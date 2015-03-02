@@ -292,3 +292,2384 @@ Processing by HomeController#minor as HTML
   Rendered layouts/_topnavbar.html.erb (0.0ms)
   Rendered layouts/_footer.html.erb (0.1ms)
 Completed 200 OK in 22ms (Views: 21.5ms | ActiveRecord: 0.0ms)
+  [1m[36m (66.3ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (7.1ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (1.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateAccounts (20150302161917)
+  [1m[35m (6.1ms)[0m  BEGIN
+  [1m[36m (32.9ms)[0m  [1mCREATE TABLE "accounts" ("id" serial primary key, "number" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150302161917"]]
+  [1m[36m (5.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (8.1ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'accounts'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+
+
+Started GET "/" for ::1 at 2015-03-02 17:21:11 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_navigation.html.erb (1.4ms)
+  Rendered layouts/_topnavbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 467ms (Views: 452.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for ::1 at 2015-03-02 17:21:13 +0100
+
+
+Started GET "/assets/animate/animate.css?body=1" for ::1 at 2015-03-02 17:21:13 +0100
+
+
+Started GET "/assets/font-awesome.css?body=1" for ::1 at 2015-03-02 17:21:13 +0100
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-03-02 17:21:13 +0100
+
+
+Started GET "/assets/style.css?body=1" for ::1 at 2015-03-02 17:21:13 +0100
+
+
+Started GET "/assets/accounts.js?body=1" for ::1 at 2015-03-02 17:21:13 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for ::1 at 2015-03-02 17:21:13 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for ::1 at 2015-03-02 17:21:13 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for ::1 at 2015-03-02 17:21:13 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for ::1 at 2015-03-02 17:21:13 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for ::1 at 2015-03-02 17:21:13 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for ::1 at 2015-03-02 17:21:13 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for ::1 at 2015-03-02 17:21:13 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for ::1 at 2015-03-02 17:21:13 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for ::1 at 2015-03-02 17:21:13 +0100
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for ::1 at 2015-03-02 17:21:13 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for ::1 at 2015-03-02 17:21:13 +0100
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for ::1 at 2015-03-02 17:21:13 +0100
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for ::1 at 2015-03-02 17:21:13 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for ::1 at 2015-03-02 17:21:13 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for ::1 at 2015-03-02 17:21:13 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for ::1 at 2015-03-02 17:21:13 +0100
+
+
+Started GET "/assets/inspinia.js?body=1" for ::1 at 2015-03-02 17:21:13 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-03-02 17:21:13 +0100
+
+
+Started GET "/assets/patterns/header-profile.png" for ::1 at 2015-03-02 17:21:13 +0100
+
+
+Started GET "/assets/fontawesome-webfont.woff2?v=4.3.0" for ::1 at 2015-03-02 17:21:13 +0100
+
+
+Started GET "/accounts" for ::1 at 2015-03-02 17:21:27 +0100
+Processing by AccountsController#index as HTML
+  [1m[35mAccount Load (2.7ms)[0m  SELECT "accounts".* FROM "accounts"
+  Rendered accounts/index.html.erb within layouts/application (6.6ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+  Rendered layouts/_topnavbar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 38ms (Views: 30.8ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-03-02 17:21:28 +0100
+
+
+Started GET "/assets/style.css?body=1" for ::1 at 2015-03-02 17:21:28 +0100
+
+
+Started GET "/assets/font-awesome.css?body=1" for ::1 at 2015-03-02 17:21:28 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for ::1 at 2015-03-02 17:21:28 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for ::1 at 2015-03-02 17:21:28 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for ::1 at 2015-03-02 17:21:28 +0100
+
+
+Started GET "/assets/animate/animate.css?body=1" for ::1 at 2015-03-02 17:21:28 +0100
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for ::1 at 2015-03-02 17:21:28 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for ::1 at 2015-03-02 17:21:28 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for ::1 at 2015-03-02 17:21:28 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for ::1 at 2015-03-02 17:21:28 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for ::1 at 2015-03-02 17:21:28 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for ::1 at 2015-03-02 17:21:28 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for ::1 at 2015-03-02 17:21:28 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for ::1 at 2015-03-02 17:21:28 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for ::1 at 2015-03-02 17:21:28 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for ::1 at 2015-03-02 17:21:28 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for ::1 at 2015-03-02 17:21:28 +0100
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for ::1 at 2015-03-02 17:21:28 +0100
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for ::1 at 2015-03-02 17:21:28 +0100
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for ::1 at 2015-03-02 17:21:28 +0100
+
+
+Started GET "/assets/accounts.js?body=1" for ::1 at 2015-03-02 17:21:28 +0100
+
+
+Started GET "/assets/inspinia.js?body=1" for ::1 at 2015-03-02 17:21:28 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-03-02 17:21:28 +0100
+
+
+Started GET "/assets/patterns/header-profile.png" for ::1 at 2015-03-02 17:21:28 +0100
+
+
+Started GET "/accounts/new" for ::1 at 2015-03-02 17:21:40 +0100
+Processing by AccountsController#new as HTML
+  Rendered accounts/_form.html.erb (28.5ms)
+  Rendered accounts/new.html.erb within layouts/application (33.4ms)
+  Rendered layouts/_navigation.html.erb (0.3ms)
+  Rendered layouts/_topnavbar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 64ms (Views: 57.7ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-03-02 17:21:40 +0100
+
+
+Started GET "/assets/font-awesome.css?body=1" for ::1 at 2015-03-02 17:21:40 +0100
+
+
+Started GET "/assets/animate/animate.css?body=1" for ::1 at 2015-03-02 17:21:40 +0100
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for ::1 at 2015-03-02 17:21:40 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for ::1 at 2015-03-02 17:21:40 +0100
+
+
+Started GET "/assets/style.css?body=1" for ::1 at 2015-03-02 17:21:40 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for ::1 at 2015-03-02 17:21:40 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for ::1 at 2015-03-02 17:21:40 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for ::1 at 2015-03-02 17:21:40 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for ::1 at 2015-03-02 17:21:40 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for ::1 at 2015-03-02 17:21:40 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for ::1 at 2015-03-02 17:21:40 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for ::1 at 2015-03-02 17:21:40 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for ::1 at 2015-03-02 17:21:40 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for ::1 at 2015-03-02 17:21:40 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for ::1 at 2015-03-02 17:21:40 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for ::1 at 2015-03-02 17:21:40 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for ::1 at 2015-03-02 17:21:40 +0100
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for ::1 at 2015-03-02 17:21:40 +0100
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for ::1 at 2015-03-02 17:21:40 +0100
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for ::1 at 2015-03-02 17:21:40 +0100
+
+
+Started GET "/assets/accounts.js?body=1" for ::1 at 2015-03-02 17:21:40 +0100
+
+
+Started GET "/assets/inspinia.js?body=1" for ::1 at 2015-03-02 17:21:40 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-03-02 17:21:40 +0100
+
+
+Started GET "/assets/patterns/header-profile.png" for ::1 at 2015-03-02 17:21:40 +0100
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (11.4ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "123456765"], ["created_at", "2015-03-02 16:27:15.147001"], ["updated_at", "2015-03-02 16:27:15.147001"]]
+  [1m[36m (12.1ms)[0m  [1mCOMMIT[0m
+
+
+Started GET "/rentals" for ::1 at 2015-03-02 17:27:15 +0100
+
+ActionController::RoutingError (No route matches [GET] "/rentals"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  puma (2.11.1) lib/puma/server.rb:507:in `handle_request'
+  puma (2.11.1) lib/puma/server.rb:375:in `process_client'
+  puma (2.11.1) lib/puma/server.rb:262:in `block in run'
+  puma (2.11.1) lib/puma/thread_pool.rb:104:in `call'
+  puma (2.11.1) lib/puma/thread_pool.rb:104:in `block in spawn_thread'
+
+
+  Rendered /Users/fredericlambrechts/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/fredericlambrechts/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
+  Rendered /Users/fredericlambrechts/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.7ms)
+  Rendered /Users/fredericlambrechts/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/fredericlambrechts/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (142.6ms)
+
+
+Started GET "/accounts" for ::1 at 2015-03-02 17:27:23 +0100
+Processing by AccountsController#index as HTML
+  [1m[36mAccount Load (16.8ms)[0m  [1mSELECT "accounts".* FROM "accounts"[0m
+  Rendered accounts/index.html.erb within layouts/application (23.9ms)
+  Rendered layouts/_navigation.html.erb (0.3ms)
+  Rendered layouts/_topnavbar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 56ms (Views: 34.2ms | ActiveRecord: 18.9ms)
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-03-02 17:27:23 +0100
+
+
+Started GET "/assets/style.css?body=1" for ::1 at 2015-03-02 17:27:23 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for ::1 at 2015-03-02 17:27:23 +0100
+
+
+Started GET "/assets/font-awesome.css?body=1" for ::1 at 2015-03-02 17:27:23 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for ::1 at 2015-03-02 17:27:23 +0100
+
+
+Started GET "/assets/animate/animate.css?body=1" for ::1 at 2015-03-02 17:27:23 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for ::1 at 2015-03-02 17:27:23 +0100
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for ::1 at 2015-03-02 17:27:23 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for ::1 at 2015-03-02 17:27:23 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for ::1 at 2015-03-02 17:27:23 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for ::1 at 2015-03-02 17:27:23 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for ::1 at 2015-03-02 17:27:23 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for ::1 at 2015-03-02 17:27:23 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for ::1 at 2015-03-02 17:27:23 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for ::1 at 2015-03-02 17:27:23 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for ::1 at 2015-03-02 17:27:23 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for ::1 at 2015-03-02 17:27:23 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for ::1 at 2015-03-02 17:27:23 +0100
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for ::1 at 2015-03-02 17:27:23 +0100
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for ::1 at 2015-03-02 17:27:23 +0100
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for ::1 at 2015-03-02 17:27:23 +0100
+
+
+Started GET "/assets/accounts.js?body=1" for ::1 at 2015-03-02 17:27:23 +0100
+
+
+Started GET "/assets/inspinia.js?body=1" for ::1 at 2015-03-02 17:27:23 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-03-02 17:27:23 +0100
+
+
+Started GET "/assets/patterns/header-profile.png" for ::1 at 2015-03-02 17:27:23 +0100
+
+
+Started GET "/accounts" for ::1 at 2015-03-02 17:28:24 +0100
+Processing by AccountsController#index as HTML
+  [1m[35mAccount Load (0.7ms)[0m  SELECT "accounts".* FROM "accounts"
+  Rendered accounts/index.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_topnavbar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 39ms (Views: 37.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-03-02 17:28:24 +0100
+
+
+Started GET "/assets/font-awesome.css?body=1" for ::1 at 2015-03-02 17:28:24 +0100
+
+
+Started GET "/assets/animate/animate.css?body=1" for ::1 at 2015-03-02 17:28:24 +0100
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for ::1 at 2015-03-02 17:28:24 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for ::1 at 2015-03-02 17:28:24 +0100
+
+
+Started GET "/assets/style.css?body=1" for ::1 at 2015-03-02 17:28:24 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for ::1 at 2015-03-02 17:28:24 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for ::1 at 2015-03-02 17:28:24 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for ::1 at 2015-03-02 17:28:24 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for ::1 at 2015-03-02 17:28:24 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for ::1 at 2015-03-02 17:28:24 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for ::1 at 2015-03-02 17:28:24 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for ::1 at 2015-03-02 17:28:24 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for ::1 at 2015-03-02 17:28:24 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for ::1 at 2015-03-02 17:28:24 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for ::1 at 2015-03-02 17:28:24 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for ::1 at 2015-03-02 17:28:24 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for ::1 at 2015-03-02 17:28:24 +0100
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for ::1 at 2015-03-02 17:28:24 +0100
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for ::1 at 2015-03-02 17:28:24 +0100
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for ::1 at 2015-03-02 17:28:24 +0100
+
+
+Started GET "/assets/accounts.js?body=1" for ::1 at 2015-03-02 17:28:24 +0100
+
+
+Started GET "/assets/inspinia.js?body=1" for ::1 at 2015-03-02 17:28:24 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-03-02 17:28:24 +0100
+
+
+Started GET "/assets/patterns/header-profile.png" for ::1 at 2015-03-02 17:28:24 +0100
+
+
+Started GET "/accounts" for ::1 at 2015-03-02 17:28:40 +0100
+Processing by AccountsController#index as HTML
+  [1m[36mAccount Load (0.3ms)[0m  [1mSELECT "accounts".* FROM "accounts"[0m
+  Rendered accounts/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+  Rendered layouts/_topnavbar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 26ms (Views: 24.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-03-02 17:28:40 +0100
+
+
+Started GET "/assets/font-awesome.css?body=1" for ::1 at 2015-03-02 17:28:40 +0100
+
+
+Started GET "/assets/animate/animate.css?body=1" for ::1 at 2015-03-02 17:28:40 +0100
+
+
+Started GET "/assets/style.css?body=1" for ::1 at 2015-03-02 17:28:40 +0100
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for ::1 at 2015-03-02 17:28:40 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for ::1 at 2015-03-02 17:28:40 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for ::1 at 2015-03-02 17:28:40 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for ::1 at 2015-03-02 17:28:40 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for ::1 at 2015-03-02 17:28:40 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for ::1 at 2015-03-02 17:28:40 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for ::1 at 2015-03-02 17:28:40 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for ::1 at 2015-03-02 17:28:40 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for ::1 at 2015-03-02 17:28:40 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for ::1 at 2015-03-02 17:28:40 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for ::1 at 2015-03-02 17:28:40 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for ::1 at 2015-03-02 17:28:40 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for ::1 at 2015-03-02 17:28:40 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for ::1 at 2015-03-02 17:28:40 +0100
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for ::1 at 2015-03-02 17:28:40 +0100
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for ::1 at 2015-03-02 17:28:40 +0100
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for ::1 at 2015-03-02 17:28:40 +0100
+
+
+Started GET "/assets/accounts.js?body=1" for ::1 at 2015-03-02 17:28:40 +0100
+
+
+Started GET "/assets/inspinia.js?body=1" for ::1 at 2015-03-02 17:28:40 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-03-02 17:28:40 +0100
+
+
+Started GET "/assets/patterns/header-profile.png" for ::1 at 2015-03-02 17:28:40 +0100
+
+
+Started GET "/accounts" for ::1 at 2015-03-02 17:30:19 +0100
+Processing by AccountsController#index as HTML
+  [1m[35mAccount Load (0.3ms)[0m  SELECT "accounts".* FROM "accounts"
+  Rendered accounts/index.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+  Rendered layouts/_topnavbar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 26ms (Views: 25.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-03-02 17:30:19 +0100
+
+
+Started GET "/assets/font-awesome.css?body=1" for ::1 at 2015-03-02 17:30:19 +0100
+
+
+Started GET "/assets/animate/animate.css?body=1" for ::1 at 2015-03-02 17:30:19 +0100
+
+
+Started GET "/assets/style.css?body=1" for ::1 at 2015-03-02 17:30:19 +0100
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for ::1 at 2015-03-02 17:30:19 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for ::1 at 2015-03-02 17:30:19 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for ::1 at 2015-03-02 17:30:19 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for ::1 at 2015-03-02 17:30:19 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for ::1 at 2015-03-02 17:30:19 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for ::1 at 2015-03-02 17:30:19 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for ::1 at 2015-03-02 17:30:19 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for ::1 at 2015-03-02 17:30:19 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for ::1 at 2015-03-02 17:30:19 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for ::1 at 2015-03-02 17:30:19 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for ::1 at 2015-03-02 17:30:19 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for ::1 at 2015-03-02 17:30:19 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for ::1 at 2015-03-02 17:30:19 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for ::1 at 2015-03-02 17:30:19 +0100
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for ::1 at 2015-03-02 17:30:19 +0100
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for ::1 at 2015-03-02 17:30:19 +0100
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for ::1 at 2015-03-02 17:30:19 +0100
+
+
+Started GET "/assets/accounts.js?body=1" for ::1 at 2015-03-02 17:30:19 +0100
+
+
+Started GET "/assets/inspinia.js?body=1" for ::1 at 2015-03-02 17:30:19 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-03-02 17:30:19 +0100
+
+
+Started GET "/assets/patterns/header-profile.png" for ::1 at 2015-03-02 17:30:19 +0100
+
+
+Started GET "/accounts/1" for ::1 at 2015-03-02 17:30:32 +0100
+Processing by AccountsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAccount Load (0.4ms)[0m  [1mSELECT  "accounts".* FROM "accounts" WHERE "accounts"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered accounts/show.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+  Rendered layouts/_topnavbar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 53ms (Views: 20.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for ::1 at 2015-03-02 17:30:32 +0100
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-03-02 17:30:32 +0100
+
+
+Started GET "/assets/style.css?body=1" for ::1 at 2015-03-02 17:30:32 +0100
+
+
+Started GET "/assets/animate/animate.css?body=1" for ::1 at 2015-03-02 17:30:32 +0100
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for ::1 at 2015-03-02 17:30:32 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for ::1 at 2015-03-02 17:30:32 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for ::1 at 2015-03-02 17:30:32 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for ::1 at 2015-03-02 17:30:32 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for ::1 at 2015-03-02 17:30:32 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for ::1 at 2015-03-02 17:30:32 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for ::1 at 2015-03-02 17:30:32 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for ::1 at 2015-03-02 17:30:32 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for ::1 at 2015-03-02 17:30:32 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for ::1 at 2015-03-02 17:30:32 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for ::1 at 2015-03-02 17:30:32 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for ::1 at 2015-03-02 17:30:32 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for ::1 at 2015-03-02 17:30:32 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for ::1 at 2015-03-02 17:30:32 +0100
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for ::1 at 2015-03-02 17:30:32 +0100
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for ::1 at 2015-03-02 17:30:32 +0100
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for ::1 at 2015-03-02 17:30:32 +0100
+
+
+Started GET "/assets/accounts.js?body=1" for ::1 at 2015-03-02 17:30:32 +0100
+
+
+Started GET "/assets/inspinia.js?body=1" for ::1 at 2015-03-02 17:30:32 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-03-02 17:30:32 +0100
+
+
+Started GET "/assets/patterns/header-profile.png" for ::1 at 2015-03-02 17:30:32 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (6.1ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.418296"], ["updated_at", "2015-03-02 16:35:00.418296"]]
+  [1m[35m (12.1ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.443364"], ["updated_at", "2015-03-02 16:35:00.443364"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.446918"], ["updated_at", "2015-03-02 16:35:00.446918"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.450189"], ["updated_at", "2015-03-02 16:35:00.450189"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.453073"], ["updated_at", "2015-03-02 16:35:00.453073"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.455698"], ["updated_at", "2015-03-02 16:35:00.455698"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.458090"], ["updated_at", "2015-03-02 16:35:00.458090"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.460349"], ["updated_at", "2015-03-02 16:35:00.460349"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.462749"], ["updated_at", "2015-03-02 16:35:00.462749"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.464991"], ["updated_at", "2015-03-02 16:35:00.464991"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.467203"], ["updated_at", "2015-03-02 16:35:00.467203"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.469263"], ["updated_at", "2015-03-02 16:35:00.469263"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.472021"], ["updated_at", "2015-03-02 16:35:00.472021"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.475048"], ["updated_at", "2015-03-02 16:35:00.475048"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.477386"], ["updated_at", "2015-03-02 16:35:00.477386"]]
+  [1m[35m (0.8ms)[0m  COMMIT
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.480721"], ["updated_at", "2015-03-02 16:35:00.480721"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.483342"], ["updated_at", "2015-03-02 16:35:00.483342"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.486170"], ["updated_at", "2015-03-02 16:35:00.486170"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.488583"], ["updated_at", "2015-03-02 16:35:00.488583"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.491215"], ["updated_at", "2015-03-02 16:35:00.491215"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.493336"], ["updated_at", "2015-03-02 16:35:00.493336"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.495578"], ["updated_at", "2015-03-02 16:35:00.495578"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.497680"], ["updated_at", "2015-03-02 16:35:00.497680"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.499781"], ["updated_at", "2015-03-02 16:35:00.499781"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.502029"], ["updated_at", "2015-03-02 16:35:00.502029"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.504087"], ["updated_at", "2015-03-02 16:35:00.504087"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.506671"], ["updated_at", "2015-03-02 16:35:00.506671"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.508872"], ["updated_at", "2015-03-02 16:35:00.508872"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.511080"], ["updated_at", "2015-03-02 16:35:00.511080"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.513277"], ["updated_at", "2015-03-02 16:35:00.513277"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.515291"], ["updated_at", "2015-03-02 16:35:00.515291"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.517488"], ["updated_at", "2015-03-02 16:35:00.517488"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.520176"], ["updated_at", "2015-03-02 16:35:00.520176"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.522855"], ["updated_at", "2015-03-02 16:35:00.522855"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.525048"], ["updated_at", "2015-03-02 16:35:00.525048"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.527190"], ["updated_at", "2015-03-02 16:35:00.527190"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.529430"], ["updated_at", "2015-03-02 16:35:00.529430"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.531611"], ["updated_at", "2015-03-02 16:35:00.531611"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.533894"], ["updated_at", "2015-03-02 16:35:00.533894"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.536427"], ["updated_at", "2015-03-02 16:35:00.536427"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.538761"], ["updated_at", "2015-03-02 16:35:00.538761"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.541100"], ["updated_at", "2015-03-02 16:35:00.541100"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.543426"], ["updated_at", "2015-03-02 16:35:00.543426"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.546088"], ["updated_at", "2015-03-02 16:35:00.546088"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.548444"], ["updated_at", "2015-03-02 16:35:00.548444"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.550778"], ["updated_at", "2015-03-02 16:35:00.550778"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.553381"], ["updated_at", "2015-03-02 16:35:00.553381"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.556102"], ["updated_at", "2015-03-02 16:35:00.556102"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.558417"], ["updated_at", "2015-03-02 16:35:00.558417"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.560885"], ["updated_at", "2015-03-02 16:35:00.560885"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.563231"], ["updated_at", "2015-03-02 16:35:00.563231"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.565977"], ["updated_at", "2015-03-02 16:35:00.565977"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.568419"], ["updated_at", "2015-03-02 16:35:00.568419"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.570856"], ["updated_at", "2015-03-02 16:35:00.570856"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.573247"], ["updated_at", "2015-03-02 16:35:00.573247"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.575378"], ["updated_at", "2015-03-02 16:35:00.575378"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.578154"], ["updated_at", "2015-03-02 16:35:00.578154"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.580405"], ["updated_at", "2015-03-02 16:35:00.580405"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.582678"], ["updated_at", "2015-03-02 16:35:00.582678"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.584932"], ["updated_at", "2015-03-02 16:35:00.584932"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.587195"], ["updated_at", "2015-03-02 16:35:00.587195"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.589361"], ["updated_at", "2015-03-02 16:35:00.589361"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.592156"], ["updated_at", "2015-03-02 16:35:00.592156"]]
+  [1m[35m (0.9ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.594612"], ["updated_at", "2015-03-02 16:35:00.594612"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.596992"], ["updated_at", "2015-03-02 16:35:00.596992"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.599528"], ["updated_at", "2015-03-02 16:35:00.599528"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.601806"], ["updated_at", "2015-03-02 16:35:00.601806"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.604223"], ["updated_at", "2015-03-02 16:35:00.604223"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.606577"], ["updated_at", "2015-03-02 16:35:00.606577"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.608832"], ["updated_at", "2015-03-02 16:35:00.608832"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.611138"], ["updated_at", "2015-03-02 16:35:00.611138"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.613505"], ["updated_at", "2015-03-02 16:35:00.613505"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.615953"], ["updated_at", "2015-03-02 16:35:00.615953"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.618230"], ["updated_at", "2015-03-02 16:35:00.618230"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.620361"], ["updated_at", "2015-03-02 16:35:00.620361"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.622559"], ["updated_at", "2015-03-02 16:35:00.622559"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.624533"], ["updated_at", "2015-03-02 16:35:00.624533"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.626596"], ["updated_at", "2015-03-02 16:35:00.626596"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.628816"], ["updated_at", "2015-03-02 16:35:00.628816"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.631165"], ["updated_at", "2015-03-02 16:35:00.631165"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.633183"], ["updated_at", "2015-03-02 16:35:00.633183"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.635116"], ["updated_at", "2015-03-02 16:35:00.635116"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.637401"], ["updated_at", "2015-03-02 16:35:00.637401"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.639540"], ["updated_at", "2015-03-02 16:35:00.639540"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.641702"], ["updated_at", "2015-03-02 16:35:00.641702"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.643743"], ["updated_at", "2015-03-02 16:35:00.643743"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.645714"], ["updated_at", "2015-03-02 16:35:00.645714"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.647712"], ["updated_at", "2015-03-02 16:35:00.647712"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.649712"], ["updated_at", "2015-03-02 16:35:00.649712"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.651644"], ["updated_at", "2015-03-02 16:35:00.651644"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.653664"], ["updated_at", "2015-03-02 16:35:00.653664"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.655664"], ["updated_at", "2015-03-02 16:35:00.655664"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.657688"], ["updated_at", "2015-03-02 16:35:00.657688"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.659738"], ["updated_at", "2015-03-02 16:35:00.659738"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.662026"], ["updated_at", "2015-03-02 16:35:00.662026"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.664093"], ["updated_at", "2015-03-02 16:35:00.664093"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.666058"], ["updated_at", "2015-03-02 16:35:00.666058"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.668031"], ["updated_at", "2015-03-02 16:35:00.668031"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.670054"], ["updated_at", "2015-03-02 16:35:00.670054"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "1000000..9999999"], ["created_at", "2015-03-02 16:35:00.672231"], ["updated_at", "2015-03-02 16:35:00.672231"]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+  [1m[35mAccount Load (2.2ms)[0m  SELECT "accounts".* FROM "accounts"
+
+
+Started GET "/accounts" for ::1 at 2015-03-02 17:36:15 +0100
+Processing by AccountsController#index as HTML
+  [1m[35mAccount Load (0.8ms)[0m  SELECT "accounts".* FROM "accounts"
+  Rendered accounts/index.html.erb within layouts/application (25.9ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_topnavbar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 57ms (Views: 51.7ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-03-02 17:36:16 +0100
+
+
+Started GET "/assets/font-awesome.css?body=1" for ::1 at 2015-03-02 17:36:16 +0100
+
+
+Started GET "/assets/animate/animate.css?body=1" for ::1 at 2015-03-02 17:36:16 +0100
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for ::1 at 2015-03-02 17:36:16 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for ::1 at 2015-03-02 17:36:16 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for ::1 at 2015-03-02 17:36:16 +0100
+
+
+Started GET "/assets/style.css?body=1" for ::1 at 2015-03-02 17:36:16 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for ::1 at 2015-03-02 17:36:16 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for ::1 at 2015-03-02 17:36:16 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for ::1 at 2015-03-02 17:36:16 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for ::1 at 2015-03-02 17:36:16 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for ::1 at 2015-03-02 17:36:16 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for ::1 at 2015-03-02 17:36:16 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for ::1 at 2015-03-02 17:36:16 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for ::1 at 2015-03-02 17:36:16 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for ::1 at 2015-03-02 17:36:16 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for ::1 at 2015-03-02 17:36:16 +0100
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for ::1 at 2015-03-02 17:36:16 +0100
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for ::1 at 2015-03-02 17:36:16 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for ::1 at 2015-03-02 17:36:16 +0100
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for ::1 at 2015-03-02 17:36:16 +0100
+
+
+Started GET "/assets/accounts.js?body=1" for ::1 at 2015-03-02 17:36:16 +0100
+
+
+Started GET "/assets/inspinia.js?body=1" for ::1 at 2015-03-02 17:36:16 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-03-02 17:36:16 +0100
+
+
+Started GET "/assets/patterns/header-profile.png" for ::1 at 2015-03-02 17:36:16 +0100
+  [1m[36m (37.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (2.5ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateAccounts (20150302161917)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (25.9ms)[0m  [1mCREATE TABLE "accounts" ("id" serial primary key, "number" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150302161917"]]
+  [1m[36m (5.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (2.9ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'accounts'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (11.7ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "330963"], ["created_at", "2015-03-02 16:40:57.068593"], ["updated_at", "2015-03-02 16:40:57.068593"]]
+  [1m[35m (11.9ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "787089"], ["created_at", "2015-03-02 16:40:57.099326"], ["updated_at", "2015-03-02 16:40:57.099326"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "332767"], ["created_at", "2015-03-02 16:40:57.102808"], ["updated_at", "2015-03-02 16:40:57.102808"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "420657"], ["created_at", "2015-03-02 16:40:57.105695"], ["updated_at", "2015-03-02 16:40:57.105695"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "317578"], ["created_at", "2015-03-02 16:40:57.108441"], ["updated_at", "2015-03-02 16:40:57.108441"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "162017"], ["created_at", "2015-03-02 16:40:57.110749"], ["updated_at", "2015-03-02 16:40:57.110749"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "499577"], ["created_at", "2015-03-02 16:40:57.113105"], ["updated_at", "2015-03-02 16:40:57.113105"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "924661"], ["created_at", "2015-03-02 16:40:57.115399"], ["updated_at", "2015-03-02 16:40:57.115399"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "621233"], ["created_at", "2015-03-02 16:40:57.117569"], ["updated_at", "2015-03-02 16:40:57.117569"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "980795"], ["created_at", "2015-03-02 16:40:57.119839"], ["updated_at", "2015-03-02 16:40:57.119839"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "407270"], ["created_at", "2015-03-02 16:40:57.122008"], ["updated_at", "2015-03-02 16:40:57.122008"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "439495"], ["created_at", "2015-03-02 16:40:57.124804"], ["updated_at", "2015-03-02 16:40:57.124804"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "304936"], ["created_at", "2015-03-02 16:40:57.127557"], ["updated_at", "2015-03-02 16:40:57.127557"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "677766"], ["created_at", "2015-03-02 16:40:57.129933"], ["updated_at", "2015-03-02 16:40:57.129933"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "399982"], ["created_at", "2015-03-02 16:40:57.132871"], ["updated_at", "2015-03-02 16:40:57.132871"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "905150"], ["created_at", "2015-03-02 16:40:57.135322"], ["updated_at", "2015-03-02 16:40:57.135322"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "129263"], ["created_at", "2015-03-02 16:40:57.138019"], ["updated_at", "2015-03-02 16:40:57.138019"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "605987"], ["created_at", "2015-03-02 16:40:57.140434"], ["updated_at", "2015-03-02 16:40:57.140434"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "567645"], ["created_at", "2015-03-02 16:40:57.143065"], ["updated_at", "2015-03-02 16:40:57.143065"]]
+  [1m[35m (6.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "278894"], ["created_at", "2015-03-02 16:40:57.152793"], ["updated_at", "2015-03-02 16:40:57.152793"]]
+  [1m[36m (6.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "107127"], ["created_at", "2015-03-02 16:40:57.160897"], ["updated_at", "2015-03-02 16:40:57.160897"]]
+  [1m[35m (6.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "896714"], ["created_at", "2015-03-02 16:40:57.169496"], ["updated_at", "2015-03-02 16:40:57.169496"]]
+  [1m[36m (5.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "216456"], ["created_at", "2015-03-02 16:40:57.176539"], ["updated_at", "2015-03-02 16:40:57.176539"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "161796"], ["created_at", "2015-03-02 16:40:57.178819"], ["updated_at", "2015-03-02 16:40:57.178819"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "768369"], ["created_at", "2015-03-02 16:40:57.181105"], ["updated_at", "2015-03-02 16:40:57.181105"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "216545"], ["created_at", "2015-03-02 16:40:57.183313"], ["updated_at", "2015-03-02 16:40:57.183313"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "943720"], ["created_at", "2015-03-02 16:40:57.185544"], ["updated_at", "2015-03-02 16:40:57.185544"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "939569"], ["created_at", "2015-03-02 16:40:57.187688"], ["updated_at", "2015-03-02 16:40:57.187688"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "885666"], ["created_at", "2015-03-02 16:40:57.189751"], ["updated_at", "2015-03-02 16:40:57.189751"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "395123"], ["created_at", "2015-03-02 16:40:57.191896"], ["updated_at", "2015-03-02 16:40:57.191896"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "414623"], ["created_at", "2015-03-02 16:40:57.194663"], ["updated_at", "2015-03-02 16:40:57.194663"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "269572"], ["created_at", "2015-03-02 16:40:57.197059"], ["updated_at", "2015-03-02 16:40:57.197059"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "963838"], ["created_at", "2015-03-02 16:40:57.199190"], ["updated_at", "2015-03-02 16:40:57.199190"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "665937"], ["created_at", "2015-03-02 16:40:57.201224"], ["updated_at", "2015-03-02 16:40:57.201224"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "757184"], ["created_at", "2015-03-02 16:40:57.203653"], ["updated_at", "2015-03-02 16:40:57.203653"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "922663"], ["created_at", "2015-03-02 16:40:57.205996"], ["updated_at", "2015-03-02 16:40:57.205996"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "192288"], ["created_at", "2015-03-02 16:40:57.208446"], ["updated_at", "2015-03-02 16:40:57.208446"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "491560"], ["created_at", "2015-03-02 16:40:57.210845"], ["updated_at", "2015-03-02 16:40:57.210845"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "735654"], ["created_at", "2015-03-02 16:40:57.213270"], ["updated_at", "2015-03-02 16:40:57.213270"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "567821"], ["created_at", "2015-03-02 16:40:57.215735"], ["updated_at", "2015-03-02 16:40:57.215735"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "599921"], ["created_at", "2015-03-02 16:40:57.218346"], ["updated_at", "2015-03-02 16:40:57.218346"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "943268"], ["created_at", "2015-03-02 16:40:57.221028"], ["updated_at", "2015-03-02 16:40:57.221028"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "269152"], ["created_at", "2015-03-02 16:40:57.223386"], ["updated_at", "2015-03-02 16:40:57.223386"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "352485"], ["created_at", "2015-03-02 16:40:57.225673"], ["updated_at", "2015-03-02 16:40:57.225673"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "498680"], ["created_at", "2015-03-02 16:40:57.227995"], ["updated_at", "2015-03-02 16:40:57.227995"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "713750"], ["created_at", "2015-03-02 16:40:57.230218"], ["updated_at", "2015-03-02 16:40:57.230218"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "615355"], ["created_at", "2015-03-02 16:40:57.232855"], ["updated_at", "2015-03-02 16:40:57.232855"]]
+  [1m[35m (0.9ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "860482"], ["created_at", "2015-03-02 16:40:57.235231"], ["updated_at", "2015-03-02 16:40:57.235231"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "892647"], ["created_at", "2015-03-02 16:40:57.237561"], ["updated_at", "2015-03-02 16:40:57.237561"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "957402"], ["created_at", "2015-03-02 16:40:57.239793"], ["updated_at", "2015-03-02 16:40:57.239793"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "537013"], ["created_at", "2015-03-02 16:40:57.242107"], ["updated_at", "2015-03-02 16:40:57.242107"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "946246"], ["created_at", "2015-03-02 16:40:57.244993"], ["updated_at", "2015-03-02 16:40:57.244993"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "359163"], ["created_at", "2015-03-02 16:40:57.247418"], ["updated_at", "2015-03-02 16:40:57.247418"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "466033"], ["created_at", "2015-03-02 16:40:57.250005"], ["updated_at", "2015-03-02 16:40:57.250005"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "858421"], ["created_at", "2015-03-02 16:40:57.252907"], ["updated_at", "2015-03-02 16:40:57.252907"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "934811"], ["created_at", "2015-03-02 16:40:57.255206"], ["updated_at", "2015-03-02 16:40:57.255206"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "339203"], ["created_at", "2015-03-02 16:40:57.257856"], ["updated_at", "2015-03-02 16:40:57.257856"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "812258"], ["created_at", "2015-03-02 16:40:57.260800"], ["updated_at", "2015-03-02 16:40:57.260800"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "246729"], ["created_at", "2015-03-02 16:40:57.263054"], ["updated_at", "2015-03-02 16:40:57.263054"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "386259"], ["created_at", "2015-03-02 16:40:57.265765"], ["updated_at", "2015-03-02 16:40:57.265765"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "795921"], ["created_at", "2015-03-02 16:40:57.268086"], ["updated_at", "2015-03-02 16:40:57.268086"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "801505"], ["created_at", "2015-03-02 16:40:57.270395"], ["updated_at", "2015-03-02 16:40:57.270395"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "494978"], ["created_at", "2015-03-02 16:40:57.272646"], ["updated_at", "2015-03-02 16:40:57.272646"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "180601"], ["created_at", "2015-03-02 16:40:57.275097"], ["updated_at", "2015-03-02 16:40:57.275097"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "591941"], ["created_at", "2015-03-02 16:40:57.277502"], ["updated_at", "2015-03-02 16:40:57.277502"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "253287"], ["created_at", "2015-03-02 16:40:57.280409"], ["updated_at", "2015-03-02 16:40:57.280409"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "363434"], ["created_at", "2015-03-02 16:40:57.282832"], ["updated_at", "2015-03-02 16:40:57.282832"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "554448"], ["created_at", "2015-03-02 16:40:57.285328"], ["updated_at", "2015-03-02 16:40:57.285328"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "171540"], ["created_at", "2015-03-02 16:40:57.287638"], ["updated_at", "2015-03-02 16:40:57.287638"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "209179"], ["created_at", "2015-03-02 16:40:57.290758"], ["updated_at", "2015-03-02 16:40:57.290758"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "325822"], ["created_at", "2015-03-02 16:40:57.293741"], ["updated_at", "2015-03-02 16:40:57.293741"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "829121"], ["created_at", "2015-03-02 16:40:57.295925"], ["updated_at", "2015-03-02 16:40:57.295925"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "307590"], ["created_at", "2015-03-02 16:40:57.298022"], ["updated_at", "2015-03-02 16:40:57.298022"]]
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "909044"], ["created_at", "2015-03-02 16:40:57.300540"], ["updated_at", "2015-03-02 16:40:57.300540"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "899482"], ["created_at", "2015-03-02 16:40:57.302595"], ["updated_at", "2015-03-02 16:40:57.302595"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "396644"], ["created_at", "2015-03-02 16:40:57.304783"], ["updated_at", "2015-03-02 16:40:57.304783"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "351401"], ["created_at", "2015-03-02 16:40:57.306821"], ["updated_at", "2015-03-02 16:40:57.306821"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "465833"], ["created_at", "2015-03-02 16:40:57.308792"], ["updated_at", "2015-03-02 16:40:57.308792"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "975310"], ["created_at", "2015-03-02 16:40:57.310745"], ["updated_at", "2015-03-02 16:40:57.310745"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "670957"], ["created_at", "2015-03-02 16:40:57.312888"], ["updated_at", "2015-03-02 16:40:57.312888"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "718182"], ["created_at", "2015-03-02 16:40:57.314868"], ["updated_at", "2015-03-02 16:40:57.314868"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "633379"], ["created_at", "2015-03-02 16:40:57.316914"], ["updated_at", "2015-03-02 16:40:57.316914"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "703584"], ["created_at", "2015-03-02 16:40:57.318968"], ["updated_at", "2015-03-02 16:40:57.318968"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "259230"], ["created_at", "2015-03-02 16:40:57.321007"], ["updated_at", "2015-03-02 16:40:57.321007"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "594408"], ["created_at", "2015-03-02 16:40:57.323060"], ["updated_at", "2015-03-02 16:40:57.323060"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "584268"], ["created_at", "2015-03-02 16:40:57.325030"], ["updated_at", "2015-03-02 16:40:57.325030"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "932958"], ["created_at", "2015-03-02 16:40:57.326980"], ["updated_at", "2015-03-02 16:40:57.326980"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "396832"], ["created_at", "2015-03-02 16:40:57.329033"], ["updated_at", "2015-03-02 16:40:57.329033"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "994948"], ["created_at", "2015-03-02 16:40:57.331004"], ["updated_at", "2015-03-02 16:40:57.331004"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "791964"], ["created_at", "2015-03-02 16:40:57.333083"], ["updated_at", "2015-03-02 16:40:57.333083"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "869454"], ["created_at", "2015-03-02 16:40:57.335187"], ["updated_at", "2015-03-02 16:40:57.335187"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "892934"], ["created_at", "2015-03-02 16:40:57.337497"], ["updated_at", "2015-03-02 16:40:57.337497"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "376223"], ["created_at", "2015-03-02 16:40:57.339684"], ["updated_at", "2015-03-02 16:40:57.339684"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "966968"], ["created_at", "2015-03-02 16:40:57.341853"], ["updated_at", "2015-03-02 16:40:57.341853"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "223840"], ["created_at", "2015-03-02 16:40:57.343909"], ["updated_at", "2015-03-02 16:40:57.343909"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "479166"], ["created_at", "2015-03-02 16:40:57.345963"], ["updated_at", "2015-03-02 16:40:57.345963"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "592575"], ["created_at", "2015-03-02 16:40:57.347860"], ["updated_at", "2015-03-02 16:40:57.347860"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "144342"], ["created_at", "2015-03-02 16:40:57.350089"], ["updated_at", "2015-03-02 16:40:57.350089"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "465905"], ["created_at", "2015-03-02 16:40:57.352163"], ["updated_at", "2015-03-02 16:40:57.352163"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "262655"], ["created_at", "2015-03-02 16:40:57.354224"], ["updated_at", "2015-03-02 16:40:57.354224"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+
+
+Started GET "/accounts" for ::1 at 2015-03-02 17:41:54 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by AccountsController#index as HTML
+  [1m[35mAccount Load (0.8ms)[0m  SELECT "accounts".* FROM "accounts"
+  Rendered accounts/index.html.erb within layouts/application (30.3ms)
+  Rendered layouts/_navigation.html.erb (1.0ms)
+  Rendered layouts/_topnavbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 298ms (Views: 277.1ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/assets/animate/animate.css?body=1" for ::1 at 2015-03-02 17:41:55 +0100
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-03-02 17:41:55 +0100
+
+
+Started GET "/assets/style.css?body=1" for ::1 at 2015-03-02 17:41:55 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for ::1 at 2015-03-02 17:41:55 +0100
+
+
+Started GET "/assets/font-awesome.css?body=1" for ::1 at 2015-03-02 17:41:55 +0100
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for ::1 at 2015-03-02 17:41:55 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for ::1 at 2015-03-02 17:41:55 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for ::1 at 2015-03-02 17:41:55 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for ::1 at 2015-03-02 17:41:55 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for ::1 at 2015-03-02 17:41:55 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for ::1 at 2015-03-02 17:41:55 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for ::1 at 2015-03-02 17:41:55 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for ::1 at 2015-03-02 17:41:55 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for ::1 at 2015-03-02 17:41:55 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for ::1 at 2015-03-02 17:41:55 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for ::1 at 2015-03-02 17:41:55 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for ::1 at 2015-03-02 17:41:55 +0100
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for ::1 at 2015-03-02 17:41:55 +0100
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for ::1 at 2015-03-02 17:41:55 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for ::1 at 2015-03-02 17:41:55 +0100
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for ::1 at 2015-03-02 17:41:55 +0100
+
+
+Started GET "/assets/accounts.js?body=1" for ::1 at 2015-03-02 17:41:55 +0100
+
+
+Started GET "/assets/inspinia.js?body=1" for ::1 at 2015-03-02 17:41:55 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-03-02 17:41:55 +0100
+
+
+Started GET "/assets/patterns/header-profile.png" for ::1 at 2015-03-02 17:41:55 +0100
+
+
+Started GET "/" for ::1 at 2015-03-02 17:42:51 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_navigation.html.erb (0.3ms)
+  Rendered layouts/_topnavbar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 34ms (Views: 33.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-03-02 17:42:51 +0100
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for ::1 at 2015-03-02 17:42:51 +0100
+
+
+Started GET "/assets/font-awesome.css?body=1" for ::1 at 2015-03-02 17:42:51 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for ::1 at 2015-03-02 17:42:51 +0100
+
+
+Started GET "/assets/style.css?body=1" for ::1 at 2015-03-02 17:42:51 +0100
+
+
+Started GET "/assets/animate/animate.css?body=1" for ::1 at 2015-03-02 17:42:51 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for ::1 at 2015-03-02 17:42:51 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for ::1 at 2015-03-02 17:42:51 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for ::1 at 2015-03-02 17:42:51 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for ::1 at 2015-03-02 17:42:51 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for ::1 at 2015-03-02 17:42:51 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for ::1 at 2015-03-02 17:42:51 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for ::1 at 2015-03-02 17:42:51 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for ::1 at 2015-03-02 17:42:51 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for ::1 at 2015-03-02 17:42:51 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for ::1 at 2015-03-02 17:42:51 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for ::1 at 2015-03-02 17:42:51 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for ::1 at 2015-03-02 17:42:51 +0100
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for ::1 at 2015-03-02 17:42:51 +0100
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for ::1 at 2015-03-02 17:42:51 +0100
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for ::1 at 2015-03-02 17:42:51 +0100
+
+
+Started GET "/assets/accounts.js?body=1" for ::1 at 2015-03-02 17:42:51 +0100
+
+
+Started GET "/assets/inspinia.js?body=1" for ::1 at 2015-03-02 17:42:51 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-03-02 17:42:51 +0100
+
+
+Started GET "/assets/patterns/header-profile.png" for ::1 at 2015-03-02 17:42:51 +0100
+
+
+Started GET "/home/minor" for ::1 at 2015-03-02 17:42:52 +0100
+Processing by HomeController#minor as HTML
+  Rendered home/minor.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_topnavbar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 38ms (Views: 36.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-03-02 17:42:52 +0100
+
+
+Started GET "/assets/font-awesome.css?body=1" for ::1 at 2015-03-02 17:42:52 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for ::1 at 2015-03-02 17:42:52 +0100
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for ::1 at 2015-03-02 17:42:52 +0100
+
+
+Started GET "/assets/style.css?body=1" for ::1 at 2015-03-02 17:42:52 +0100
+
+
+Started GET "/assets/animate/animate.css?body=1" for ::1 at 2015-03-02 17:42:52 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for ::1 at 2015-03-02 17:42:52 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for ::1 at 2015-03-02 17:42:52 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for ::1 at 2015-03-02 17:42:52 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for ::1 at 2015-03-02 17:42:52 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for ::1 at 2015-03-02 17:42:52 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for ::1 at 2015-03-02 17:42:52 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for ::1 at 2015-03-02 17:42:52 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for ::1 at 2015-03-02 17:42:52 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for ::1 at 2015-03-02 17:42:52 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for ::1 at 2015-03-02 17:42:52 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for ::1 at 2015-03-02 17:42:52 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for ::1 at 2015-03-02 17:42:52 +0100
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for ::1 at 2015-03-02 17:42:52 +0100
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for ::1 at 2015-03-02 17:42:52 +0100
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for ::1 at 2015-03-02 17:42:52 +0100
+
+
+Started GET "/assets/accounts.js?body=1" for ::1 at 2015-03-02 17:42:52 +0100
+
+
+Started GET "/assets/inspinia.js?body=1" for ::1 at 2015-03-02 17:42:52 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-03-02 17:42:52 +0100
+
+
+Started GET "/assets/patterns/header-profile.png" for ::1 at 2015-03-02 17:42:52 +0100
+
+
+Started GET "/home/minor" for ::1 at 2015-03-02 17:42:52 +0100
+Processing by HomeController#minor as HTML
+  Rendered home/minor.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+  Rendered layouts/_topnavbar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 28ms (Views: 26.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-03-02 17:42:53 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for ::1 at 2015-03-02 17:42:53 +0100
+
+
+Started GET "/assets/font-awesome.css?body=1" for ::1 at 2015-03-02 17:42:53 +0100
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for ::1 at 2015-03-02 17:42:53 +0100
+
+
+Started GET "/assets/style.css?body=1" for ::1 at 2015-03-02 17:42:53 +0100
+
+
+Started GET "/assets/animate/animate.css?body=1" for ::1 at 2015-03-02 17:42:53 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for ::1 at 2015-03-02 17:42:53 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for ::1 at 2015-03-02 17:42:53 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for ::1 at 2015-03-02 17:42:53 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for ::1 at 2015-03-02 17:42:53 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for ::1 at 2015-03-02 17:42:53 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for ::1 at 2015-03-02 17:42:53 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for ::1 at 2015-03-02 17:42:53 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for ::1 at 2015-03-02 17:42:53 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for ::1 at 2015-03-02 17:42:53 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for ::1 at 2015-03-02 17:42:53 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for ::1 at 2015-03-02 17:42:53 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for ::1 at 2015-03-02 17:42:53 +0100
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for ::1 at 2015-03-02 17:42:53 +0100
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for ::1 at 2015-03-02 17:42:53 +0100
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for ::1 at 2015-03-02 17:42:53 +0100
+
+
+Started GET "/assets/accounts.js?body=1" for ::1 at 2015-03-02 17:42:53 +0100
+
+
+Started GET "/assets/inspinia.js?body=1" for ::1 at 2015-03-02 17:42:53 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-03-02 17:42:53 +0100
+
+
+Started GET "/assets/patterns/header-profile.png" for ::1 at 2015-03-02 17:42:53 +0100
+
+
+Started GET "/" for ::1 at 2015-03-02 17:42:53 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+  Rendered layouts/_topnavbar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 27ms (Views: 26.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-03-02 17:42:54 +0100
+
+
+Started GET "/assets/font-awesome.css?body=1" for ::1 at 2015-03-02 17:42:54 +0100
+
+
+Started GET "/assets/animate/animate.css?body=1" for ::1 at 2015-03-02 17:42:54 +0100
+
+
+Started GET "/assets/style.css?body=1" for ::1 at 2015-03-02 17:42:54 +0100
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for ::1 at 2015-03-02 17:42:54 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for ::1 at 2015-03-02 17:42:54 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for ::1 at 2015-03-02 17:42:54 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for ::1 at 2015-03-02 17:42:54 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for ::1 at 2015-03-02 17:42:54 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for ::1 at 2015-03-02 17:42:54 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for ::1 at 2015-03-02 17:42:54 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for ::1 at 2015-03-02 17:42:54 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for ::1 at 2015-03-02 17:42:54 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for ::1 at 2015-03-02 17:42:54 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for ::1 at 2015-03-02 17:42:54 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for ::1 at 2015-03-02 17:42:54 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for ::1 at 2015-03-02 17:42:54 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for ::1 at 2015-03-02 17:42:54 +0100
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for ::1 at 2015-03-02 17:42:54 +0100
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for ::1 at 2015-03-02 17:42:54 +0100
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for ::1 at 2015-03-02 17:42:54 +0100
+
+
+Started GET "/assets/accounts.js?body=1" for ::1 at 2015-03-02 17:42:54 +0100
+
+
+Started GET "/assets/inspinia.js?body=1" for ::1 at 2015-03-02 17:42:54 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-03-02 17:42:54 +0100
+
+
+Started GET "/assets/patterns/header-profile.png" for ::1 at 2015-03-02 17:42:54 +0100
+
+
+Started GET "/" for ::1 at 2015-03-02 17:43:03 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+  Rendered layouts/_topnavbar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 27ms (Views: 26.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-03-02 17:43:04 +0100
+
+
+Started GET "/assets/animate/animate.css?body=1" for ::1 at 2015-03-02 17:43:04 +0100
+
+
+Started GET "/assets/font-awesome.css?body=1" for ::1 at 2015-03-02 17:43:04 +0100
+
+
+Started GET "/assets/style.css?body=1" for ::1 at 2015-03-02 17:43:04 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for ::1 at 2015-03-02 17:43:04 +0100
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for ::1 at 2015-03-02 17:43:04 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for ::1 at 2015-03-02 17:43:04 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for ::1 at 2015-03-02 17:43:04 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for ::1 at 2015-03-02 17:43:04 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for ::1 at 2015-03-02 17:43:04 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for ::1 at 2015-03-02 17:43:04 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for ::1 at 2015-03-02 17:43:04 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for ::1 at 2015-03-02 17:43:04 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for ::1 at 2015-03-02 17:43:04 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for ::1 at 2015-03-02 17:43:04 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for ::1 at 2015-03-02 17:43:04 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for ::1 at 2015-03-02 17:43:04 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for ::1 at 2015-03-02 17:43:04 +0100
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for ::1 at 2015-03-02 17:43:04 +0100
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for ::1 at 2015-03-02 17:43:04 +0100
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for ::1 at 2015-03-02 17:43:04 +0100
+
+
+Started GET "/assets/accounts.js?body=1" for ::1 at 2015-03-02 17:43:04 +0100
+
+
+Started GET "/assets/inspinia.js?body=1" for ::1 at 2015-03-02 17:43:04 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-03-02 17:43:04 +0100
+
+
+Started GET "/assets/patterns/header-profile.png" for ::1 at 2015-03-02 17:43:04 +0100
+
+
+Started GET "/home/minor" for ::1 at 2015-03-02 17:43:04 +0100
+Processing by HomeController#minor as HTML
+  Rendered home/minor.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+  Rendered layouts/_topnavbar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 31ms (Views: 30.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for ::1 at 2015-03-02 17:43:04 +0100
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-03-02 17:43:04 +0100
+
+
+Started GET "/assets/animate/animate.css?body=1" for ::1 at 2015-03-02 17:43:04 +0100
+
+
+Started GET "/assets/style.css?body=1" for ::1 at 2015-03-02 17:43:04 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for ::1 at 2015-03-02 17:43:04 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for ::1 at 2015-03-02 17:43:04 +0100
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for ::1 at 2015-03-02 17:43:04 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for ::1 at 2015-03-02 17:43:04 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for ::1 at 2015-03-02 17:43:04 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for ::1 at 2015-03-02 17:43:04 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for ::1 at 2015-03-02 17:43:04 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for ::1 at 2015-03-02 17:43:04 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for ::1 at 2015-03-02 17:43:04 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for ::1 at 2015-03-02 17:43:04 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for ::1 at 2015-03-02 17:43:04 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for ::1 at 2015-03-02 17:43:04 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for ::1 at 2015-03-02 17:43:04 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for ::1 at 2015-03-02 17:43:04 +0100
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for ::1 at 2015-03-02 17:43:04 +0100
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for ::1 at 2015-03-02 17:43:04 +0100
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for ::1 at 2015-03-02 17:43:04 +0100
+
+
+Started GET "/assets/accounts.js?body=1" for ::1 at 2015-03-02 17:43:04 +0100
+
+
+Started GET "/assets/inspinia.js?body=1" for ::1 at 2015-03-02 17:43:05 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-03-02 17:43:05 +0100
+
+
+Started GET "/assets/patterns/header-profile.png" for ::1 at 2015-03-02 17:43:05 +0100
+
+
+Started GET "/" for ::1 at 2015-03-02 17:43:13 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+  Rendered layouts/_topnavbar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 27ms (Views: 26.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for ::1 at 2015-03-02 17:43:13 +0100
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-03-02 17:43:13 +0100
+
+
+Started GET "/assets/style.css?body=1" for ::1 at 2015-03-02 17:43:13 +0100
+
+
+Started GET "/assets/animate/animate.css?body=1" for ::1 at 2015-03-02 17:43:13 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for ::1 at 2015-03-02 17:43:13 +0100
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for ::1 at 2015-03-02 17:43:13 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for ::1 at 2015-03-02 17:43:13 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for ::1 at 2015-03-02 17:43:13 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for ::1 at 2015-03-02 17:43:13 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for ::1 at 2015-03-02 17:43:13 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for ::1 at 2015-03-02 17:43:13 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for ::1 at 2015-03-02 17:43:13 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for ::1 at 2015-03-02 17:43:13 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for ::1 at 2015-03-02 17:43:13 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for ::1 at 2015-03-02 17:43:13 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for ::1 at 2015-03-02 17:43:13 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for ::1 at 2015-03-02 17:43:13 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for ::1 at 2015-03-02 17:43:13 +0100
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for ::1 at 2015-03-02 17:43:13 +0100
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for ::1 at 2015-03-02 17:43:13 +0100
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for ::1 at 2015-03-02 17:43:13 +0100
+
+
+Started GET "/assets/accounts.js?body=1" for ::1 at 2015-03-02 17:43:13 +0100
+
+
+Started GET "/assets/inspinia.js?body=1" for ::1 at 2015-03-02 17:43:13 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-03-02 17:43:13 +0100
+
+
+Started GET "/assets/patterns/header-profile.png" for ::1 at 2015-03-02 17:43:13 +0100
+
+
+Started GET "/" for ::1 at 2015-03-02 17:43:18 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_navigation.html.erb (0.3ms)
+  Rendered layouts/_topnavbar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 29ms (Views: 28.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-03-02 17:43:18 +0100
+
+
+Started GET "/assets/font-awesome.css?body=1" for ::1 at 2015-03-02 17:43:18 +0100
+
+
+Started GET "/assets/style.css?body=1" for ::1 at 2015-03-02 17:43:18 +0100
+
+
+Started GET "/assets/animate/animate.css?body=1" for ::1 at 2015-03-02 17:43:19 +0100
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for ::1 at 2015-03-02 17:43:19 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for ::1 at 2015-03-02 17:43:19 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for ::1 at 2015-03-02 17:43:19 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for ::1 at 2015-03-02 17:43:19 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for ::1 at 2015-03-02 17:43:19 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for ::1 at 2015-03-02 17:43:19 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for ::1 at 2015-03-02 17:43:19 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for ::1 at 2015-03-02 17:43:19 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for ::1 at 2015-03-02 17:43:19 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for ::1 at 2015-03-02 17:43:19 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for ::1 at 2015-03-02 17:43:19 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for ::1 at 2015-03-02 17:43:19 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for ::1 at 2015-03-02 17:43:19 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for ::1 at 2015-03-02 17:43:19 +0100
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for ::1 at 2015-03-02 17:43:19 +0100
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for ::1 at 2015-03-02 17:43:19 +0100
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for ::1 at 2015-03-02 17:43:19 +0100
+
+
+Started GET "/assets/accounts.js?body=1" for ::1 at 2015-03-02 17:43:19 +0100
+
+
+Started GET "/assets/inspinia.js?body=1" for ::1 at 2015-03-02 17:43:19 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-03-02 17:43:19 +0100
+
+
+Started GET "/assets/patterns/header-profile.png" for ::1 at 2015-03-02 17:43:19 +0100
+
+
+Started GET "/index" for ::1 at 2015-03-02 17:43:35 +0100
+
+ActionController::RoutingError (No route matches [GET] "/index"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  puma (2.11.1) lib/puma/server.rb:507:in `handle_request'
+  puma (2.11.1) lib/puma/server.rb:375:in `process_client'
+  puma (2.11.1) lib/puma/server.rb:262:in `block in run'
+  puma (2.11.1) lib/puma/thread_pool.rb:104:in `call'
+  puma (2.11.1) lib/puma/thread_pool.rb:104:in `block in spawn_thread'
+
+
+  Rendered /Users/fredericlambrechts/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Users/fredericlambrechts/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.1ms)
+  Rendered /Users/fredericlambrechts/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (16.7ms)
+  Rendered /Users/fredericlambrechts/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.8ms)
+  Rendered /Users/fredericlambrechts/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (215.0ms)
+
+
+Started GET "/accounts/index" for ::1 at 2015-03-02 17:43:46 +0100
+Processing by AccountsController#show as HTML
+  Parameters: {"id"=>"index"}
+  [1m[36mAccount Load (5.1ms)[0m  [1mSELECT  "accounts".* FROM "accounts" WHERE "accounts"."id" = $1 LIMIT 1[0m  [["id", 0]]
+Completed 404 Not Found in 31ms
+
+ActiveRecord::RecordNotFound (Couldn't find Account with 'id'=index):
+  app/controllers/accounts_controller.rb:67:in `set_account'
+
+
+  Rendered /Users/fredericlambrechts/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.3ms)
+  Rendered /Users/fredericlambrechts/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered /Users/fredericlambrechts/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /Users/fredericlambrechts/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (117.5ms)
+
+
+Started GET "/accounts/shoz" for ::1 at 2015-03-02 17:43:54 +0100
+Processing by AccountsController#show as HTML
+  Parameters: {"id"=>"shoz"}
+  [1m[35mAccount Load (0.4ms)[0m  SELECT  "accounts".* FROM "accounts" WHERE "accounts"."id" = $1 LIMIT 1  [["id", 0]]
+Completed 404 Not Found in 2ms
+
+ActiveRecord::RecordNotFound (Couldn't find Account with 'id'=shoz):
+  app/controllers/accounts_controller.rb:67:in `set_account'
+
+
+  Rendered /Users/fredericlambrechts/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.1ms)
+  Rendered /Users/fredericlambrechts/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /Users/fredericlambrechts/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/fredericlambrechts/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (100.5ms)
+
+
+Started GET "/accounts/show" for ::1 at 2015-03-02 17:43:59 +0100
+Processing by AccountsController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[36mAccount Load (0.3ms)[0m  [1mSELECT  "accounts".* FROM "accounts" WHERE "accounts"."id" = $1 LIMIT 1[0m  [["id", 0]]
+Completed 404 Not Found in 1ms
+
+ActiveRecord::RecordNotFound (Couldn't find Account with 'id'=show):
+  app/controllers/accounts_controller.rb:67:in `set_account'
+
+
+  Rendered /Users/fredericlambrechts/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.8ms)
+  Rendered /Users/fredericlambrechts/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.3ms)
+  Rendered /Users/fredericlambrechts/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/fredericlambrechts/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (103.7ms)
+
+
+Started GET "/accounts/" for ::1 at 2015-03-02 17:44:03 +0100
+Processing by AccountsController#index as HTML
+  [1m[35mAccount Load (0.7ms)[0m  SELECT "accounts".* FROM "accounts"
+  Rendered accounts/index.html.erb within layouts/application (20.4ms)
+  Rendered layouts/_navigation.html.erb (0.3ms)
+  Rendered layouts/_topnavbar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 50ms (Views: 47.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for ::1 at 2015-03-02 17:44:03 +0100
+
+
+Started GET "/assets/style.css?body=1" for ::1 at 2015-03-02 17:44:03 +0100
+
+
+Started GET "/assets/animate/animate.css?body=1" for ::1 at 2015-03-02 17:44:03 +0100
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-03-02 17:44:03 +0100
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for ::1 at 2015-03-02 17:44:03 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for ::1 at 2015-03-02 17:44:03 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for ::1 at 2015-03-02 17:44:03 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for ::1 at 2015-03-02 17:44:03 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for ::1 at 2015-03-02 17:44:03 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for ::1 at 2015-03-02 17:44:03 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for ::1 at 2015-03-02 17:44:03 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for ::1 at 2015-03-02 17:44:03 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for ::1 at 2015-03-02 17:44:03 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for ::1 at 2015-03-02 17:44:03 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for ::1 at 2015-03-02 17:44:03 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for ::1 at 2015-03-02 17:44:03 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for ::1 at 2015-03-02 17:44:03 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for ::1 at 2015-03-02 17:44:03 +0100
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for ::1 at 2015-03-02 17:44:03 +0100
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for ::1 at 2015-03-02 17:44:03 +0100
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for ::1 at 2015-03-02 17:44:03 +0100
+
+
+Started GET "/assets/accounts.js?body=1" for ::1 at 2015-03-02 17:44:03 +0100
+
+
+Started GET "/assets/inspinia.js?body=1" for ::1 at 2015-03-02 17:44:03 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-03-02 17:44:03 +0100
+
+
+Started GET "/assets/patterns/header-profile.png" for ::1 at 2015-03-02 17:44:04 +0100
