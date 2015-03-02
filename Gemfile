@@ -5,7 +5,7 @@ gem 'rails_12factor', group: :production
 gem 'puma',           group: :production
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.2'
+gem 'rails', '4.2.0'
 gem 'bootstrap-sass', '3.2.0.0'
 gem "font-awesome-rails"
 
