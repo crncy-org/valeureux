@@ -22,7 +22,7 @@ class Account < ActiveRecord::Base
     rest = random_figure - multiplication
 
     if rest < 10
-      number = random_figure.to_s + rest.to_s
+      number = "#{random_figure}#{rest}"
     else
       number = "#{random_figure}0#{rest}"
     end

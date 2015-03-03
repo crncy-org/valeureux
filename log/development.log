@@ -13383,3 +13383,414 @@ Started GET "/assets/patterns/header-profile.png" for ::1 at 2015-03-02 19:23:01
   [1m[36mAccount Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "accounts" WHERE "accounts"."number" = $1 LIMIT 1[0m  [["number", "6192021188095"]]
   [1m[35mSQL (1.0ms)[0m  UPDATE "accounts" SET "number" = $1, "updated_at" = $2 WHERE "accounts"."id" = $3  [["number", "6192021188095"], ["updated_at", "2015-03-03 11:45:05.236757"], ["id", 104]]
   [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+
+
+Started GET "/" for ::1 at 2015-03-03 12:47:19 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (5.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_navigation.html.erb (1.4ms)
+  Rendered layouts/_topnavbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 2389ms (Views: 2375.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.css?body=1" for ::1 at 2015-03-03 12:47:22 +0100
+
+
+Started GET "/assets/font-awesome.css?body=1" for ::1 at 2015-03-03 12:47:22 +0100
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-03-03 12:47:22 +0100
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for ::1 at 2015-03-03 12:47:22 +0100
+
+
+Started GET "/assets/animate/animate.css?body=1" for ::1 at 2015-03-03 12:47:22 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for ::1 at 2015-03-03 12:47:22 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for ::1 at 2015-03-03 12:47:22 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for ::1 at 2015-03-03 12:47:22 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for ::1 at 2015-03-03 12:47:22 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for ::1 at 2015-03-03 12:47:22 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for ::1 at 2015-03-03 12:47:22 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for ::1 at 2015-03-03 12:47:22 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for ::1 at 2015-03-03 12:47:22 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for ::1 at 2015-03-03 12:47:22 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for ::1 at 2015-03-03 12:47:22 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for ::1 at 2015-03-03 12:47:22 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for ::1 at 2015-03-03 12:47:22 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for ::1 at 2015-03-03 12:47:22 +0100
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for ::1 at 2015-03-03 12:47:22 +0100
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for ::1 at 2015-03-03 12:47:22 +0100
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for ::1 at 2015-03-03 12:47:22 +0100
+
+
+Started GET "/assets/accounts.js?body=1" for ::1 at 2015-03-03 12:47:22 +0100
+
+
+Started GET "/assets/inspinia.js?body=1" for ::1 at 2015-03-03 12:47:22 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-03-03 12:47:22 +0100
+
+
+Started GET "/assets/patterns/header-profile.png" for ::1 at 2015-03-03 12:47:22 +0100
+
+
+Started GET "/assets/fontawesome-webfont.woff2?v=4.3.0" for ::1 at 2015-03-03 12:47:22 +0100
+
+
+Started GET "/home/minor" for ::1 at 2015-03-03 12:47:25 +0100
+Processing by HomeController#minor as HTML
+  Rendered home/minor.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_topnavbar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 28ms (Views: 27.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-03-03 12:47:25 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for ::1 at 2015-03-03 12:47:25 +0100
+
+
+Started GET "/assets/style.css?body=1" for ::1 at 2015-03-03 12:47:25 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for ::1 at 2015-03-03 12:47:25 +0100
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for ::1 at 2015-03-03 12:47:25 +0100
+
+
+Started GET "/assets/font-awesome.css?body=1" for ::1 at 2015-03-03 12:47:25 +0100
+
+
+Started GET "/assets/animate/animate.css?body=1" for ::1 at 2015-03-03 12:47:25 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for ::1 at 2015-03-03 12:47:25 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for ::1 at 2015-03-03 12:47:25 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for ::1 at 2015-03-03 12:47:25 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for ::1 at 2015-03-03 12:47:25 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for ::1 at 2015-03-03 12:47:25 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for ::1 at 2015-03-03 12:47:25 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for ::1 at 2015-03-03 12:47:25 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for ::1 at 2015-03-03 12:47:25 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for ::1 at 2015-03-03 12:47:25 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for ::1 at 2015-03-03 12:47:25 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for ::1 at 2015-03-03 12:47:25 +0100
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for ::1 at 2015-03-03 12:47:25 +0100
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for ::1 at 2015-03-03 12:47:25 +0100
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for ::1 at 2015-03-03 12:47:25 +0100
+
+
+Started GET "/assets/accounts.js?body=1" for ::1 at 2015-03-03 12:47:25 +0100
+
+
+Started GET "/assets/inspinia.js?body=1" for ::1 at 2015-03-03 12:47:25 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-03-03 12:47:25 +0100
+
+
+Started GET "/assets/patterns/header-profile.png" for ::1 at 2015-03-03 12:47:25 +0100
+
+
+Started GET "/accounts" for ::1 at 2015-03-03 12:47:26 +0100
+Processing by AccountsController#index as HTML
+  [1m[35mAccount Load (7.1ms)[0m  SELECT "accounts".* FROM "accounts"
+  Rendered accounts/index.html.erb within layouts/application (57.4ms)
+Completed 500 Internal Server Error in 68ms
+
+ActionView::Template::Error (undefined method `edit_account_path' for #<#<Class:0x007f97c82b6b48>:0x007f97c82adf98>):
+    18:         <td><%= account.number %></td>
+    19:         <td><%= account.amount %></td>
+    20:         <td><%= link_to 'Show', account %></td>
+    21:         <td><%= link_to 'Edit', edit_account_path(account) %></td>
+    22:       </tr>
+    23:     <% end %>
+    24:   </tbody>
+  app/views/accounts/index.html.erb:21:in `block in _app_views_accounts_index_html_erb___413284688643545279_70144937518220'
+  app/views/accounts/index.html.erb:16:in `_app_views_accounts_index_html_erb___413284688643545279_70144937518220'
+
+
+  Rendered /Users/fredericlambrechts/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.0ms)
+  Rendered /Users/fredericlambrechts/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.6ms)
+  Rendered /Users/fredericlambrechts/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/fredericlambrechts/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (122.2ms)
+
+
+Started GET "/accounts/new" for ::1 at 2015-03-03 12:47:57 +0100
+Processing by AccountsController#new as HTML
+  Rendered accounts/_form.html.erb (34.5ms)
+  Rendered accounts/new.html.erb within layouts/application (37.3ms)
+  Rendered layouts/_navigation.html.erb (0.3ms)
+  Rendered layouts/_topnavbar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 61ms (Views: 60.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-03-03 12:47:57 +0100
+
+
+Started GET "/assets/font-awesome.css?body=1" for ::1 at 2015-03-03 12:47:57 +0100
+
+
+Started GET "/assets/animate/animate.css?body=1" for ::1 at 2015-03-03 12:47:57 +0100
+
+
+Started GET "/assets/style.css?body=1" for ::1 at 2015-03-03 12:47:57 +0100
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for ::1 at 2015-03-03 12:47:58 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for ::1 at 2015-03-03 12:47:58 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for ::1 at 2015-03-03 12:47:58 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for ::1 at 2015-03-03 12:47:58 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for ::1 at 2015-03-03 12:47:58 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for ::1 at 2015-03-03 12:47:58 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for ::1 at 2015-03-03 12:47:58 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for ::1 at 2015-03-03 12:47:58 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for ::1 at 2015-03-03 12:47:58 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for ::1 at 2015-03-03 12:47:58 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for ::1 at 2015-03-03 12:47:58 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for ::1 at 2015-03-03 12:47:58 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for ::1 at 2015-03-03 12:47:58 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for ::1 at 2015-03-03 12:47:58 +0100
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for ::1 at 2015-03-03 12:47:58 +0100
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for ::1 at 2015-03-03 12:47:58 +0100
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for ::1 at 2015-03-03 12:47:58 +0100
+
+
+Started GET "/assets/accounts.js?body=1" for ::1 at 2015-03-03 12:47:58 +0100
+
+
+Started GET "/assets/inspinia.js?body=1" for ::1 at 2015-03-03 12:47:58 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-03-03 12:47:58 +0100
+
+
+Started GET "/assets/patterns/header-profile.png" for ::1 at 2015-03-03 12:47:58 +0100
+
+
+Started POST "/accounts" for ::1 at 2015-03-03 12:47:59 +0100
+Processing by AccountsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cm1FVSnYwRLnP1Bx1dmVpL9KaV3j7Xa3rzuRtloBpnsEY9N4M9uexZ1wDSd+ApEcJVuxWRGTOaFyHMF+zss35w==", "account"=>{"number"=>""}, "commit"=>"Create Account"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mAccount Exists (0.3ms)[0m  SELECT  1 AS one FROM "accounts" WHERE "accounts"."number" = $1 LIMIT 1  [["number", "6828974256044"]]
+  [1m[36mSQL (1.7ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "6828974256044"], ["created_at", "2015-03-03 11:47:59.851667"], ["updated_at", "2015-03-03 11:47:59.851667"]]
+  [1m[35m (12.2ms)[0m  COMMIT
+Redirected to http://localhost:3000/accounts/105
+Completed 302 Found in 46ms (ActiveRecord: 14.5ms)
+
+
+Started GET "/accounts/105" for ::1 at 2015-03-03 12:47:59 +0100
+Processing by AccountsController#show as HTML
+  Parameters: {"id"=>"105"}
+  [1m[36mAccount Load (0.3ms)[0m  [1mSELECT  "accounts".* FROM "accounts" WHERE "accounts"."id" = $1 LIMIT 1[0m  [["id", 105]]
+  Rendered accounts/show.html.erb within layouts/application (15.9ms)
+Completed 500 Internal Server Error in 25ms
+
+ActionView::Template::Error (undefined method `edit_account_path' for #<#<Class:0x007f97c82b6b48>:0x007f97c3e3ed80>):
+    5:   <%= @account.number %>
+    6: </p>
+    7: 
+    8: <%= link_to 'Edit', edit_account_path(@account) %> |
+    9: <%= link_to 'Back', accounts_path %>
+  app/views/accounts/show.html.erb:8:in `_app_views_accounts_show_html_erb__4307089815710607824_70144901638920'
+
+
+  Rendered /Users/fredericlambrechts/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.4ms)
+  Rendered /Users/fredericlambrechts/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.4ms)
+  Rendered /Users/fredericlambrechts/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/fredericlambrechts/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (126.5ms)
+
+
+Started POST "/accounts" for ::1 at 2015-03-03 12:49:51 +0100
+Processing by AccountsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cm1FVSnYwRLnP1Bx1dmVpL9KaV3j7Xa3rzuRtloBpnsEY9N4M9uexZ1wDSd+ApEcJVuxWRGTOaFyHMF+zss35w==", "account"=>{"number"=>""}, "commit"=>"Create Account"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mAccount Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "accounts" WHERE "accounts"."number" = $1 LIMIT 1[0m  [["number", "4864675004068"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "4864675004068"], ["created_at", "2015-03-03 11:49:51.587777"], ["updated_at", "2015-03-03 11:49:51.587777"]]
+  [1m[36m (6.5ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/accounts/106
+Completed 302 Found in 12ms (ActiveRecord: 7.1ms)
+
+
+Started GET "/accounts/106" for ::1 at 2015-03-03 12:49:51 +0100
+Processing by AccountsController#show as HTML
+  Parameters: {"id"=>"106"}
+  [1m[35mAccount Load (0.3ms)[0m  SELECT  "accounts".* FROM "accounts" WHERE "accounts"."id" = $1 LIMIT 1  [["id", 106]]
+  Rendered accounts/show.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+  Rendered layouts/_topnavbar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 28ms (Views: 26.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for ::1 at 2015-03-03 12:49:51 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for ::1 at 2015-03-03 12:49:51 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for ::1 at 2015-03-03 12:49:51 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for ::1 at 2015-03-03 12:49:51 +0100
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-03-03 12:49:51 +0100
+
+
+Started GET "/assets/animate/animate.css?body=1" for ::1 at 2015-03-03 12:49:51 +0100
+
+
+Started GET "/assets/style.css?body=1" for ::1 at 2015-03-03 12:49:51 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for ::1 at 2015-03-03 12:49:51 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for ::1 at 2015-03-03 12:49:51 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for ::1 at 2015-03-03 12:49:51 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for ::1 at 2015-03-03 12:49:51 +0100
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for ::1 at 2015-03-03 12:49:51 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for ::1 at 2015-03-03 12:49:51 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for ::1 at 2015-03-03 12:49:51 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for ::1 at 2015-03-03 12:49:51 +0100
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for ::1 at 2015-03-03 12:49:51 +0100
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for ::1 at 2015-03-03 12:49:51 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for ::1 at 2015-03-03 12:49:51 +0100
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for ::1 at 2015-03-03 12:49:51 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for ::1 at 2015-03-03 12:49:51 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for ::1 at 2015-03-03 12:49:51 +0100
+
+
+Started GET "/assets/accounts.js?body=1" for ::1 at 2015-03-03 12:49:51 +0100
+
+
+Started GET "/assets/inspinia.js?body=1" for ::1 at 2015-03-03 12:49:51 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-03-03 12:49:51 +0100
+
+
+Started GET "/assets/patterns/header-profile.png" for ::1 at 2015-03-03 12:49:51 +0100
