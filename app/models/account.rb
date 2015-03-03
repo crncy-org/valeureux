@@ -1,5 +1,6 @@
 class Account < ActiveRecord::Base
   before_save :generate_unique_account_number
+  belongs_to :user
 
   def amount
     return 2000
