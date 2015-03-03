@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150303122113) do
+ActiveRecord::Schema.define(version: 20150303140148) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -20,7 +20,10 @@ ActiveRecord::Schema.define(version: 20150303122113) do
     t.string   "number"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer  "user_id"
   end
+
+  add_index "accounts", ["user_id"], name: "index_accounts_on_user_id", using: :btree
 
   create_table "transactions", force: :cascade do |t|
     t.string   "transaction_type"
@@ -37,4 +40,18 @@ ActiveRecord::Schema.define(version: 20150303122113) do
   add_index "transactions", ["receiver_id"], name: "index_transactions_on_receiver_id", using: :btree
   add_index "transactions", ["sender_id"], name: "index_transactions_on_sender_id", using: :btree
 
+  create_table "users", force: :cascade do |t|
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "salutation"
+    t.string   "email"
+    t.string   "phone_number"
+    t.string   "user_type"
+    t.string   "vat_number"
+    t.boolean  "active"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+  end
+
+  add_foreign_key "accounts", "users"
 end
