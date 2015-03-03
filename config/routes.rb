@@ -1,5 +1,5 @@
 Myapp::Application.routes.draw do
-  resources :accounts
+  resources :accounts, :only => [:index, :new, :create, :show]
 
   get "home/index"
   get "home/minor"

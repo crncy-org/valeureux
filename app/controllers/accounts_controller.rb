@@ -17,9 +17,9 @@ class AccountsController < ApplicationController
     @account = Account.new
   end
 
-  # GET /accounts/1/edit
-  def edit
-  end
+  # # GET /accounts/1/edit
+  # def edit
+  # end
 
   # POST /accounts
   # POST /accounts.json
@@ -37,19 +37,19 @@ class AccountsController < ApplicationController
     end
   end
 
-  # PATCH/PUT /accounts/1
-  # PATCH/PUT /accounts/1.json
-  def update
-    respond_to do |format|
-      if @account.update(account_params)
-        format.html { redirect_to @account, notice: 'Account was successfully updated.' }
-        format.json { head :no_content }
-      else
-        format.html { render action: 'edit' }
-        format.json { render json: @account.errors, status: :unprocessable_entity }
-      end
-    end
-  end
+  # # PATCH/PUT /accounts/1
+  # # PATCH/PUT /accounts/1.json
+  # def update
+  #   respond_to do |format|
+  #     if @account.update(account_params)
+  #       format.html { redirect_to @account, notice: 'Account was successfully updated.' }
+  #       format.json { head :no_content }
+  #     else
+  #       format.html { render action: 'edit' }
+  #       format.json { render json: @account.errors, status: :unprocessable_entity }
+  #     end
+  #   end
+  # end
 
   # # DELETE /accounts/1
   # # DELETE /accounts/1.json
