@@ -9,11 +9,14 @@
 
 
 50.times do
+  pw = "12345678"
   User.create(
     first_name: Faker::Name.first_name,
     last_name: Faker::Name.last_name,
     salutation: Faker::Name.prefix,
     email: Faker::Internet.email,
+    password: pw,
+    password_confirmation: pw,
     phone_number: Faker::PhoneNumber.phone_number,
     user_type: "citizen",
     vat_number: Faker::Number.number(8),

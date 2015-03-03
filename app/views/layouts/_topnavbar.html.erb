@@ -10,9 +10,14 @@
         </div>
         <ul class="nav navbar-top-links navbar-right">
             <li>
-                <a href="#">
-                    <i class="fa fa-sign-out"></i> Log out
-                </a>
+             <% if user_signed_in? %>
+            <li><%= link_to "edit profile", edit_user_registration_path %></li>
+            <li><%= link_to destroy_user_session_path, method: :delete do %>
+                  <i class="fa fa-sign-out"></i>  <%= t ".sign_out", default: "Sign out" %></li>
+                <% end %>
+            <% else %>
+            <li><%= link_to "login", new_user_session_path %></li>
+            <% end %>
             </li>
         </ul>
     </nav>

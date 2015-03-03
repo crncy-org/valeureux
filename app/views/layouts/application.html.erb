@@ -27,6 +27,10 @@
             <!-- Page wrapper -->
             <%= render 'layouts/topnavbar' %>
 
+            <!-- Volgende notices toegevoegd voor devise, kunnen later verwijdert wanneer dubbel -->
+           <p class="notice"><%= notice %></p>
+           <p class="alert"><%= alert %></p>
+
             <!-- Main view  -->
             <%= yield %>
 
