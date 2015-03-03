@@ -13339,3 +13339,47 @@ Started GET "/assets/application.js?body=1" for ::1 at 2015-03-02 19:23:01 +0100
 
 
 Started GET "/assets/patterns/header-profile.png" for ::1 at 2015-03-02 19:23:01 +0100
+  [1m[36mAccount Exists (2.9ms)[0m  [1mSELECT  1 AS one FROM "accounts" WHERE "accounts"."number" = $1 LIMIT 1[0m  [["number", "2127897779049"]]
+  [1m[35mAccount Exists (0.7ms)[0m  SELECT  1 AS one FROM "accounts" WHERE "accounts"."number" = $1 LIMIT 1  [["number", "6066562230064"]]
+  [1m[36mAccount Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "accounts" WHERE "accounts"."number" = $1 LIMIT 1[0m  [["number", "9030851116087"]]
+  [1m[35mAccount Exists (0.7ms)[0m  SELECT  1 AS one FROM "accounts" WHERE "accounts"."number" = $1 LIMIT 1  [["number", "4910753656034"]]
+  [1m[36mAccount Exists (0.7ms)[0m  [1mSELECT  1 AS one FROM "accounts" WHERE "accounts"."number" = $1 LIMIT 1[0m  [["number", "7121041537034"]]
+  [1m[35mAccount Exists (0.4ms)[0m  SELECT  1 AS one FROM "accounts" WHERE "accounts"."number" = $1 LIMIT 1  [["number", "b"]]
+  [1m[36mAccount Exists (0.6ms)[0m  [1mSELECT  1 AS one FROM "accounts" WHERE "accounts"."number" = $1 LIMIT 1[0m  [["number", "b"]]
+  [1m[35mAccount Exists (0.3ms)[0m  SELECT  1 AS one FROM "accounts" WHERE "accounts"."number" = $1 LIMIT 1  [["number", "2690173917070"]]
+  [1m[36mAccount Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "accounts" WHERE "accounts"."number" = $1 LIMIT 1[0m  [["number", "8891665480042"]]
+  [1m[35mAccount Load (3.9ms)[0m  SELECT  "accounts".* FROM "accounts"  ORDER BY "accounts"."id" DESC LIMIT 1
+  [1m[36mAccount Load (0.8ms)[0m  [1mSELECT  "accounts".* FROM "accounts"  ORDER BY "accounts"."id" ASC LIMIT 1[0m
+  [1m[35mAccount Load (1.3ms)[0m  SELECT "accounts".* FROM "accounts"
+  [1m[36mAccount Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "accounts" WHERE "accounts"."number" = $1 LIMIT 1[0m  [["number", "6737247947039"]]
+  [1m[35mAccount Exists (0.3ms)[0m  SELECT  1 AS one FROM "accounts" WHERE "accounts"."number" = $1 LIMIT 1  [["number", "5897276389078"]]
+  [1m[36mAccount Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "accounts" WHERE "accounts"."number" = $1 LIMIT 1[0m  [["number", "3167350769069"]]
+  [1m[36mAccount Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "accounts" WHERE "accounts"."number" = $1 LIMIT 1[0m  [["number", "79234875874"]]
+  [1m[35mAccount Exists (0.3ms)[0m  SELECT  1 AS one FROM "accounts" WHERE "accounts"."number" = $1 LIMIT 1  [["number", "5842953219012"]]
+  [1m[36mAccount Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "accounts" WHERE "accounts"."number" = $1 LIMIT 1[0m  [["number", "3379848742045"]]
+  [1m[35mAccount Exists (0.3ms)[0m  SELECT  1 AS one FROM "accounts" WHERE "accounts"."number" = $1 LIMIT 1  [["number", "6359979975084"]]
+  [1m[36mAccount Exists (0.7ms)[0m  [1mSELECT  1 AS one FROM "accounts" WHERE "accounts"."number" = $1 LIMIT 1[0m  [["number", "2356271127089"]]
+  [1m[35mAccount Exists (0.7ms)[0m  SELECT  1 AS one FROM "accounts" WHERE "accounts"."number" = $1 LIMIT 1  [["number", "6688428583096"]]
+  [1m[36mAccount Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "accounts" WHERE "accounts"."number" = $1 LIMIT 1[0m  [["number", "5355938876068"]]
+  [1m[35m (2.7ms)[0m  BEGIN
+  [1m[36mSQL (18.4ms)[0m  [1mINSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["number", "5355938876068"], ["created_at", "2015-03-03 11:39:32.053375"], ["updated_at", "2015-03-03 11:39:32.053375"]]
+  [1m[35m (2.2ms)[0m  COMMIT
+  [1m[36mAccount Load (1.4ms)[0m  [1mSELECT  "accounts".* FROM "accounts"  ORDER BY "accounts"."id" DESC LIMIT 1[0m
+  [1m[35mAccount Load (0.8ms)[0m  SELECT  "accounts".* FROM "accounts"  ORDER BY "accounts"."id" DESC LIMIT 1
+  [1m[36mAccount Load (0.3ms)[0m  [1mSELECT  "accounts".* FROM "accounts" WHERE "accounts"."id" = $1 LIMIT 1[0m  [["id", 101]]
+  [1m[35mAccount Load (0.7ms)[0m  SELECT  "accounts".* FROM "accounts"  ORDER BY "accounts"."id" DESC LIMIT 1
+  [1m[36mAccount Load (0.7ms)[0m  [1mSELECT  "accounts".* FROM "accounts" WHERE "accounts"."id" = $1 LIMIT 1[0m  [["id", 101]]
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "accounts" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", "2015-03-03 11:43:55.379727"], ["updated_at", "2015-03-03 11:43:55.379727"]]
+  [1m[35m (6.4ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "accounts" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"  [["created_at", "2015-03-03 11:44:21.776089"], ["updated_at", "2015-03-03 11:44:21.776089"]]
+  [1m[36m (6.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mAccount Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "accounts" WHERE "accounts"."number" = $1 LIMIT 1[0m  [["number", "1966851702065"]]
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "accounts" ("number", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["number", "1966851702065"], ["created_at", "2015-03-03 11:44:46.543151"], ["updated_at", "2015-03-03 11:44:46.543151"]]
+  [1m[36m (6.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mAccount Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "accounts" WHERE "accounts"."number" = $1 LIMIT 1[0m  [["number", "6192021188095"]]
+  [1m[35mSQL (1.0ms)[0m  UPDATE "accounts" SET "number" = $1, "updated_at" = $2 WHERE "accounts"."id" = $3  [["number", "6192021188095"], ["updated_at", "2015-03-03 11:45:05.236757"], ["id", 104]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
