@@ -3,7 +3,6 @@ source 'https://rubygems.org'
 ruby '2.2.0'
 gem 'rails_12factor', group: :production
 gem 'puma',           group: :production
-gem 'faker',          group: :development
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
@@ -15,6 +14,9 @@ gem 'pg'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
+
+# Use Simple Form to generate beautiful forms
+gem 'simple_form'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'

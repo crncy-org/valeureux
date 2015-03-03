@@ -15,6 +15,7 @@ class TransactionsController < ApplicationController
   # GET /transactions/new
   def new
     @transaction = Transaction.new
+    @accounts = Account.all
   end
 
   # GET /transactions/1/edit
@@ -25,7 +26,10 @@ class TransactionsController < ApplicationController
   # POST /transactions.json
   def create
     @transaction = Transaction.new(transaction_params)
-
+    @transaction.transaction_type = "transfer"
+    @transaction.status = "confirmed"
+    @transaction.reference = "RTRGGTAF4Z3"
+    @transaction.sender = Account.find_by_number("9563488190073")
     respond_to do |format|
       if @transaction.save
         format.html { redirect_to @transaction, notice: 'Transaction was successfully created.' }
@@ -69,6 +73,6 @@ class TransactionsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def transaction_params
-      params.require(:transaction).permit(:type, :sender_id, :receiver_id, :amount, :reference, :status, :communication)
+      params.require(:transaction).permit(:receiver_id, :amount, :communication) #removed the fields that are not rendered in the form
     end
 end
