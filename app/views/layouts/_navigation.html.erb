@@ -27,8 +27,8 @@
                 <i class="fa fa-cart-plus"></i> <span class="nav-label">Top-up</span>
                 <% end %>
             </li>
-            <li class="<%= 'active' if current_page?('/accounts') %>">
-                <%= link_to "/accounts" do %>
+            <li class="<%= 'active' if current_page?('/transactions/new') %>">
+                <%= link_to "/transactions/new" do %>
                 <i class="fa fa-exchange"></i> <span class="nav-label">Transfer</span>
                 <% end %>
             </li>

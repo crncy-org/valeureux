@@ -28,5 +28,8 @@ class Account < ActiveRecord::Base
     end
     number
   end
-end
 
+  def to_s
+    "#{number}"
+  end
+end

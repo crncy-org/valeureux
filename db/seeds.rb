@@ -7,6 +7,17 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 100.times do
-  a = Account.new(number: rand(100000..999999))
+  a = Account.new
   a.save
+end
+
+100.times do
+  Transaction.create(
+    transaction_type: "transfer",
+    sender: Account.all.sample,
+    receiver: Account.all.sample,
+    amount: rand(10..150),
+    reference: "DFCH-Z4353V",
+    status: "confirmed",
+    communication: "my favorite transaction")
 end
