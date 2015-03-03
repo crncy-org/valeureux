@@ -1,4 +1,6 @@
 Myapp::Application.routes.draw do
+  resources :users
+
   resources :transactions
 
   resources :accounts, :only => [:index, :new, :create, :show]
