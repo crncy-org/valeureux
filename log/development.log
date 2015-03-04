@@ -81786,3 +81786,3722 @@ Started GET "/assets/users.js?body=1" for ::1 at 2015-03-04 16:04:57 +0100
 
 
 Started GET "/assets/application.js?body=1" for ::1 at 2015-03-04 16:04:57 +0100
+
+
+Started GET "/" for ::1 at 2015-03-04 16:26:26 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (6.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by LandingController#landing as HTML
+  Rendered landing/landing.html.erb (524.8ms)
+Completed 200 OK in 558ms (Views: 534.2ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/" for ::1 at 2015-03-04 16:26:27 +0100
+Processing by LandingController#landing as HTML
+  Rendered landing/landing.html.erb (16.0ms)
+Completed 200 OK in 19ms (Views: 18.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-03-04 16:26:27 +0100
+
+
+Started GET "/assets/font-awesome.css?body=1" for ::1 at 2015-03-04 16:26:27 +0100
+
+
+Started GET "/assets/style.css?body=1" for ::1 at 2015-03-04 16:26:27 +0100
+
+
+Started GET "/assets/animate/animate.css?body=1" for ::1 at 2015-03-04 16:26:27 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-03-04 16:26:27 +0100
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for ::1 at 2015-03-04 16:26:27 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for ::1 at 2015-03-04 16:26:27 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for ::1 at 2015-03-04 16:26:27 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for ::1 at 2015-03-04 16:26:27 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for ::1 at 2015-03-04 16:26:27 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for ::1 at 2015-03-04 16:26:27 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for ::1 at 2015-03-04 16:26:27 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for ::1 at 2015-03-04 16:26:27 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for ::1 at 2015-03-04 16:26:27 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for ::1 at 2015-03-04 16:26:27 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for ::1 at 2015-03-04 16:26:27 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for ::1 at 2015-03-04 16:26:27 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for ::1 at 2015-03-04 16:26:27 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for ::1 at 2015-03-04 16:26:27 +0100
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for ::1 at 2015-03-04 16:26:27 +0100
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for ::1 at 2015-03-04 16:26:27 +0100
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for ::1 at 2015-03-04 16:26:27 +0100
+
+
+Started GET "/assets/accounts.js?body=1" for ::1 at 2015-03-04 16:26:27 +0100
+
+
+Started GET "/assets/inspinia.js?body=1" for ::1 at 2015-03-04 16:26:27 +0100
+
+
+Started GET "/assets/landing.js?body=1" for ::1 at 2015-03-04 16:26:27 +0100
+
+
+Started GET "/assets/transactions.js?body=1" for ::1 at 2015-03-04 16:26:27 +0100
+
+
+Started GET "/assets/users.js?body=1" for ::1 at 2015-03-04 16:26:27 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-03-04 16:26:27 +0100
+
+
+Started GET "/landing/signup" for ::1 at 2015-03-04 16:26:29 +0100
+Processing by LandingController#signup as HTML
+  Rendered landing/signup.html.erb (21.3ms)
+Completed 200 OK in 26ms (Views: 24.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for ::1 at 2015-03-04 16:26:30 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for ::1 at 2015-03-04 16:26:30 +0100
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-03-04 16:26:30 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-03-04 16:26:30 +0100
+
+
+Started GET "/assets/animate/animate.css?body=1" for ::1 at 2015-03-04 16:26:30 +0100
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for ::1 at 2015-03-04 16:26:30 +0100
+
+
+Started GET "/assets/style.css?body=1" for ::1 at 2015-03-04 16:26:30 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for ::1 at 2015-03-04 16:26:30 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for ::1 at 2015-03-04 16:26:30 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for ::1 at 2015-03-04 16:26:30 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for ::1 at 2015-03-04 16:26:30 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for ::1 at 2015-03-04 16:26:30 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for ::1 at 2015-03-04 16:26:30 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for ::1 at 2015-03-04 16:26:30 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for ::1 at 2015-03-04 16:26:30 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for ::1 at 2015-03-04 16:26:30 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for ::1 at 2015-03-04 16:26:30 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for ::1 at 2015-03-04 16:26:30 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for ::1 at 2015-03-04 16:26:30 +0100
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for ::1 at 2015-03-04 16:26:30 +0100
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for ::1 at 2015-03-04 16:26:30 +0100
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for ::1 at 2015-03-04 16:26:30 +0100
+
+
+Started GET "/assets/accounts.js?body=1" for ::1 at 2015-03-04 16:26:30 +0100
+
+
+Started GET "/assets/inspinia.js?body=1" for ::1 at 2015-03-04 16:26:30 +0100
+
+
+Started GET "/assets/landing.js?body=1" for ::1 at 2015-03-04 16:26:30 +0100
+
+
+Started GET "/assets/transactions.js?body=1" for ::1 at 2015-03-04 16:26:30 +0100
+
+
+Started GET "/assets/users.js?body=1" for ::1 at 2015-03-04 16:26:30 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-03-04 16:26:30 +0100
+
+
+Started GET "/" for ::1 at 2015-03-04 16:31:23 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by LandingController#landing as HTML
+Completed 401 Unauthorized in 19ms
+
+
+Started GET "/users/sign_in" for ::1 at 2015-03-04 16:31:23 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendered users/shared/_links.html.erb (5.8ms)
+  Rendered users/sessions/new.html.erb within layouts/application (27.2ms)
+  Rendered layouts/_navigation.html.erb (0.9ms)
+  Rendered layouts/_topnavbar.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 168ms (Views: 154.7ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-03-04 16:31:24 +0100
+
+
+Started GET "/assets/font-awesome.css?body=1" for ::1 at 2015-03-04 16:31:24 +0100
+
+
+Started GET "/assets/animate/animate.css?body=1" for ::1 at 2015-03-04 16:31:24 +0100
+
+
+Started GET "/assets/style.css?body=1" for ::1 at 2015-03-04 16:31:24 +0100
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for ::1 at 2015-03-04 16:31:24 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-03-04 16:31:24 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for ::1 at 2015-03-04 16:31:24 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for ::1 at 2015-03-04 16:31:24 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for ::1 at 2015-03-04 16:31:24 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for ::1 at 2015-03-04 16:31:24 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for ::1 at 2015-03-04 16:31:24 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for ::1 at 2015-03-04 16:31:24 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for ::1 at 2015-03-04 16:31:24 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for ::1 at 2015-03-04 16:31:24 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for ::1 at 2015-03-04 16:31:24 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for ::1 at 2015-03-04 16:31:24 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for ::1 at 2015-03-04 16:31:24 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for ::1 at 2015-03-04 16:31:24 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for ::1 at 2015-03-04 16:31:24 +0100
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for ::1 at 2015-03-04 16:31:24 +0100
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for ::1 at 2015-03-04 16:31:24 +0100
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for ::1 at 2015-03-04 16:31:24 +0100
+
+
+Started GET "/assets/accounts.js?body=1" for ::1 at 2015-03-04 16:31:24 +0100
+
+
+Started GET "/assets/inspinia.js?body=1" for ::1 at 2015-03-04 16:31:24 +0100
+
+
+Started GET "/assets/landing.js?body=1" for ::1 at 2015-03-04 16:31:24 +0100
+
+
+Started GET "/assets/transactions.js?body=1" for ::1 at 2015-03-04 16:31:24 +0100
+
+
+Started GET "/assets/users.js?body=1" for ::1 at 2015-03-04 16:31:24 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-03-04 16:31:24 +0100
+
+
+Started GET "/assets/patterns/header-profile.png" for ::1 at 2015-03-04 16:31:24 +0100
+
+
+Started GET "/assets/fontawesome-webfont.woff2?v=4.3.0" for ::1 at 2015-03-04 16:31:24 +0100
+
+
+Started GET "/" for ::1 at 2015-03-04 16:31:28 +0100
+Processing by LandingController#landing as HTML
+Completed 401 Unauthorized in 2ms
+
+
+Started GET "/users/sign_in" for ::1 at 2015-03-04 16:31:28 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendered users/shared/_links.html.erb (3.4ms)
+  Rendered users/sessions/new.html.erb within layouts/application (12.9ms)
+  Rendered layouts/_navigation.html.erb (0.3ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 48ms (Views: 46.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-03-04 16:31:28 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-03-04 16:31:28 +0100
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for ::1 at 2015-03-04 16:31:28 +0100
+
+
+Started GET "/assets/style.css?body=1" for ::1 at 2015-03-04 16:31:28 +0100
+
+
+Started GET "/assets/animate/animate.css?body=1" for ::1 at 2015-03-04 16:31:28 +0100
+
+
+Started GET "/assets/font-awesome.css?body=1" for ::1 at 2015-03-04 16:31:28 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for ::1 at 2015-03-04 16:31:28 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for ::1 at 2015-03-04 16:31:28 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for ::1 at 2015-03-04 16:31:28 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for ::1 at 2015-03-04 16:31:28 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for ::1 at 2015-03-04 16:31:28 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for ::1 at 2015-03-04 16:31:28 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for ::1 at 2015-03-04 16:31:28 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for ::1 at 2015-03-04 16:31:28 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for ::1 at 2015-03-04 16:31:28 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for ::1 at 2015-03-04 16:31:28 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for ::1 at 2015-03-04 16:31:28 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for ::1 at 2015-03-04 16:31:28 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for ::1 at 2015-03-04 16:31:28 +0100
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for ::1 at 2015-03-04 16:31:28 +0100
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for ::1 at 2015-03-04 16:31:28 +0100
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for ::1 at 2015-03-04 16:31:28 +0100
+
+
+Started GET "/assets/accounts.js?body=1" for ::1 at 2015-03-04 16:31:28 +0100
+
+
+Started GET "/assets/inspinia.js?body=1" for ::1 at 2015-03-04 16:31:28 +0100
+
+
+Started GET "/assets/landing.js?body=1" for ::1 at 2015-03-04 16:31:28 +0100
+
+
+Started GET "/assets/transactions.js?body=1" for ::1 at 2015-03-04 16:31:28 +0100
+
+
+Started GET "/assets/users.js?body=1" for ::1 at 2015-03-04 16:31:28 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-03-04 16:31:28 +0100
+
+
+Started GET "/assets/patterns/header-profile.png" for ::1 at 2015-03-04 16:31:28 +0100
+
+
+Started GET "/users/sign_in" for ::1 at 2015-03-04 16:31:30 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendered users/shared/_links.html.erb (3.2ms)
+  Rendered users/sessions/new.html.erb within layouts/application (7.7ms)
+  Rendered layouts/_navigation.html.erb (0.3ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 33ms (Views: 32.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-03-04 16:31:30 +0100
+
+
+Started GET "/assets/font-awesome.css?body=1" for ::1 at 2015-03-04 16:31:30 +0100
+
+
+Started GET "/assets/animate/animate.css?body=1" for ::1 at 2015-03-04 16:31:30 +0100
+
+
+Started GET "/assets/style.css?body=1" for ::1 at 2015-03-04 16:31:30 +0100
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for ::1 at 2015-03-04 16:31:30 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-03-04 16:31:30 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for ::1 at 2015-03-04 16:31:30 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for ::1 at 2015-03-04 16:31:30 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for ::1 at 2015-03-04 16:31:30 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for ::1 at 2015-03-04 16:31:30 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for ::1 at 2015-03-04 16:31:30 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for ::1 at 2015-03-04 16:31:30 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for ::1 at 2015-03-04 16:31:30 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for ::1 at 2015-03-04 16:31:30 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for ::1 at 2015-03-04 16:31:30 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for ::1 at 2015-03-04 16:31:31 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for ::1 at 2015-03-04 16:31:31 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for ::1 at 2015-03-04 16:31:31 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for ::1 at 2015-03-04 16:31:31 +0100
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for ::1 at 2015-03-04 16:31:31 +0100
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for ::1 at 2015-03-04 16:31:31 +0100
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for ::1 at 2015-03-04 16:31:31 +0100
+
+
+Started GET "/assets/accounts.js?body=1" for ::1 at 2015-03-04 16:31:31 +0100
+
+
+Started GET "/assets/inspinia.js?body=1" for ::1 at 2015-03-04 16:31:31 +0100
+
+
+Started GET "/assets/landing.js?body=1" for ::1 at 2015-03-04 16:31:31 +0100
+
+
+Started GET "/assets/transactions.js?body=1" for ::1 at 2015-03-04 16:31:31 +0100
+
+
+Started GET "/assets/users.js?body=1" for ::1 at 2015-03-04 16:31:31 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-03-04 16:31:31 +0100
+
+
+Started GET "/assets/patterns/header-profile.png" for ::1 at 2015-03-04 16:31:31 +0100
+
+
+Started GET "/" for ::1 at 2015-03-04 16:31:34 +0100
+Processing by LandingController#landing as HTML
+Completed 401 Unauthorized in 1ms
+
+
+Started GET "/users/sign_in" for ::1 at 2015-03-04 16:31:34 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendered users/shared/_links.html.erb (4.3ms)
+  Rendered users/sessions/new.html.erb within layouts/application (13.6ms)
+  Rendered layouts/_navigation.html.erb (0.3ms)
+  Rendered layouts/_topnavbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 47ms (Views: 44.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-03-04 16:31:34 +0100
+
+
+Started GET "/assets/font-awesome.css?body=1" for ::1 at 2015-03-04 16:31:34 +0100
+
+
+Started GET "/assets/style.css?body=1" for ::1 at 2015-03-04 16:31:34 +0100
+
+
+Started GET "/assets/animate/animate.css?body=1" for ::1 at 2015-03-04 16:31:34 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-03-04 16:31:34 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for ::1 at 2015-03-04 16:31:34 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for ::1 at 2015-03-04 16:31:34 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for ::1 at 2015-03-04 16:31:34 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for ::1 at 2015-03-04 16:31:34 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for ::1 at 2015-03-04 16:31:34 +0100
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for ::1 at 2015-03-04 16:31:34 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for ::1 at 2015-03-04 16:31:34 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for ::1 at 2015-03-04 16:31:34 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for ::1 at 2015-03-04 16:31:34 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for ::1 at 2015-03-04 16:31:34 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for ::1 at 2015-03-04 16:31:34 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for ::1 at 2015-03-04 16:31:34 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for ::1 at 2015-03-04 16:31:34 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for ::1 at 2015-03-04 16:31:34 +0100
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for ::1 at 2015-03-04 16:31:34 +0100
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for ::1 at 2015-03-04 16:31:34 +0100
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for ::1 at 2015-03-04 16:31:34 +0100
+
+
+Started GET "/assets/accounts.js?body=1" for ::1 at 2015-03-04 16:31:34 +0100
+
+
+Started GET "/assets/inspinia.js?body=1" for ::1 at 2015-03-04 16:31:34 +0100
+
+
+Started GET "/assets/landing.js?body=1" for ::1 at 2015-03-04 16:31:34 +0100
+
+
+Started GET "/assets/transactions.js?body=1" for ::1 at 2015-03-04 16:31:34 +0100
+
+
+Started GET "/assets/users.js?body=1" for ::1 at 2015-03-04 16:31:34 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-03-04 16:31:34 +0100
+
+
+Started GET "/assets/patterns/header-profile.png" for ::1 at 2015-03-04 16:31:34 +0100
+
+
+Started GET "/" for ::1 at 2015-03-04 16:31:47 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by LandingController#landing as HTML
+Completed 401 Unauthorized in 15ms
+
+
+Started GET "/users/sign_in" for ::1 at 2015-03-04 16:31:48 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendered users/shared/_links.html.erb (6.4ms)
+  Rendered users/sessions/new.html.erb within layouts/application (28.3ms)
+  Rendered layouts/_navigation.html.erb (1.0ms)
+  Rendered layouts/_topnavbar.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 168ms (Views: 154.2ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-03-04 16:31:48 +0100
+
+
+Started GET "/assets/style.css?body=1" for ::1 at 2015-03-04 16:31:48 +0100
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for ::1 at 2015-03-04 16:31:48 +0100
+
+
+Started GET "/assets/animate/animate.css?body=1" for ::1 at 2015-03-04 16:31:48 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-03-04 16:31:48 +0100
+
+
+Started GET "/assets/font-awesome.css?body=1" for ::1 at 2015-03-04 16:31:48 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for ::1 at 2015-03-04 16:31:48 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for ::1 at 2015-03-04 16:31:48 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for ::1 at 2015-03-04 16:31:48 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for ::1 at 2015-03-04 16:31:48 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for ::1 at 2015-03-04 16:31:48 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for ::1 at 2015-03-04 16:31:48 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for ::1 at 2015-03-04 16:31:48 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for ::1 at 2015-03-04 16:31:48 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for ::1 at 2015-03-04 16:31:48 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for ::1 at 2015-03-04 16:31:48 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for ::1 at 2015-03-04 16:31:48 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for ::1 at 2015-03-04 16:31:48 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for ::1 at 2015-03-04 16:31:48 +0100
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for ::1 at 2015-03-04 16:31:48 +0100
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for ::1 at 2015-03-04 16:31:48 +0100
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for ::1 at 2015-03-04 16:31:48 +0100
+
+
+Started GET "/assets/accounts.js?body=1" for ::1 at 2015-03-04 16:31:48 +0100
+
+
+Started GET "/assets/inspinia.js?body=1" for ::1 at 2015-03-04 16:31:48 +0100
+
+
+Started GET "/assets/landing.js?body=1" for ::1 at 2015-03-04 16:31:48 +0100
+
+
+Started GET "/assets/transactions.js?body=1" for ::1 at 2015-03-04 16:31:48 +0100
+
+
+Started GET "/assets/users.js?body=1" for ::1 at 2015-03-04 16:31:48 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-03-04 16:31:48 +0100
+
+
+Started GET "/assets/patterns/header-profile.png" for ::1 at 2015-03-04 16:31:48 +0100
+
+
+Started GET "/" for ::1 at 2015-03-04 16:32:29 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by LandingController#landing as HTML
+Completed 401 Unauthorized in 21ms
+
+
+Started GET "/users/sign_in" for ::1 at 2015-03-04 16:32:29 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendered users/shared/_links.html.erb (5.8ms)
+  Rendered users/sessions/new.html.erb within layouts/application (24.6ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_topnavbar.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 145ms (Views: 132.1ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-03-04 16:32:29 +0100
+
+
+Started GET "/assets/font-awesome.css?body=1" for ::1 at 2015-03-04 16:32:29 +0100
+
+
+Started GET "/assets/animate/animate.css?body=1" for ::1 at 2015-03-04 16:32:29 +0100
+
+
+Started GET "/assets/style.css?body=1" for ::1 at 2015-03-04 16:32:29 +0100
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for ::1 at 2015-03-04 16:32:29 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-03-04 16:32:29 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for ::1 at 2015-03-04 16:32:29 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for ::1 at 2015-03-04 16:32:29 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for ::1 at 2015-03-04 16:32:29 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for ::1 at 2015-03-04 16:32:29 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for ::1 at 2015-03-04 16:32:29 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for ::1 at 2015-03-04 16:32:29 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for ::1 at 2015-03-04 16:32:29 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for ::1 at 2015-03-04 16:32:29 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for ::1 at 2015-03-04 16:32:29 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for ::1 at 2015-03-04 16:32:29 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for ::1 at 2015-03-04 16:32:29 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for ::1 at 2015-03-04 16:32:29 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for ::1 at 2015-03-04 16:32:29 +0100
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for ::1 at 2015-03-04 16:32:29 +0100
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for ::1 at 2015-03-04 16:32:29 +0100
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for ::1 at 2015-03-04 16:32:29 +0100
+
+
+Started GET "/assets/accounts.js?body=1" for ::1 at 2015-03-04 16:32:29 +0100
+
+
+Started GET "/assets/inspinia.js?body=1" for ::1 at 2015-03-04 16:32:29 +0100
+
+
+Started GET "/assets/landing.js?body=1" for ::1 at 2015-03-04 16:32:29 +0100
+
+
+Started GET "/assets/transactions.js?body=1" for ::1 at 2015-03-04 16:32:29 +0100
+
+
+Started GET "/assets/users.js?body=1" for ::1 at 2015-03-04 16:32:29 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-03-04 16:32:29 +0100
+
+
+Started GET "/assets/patterns/header-profile.png" for ::1 at 2015-03-04 16:32:30 +0100
+
+
+Started GET "/assets/fontawesome-webfont.woff2?v=4.3.0" for ::1 at 2015-03-04 16:32:30 +0100
+
+
+Started GET "/" for ::1 at 2015-03-04 16:32:34 +0100
+Processing by LandingController#landing as HTML
+Completed 401 Unauthorized in 1ms
+
+
+Started GET "/users/sign_in" for ::1 at 2015-03-04 16:32:34 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendered users/shared/_links.html.erb (6.4ms)
+  Rendered users/sessions/new.html.erb within layouts/application (13.0ms)
+  Rendered layouts/_navigation.html.erb (0.3ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 45ms (Views: 43.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-03-04 16:32:34 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-03-04 16:32:34 +0100
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for ::1 at 2015-03-04 16:32:34 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for ::1 at 2015-03-04 16:32:34 +0100
+
+
+Started GET "/assets/animate/animate.css?body=1" for ::1 at 2015-03-04 16:32:34 +0100
+
+
+Started GET "/assets/font-awesome.css?body=1" for ::1 at 2015-03-04 16:32:34 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for ::1 at 2015-03-04 16:32:34 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for ::1 at 2015-03-04 16:32:34 +0100
+
+
+Started GET "/assets/style.css?body=1" for ::1 at 2015-03-04 16:32:34 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for ::1 at 2015-03-04 16:32:34 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for ::1 at 2015-03-04 16:32:34 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for ::1 at 2015-03-04 16:32:34 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for ::1 at 2015-03-04 16:32:34 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for ::1 at 2015-03-04 16:32:34 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for ::1 at 2015-03-04 16:32:34 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for ::1 at 2015-03-04 16:32:34 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for ::1 at 2015-03-04 16:32:34 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for ::1 at 2015-03-04 16:32:34 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for ::1 at 2015-03-04 16:32:34 +0100
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for ::1 at 2015-03-04 16:32:34 +0100
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for ::1 at 2015-03-04 16:32:34 +0100
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for ::1 at 2015-03-04 16:32:34 +0100
+
+
+Started GET "/assets/accounts.js?body=1" for ::1 at 2015-03-04 16:32:34 +0100
+
+
+Started GET "/assets/inspinia.js?body=1" for ::1 at 2015-03-04 16:32:34 +0100
+
+
+Started GET "/assets/landing.js?body=1" for ::1 at 2015-03-04 16:32:34 +0100
+
+
+Started GET "/assets/transactions.js?body=1" for ::1 at 2015-03-04 16:32:34 +0100
+
+
+Started GET "/assets/users.js?body=1" for ::1 at 2015-03-04 16:32:34 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-03-04 16:32:34 +0100
+
+
+Started GET "/assets/patterns/header-profile.png" for ::1 at 2015-03-04 16:32:34 +0100
+
+
+Started GET "/" for ::1 at 2015-03-04 16:32:39 +0100
+Processing by LandingController#landing as HTML
+Completed 401 Unauthorized in 1ms
+
+
+Started GET "/users/sign_in" for ::1 at 2015-03-04 16:32:39 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendered users/shared/_links.html.erb (4.2ms)
+  Rendered users/sessions/new.html.erb within layouts/application (14.2ms)
+  Rendered layouts/_navigation.html.erb (0.3ms)
+  Rendered layouts/_topnavbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 42ms (Views: 41.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-03-04 16:32:39 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for ::1 at 2015-03-04 16:32:39 +0100
+
+
+Started GET "/assets/font-awesome.css?body=1" for ::1 at 2015-03-04 16:32:39 +0100
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for ::1 at 2015-03-04 16:32:39 +0100
+
+
+Started GET "/assets/style.css?body=1" for ::1 at 2015-03-04 16:32:39 +0100
+
+
+Started GET "/assets/animate/animate.css?body=1" for ::1 at 2015-03-04 16:32:39 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-03-04 16:32:39 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for ::1 at 2015-03-04 16:32:39 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for ::1 at 2015-03-04 16:32:39 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for ::1 at 2015-03-04 16:32:39 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for ::1 at 2015-03-04 16:32:39 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for ::1 at 2015-03-04 16:32:39 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for ::1 at 2015-03-04 16:32:39 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for ::1 at 2015-03-04 16:32:39 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for ::1 at 2015-03-04 16:32:39 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for ::1 at 2015-03-04 16:32:39 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for ::1 at 2015-03-04 16:32:39 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for ::1 at 2015-03-04 16:32:39 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for ::1 at 2015-03-04 16:32:39 +0100
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for ::1 at 2015-03-04 16:32:39 +0100
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for ::1 at 2015-03-04 16:32:39 +0100
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for ::1 at 2015-03-04 16:32:39 +0100
+
+
+Started GET "/assets/accounts.js?body=1" for ::1 at 2015-03-04 16:32:39 +0100
+
+
+Started GET "/assets/inspinia.js?body=1" for ::1 at 2015-03-04 16:32:39 +0100
+
+
+Started GET "/assets/landing.js?body=1" for ::1 at 2015-03-04 16:32:39 +0100
+
+
+Started GET "/assets/transactions.js?body=1" for ::1 at 2015-03-04 16:32:39 +0100
+
+
+Started GET "/assets/users.js?body=1" for ::1 at 2015-03-04 16:32:39 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-03-04 16:32:39 +0100
+
+
+Started GET "/assets/patterns/header-profile.png" for ::1 at 2015-03-04 16:32:39 +0100
+
+
+Started GET "/" for ::1 at 2015-03-04 16:38:02 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by LandingController#landing as HTML
+Completed 401 Unauthorized in 15ms
+
+
+Started GET "/users/sign_in" for ::1 at 2015-03-04 16:38:03 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendered users/shared/_links.html.erb (6.2ms)
+  Rendered users/sessions/new.html.erb within layouts/application (26.5ms)
+  Rendered layouts/_navigation.html.erb (0.9ms)
+  Rendered layouts/_topnavbar.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 152ms (Views: 136.7ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-03-04 16:38:03 +0100
+
+
+Started GET "/assets/animate/animate.css?body=1" for ::1 at 2015-03-04 16:38:03 +0100
+
+
+Started GET "/assets/font-awesome.css?body=1" for ::1 at 2015-03-04 16:38:03 +0100
+
+
+Started GET "/assets/style.css?body=1" for ::1 at 2015-03-04 16:38:03 +0100
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for ::1 at 2015-03-04 16:38:03 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-03-04 16:38:03 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for ::1 at 2015-03-04 16:38:03 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for ::1 at 2015-03-04 16:38:03 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for ::1 at 2015-03-04 16:38:03 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for ::1 at 2015-03-04 16:38:03 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for ::1 at 2015-03-04 16:38:03 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for ::1 at 2015-03-04 16:38:03 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for ::1 at 2015-03-04 16:38:03 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for ::1 at 2015-03-04 16:38:03 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for ::1 at 2015-03-04 16:38:03 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for ::1 at 2015-03-04 16:38:03 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for ::1 at 2015-03-04 16:38:03 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for ::1 at 2015-03-04 16:38:03 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for ::1 at 2015-03-04 16:38:03 +0100
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for ::1 at 2015-03-04 16:38:03 +0100
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for ::1 at 2015-03-04 16:38:03 +0100
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for ::1 at 2015-03-04 16:38:03 +0100
+
+
+Started GET "/assets/accounts.js?body=1" for ::1 at 2015-03-04 16:38:03 +0100
+
+
+Started GET "/assets/inspinia.js?body=1" for ::1 at 2015-03-04 16:38:03 +0100
+
+
+Started GET "/assets/landing.js?body=1" for ::1 at 2015-03-04 16:38:03 +0100
+
+
+Started GET "/assets/transactions.js?body=1" for ::1 at 2015-03-04 16:38:03 +0100
+
+
+Started GET "/assets/users.js?body=1" for ::1 at 2015-03-04 16:38:03 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-03-04 16:38:03 +0100
+
+
+Started GET "/assets/patterns/header-profile.png" for ::1 at 2015-03-04 16:38:03 +0100
+
+
+Started GET "/" for ::1 at 2015-03-04 16:38:07 +0100
+Processing by LandingController#landing as HTML
+Completed 401 Unauthorized in 1ms
+
+
+Started GET "/users/sign_in" for ::1 at 2015-03-04 16:38:07 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendered users/shared/_links.html.erb (4.4ms)
+  Rendered users/sessions/new.html.erb within layouts/application (14.2ms)
+  Rendered layouts/_navigation.html.erb (0.3ms)
+  Rendered layouts/_topnavbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 42ms (Views: 40.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for ::1 at 2015-03-04 16:38:07 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-03-04 16:38:07 +0100
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-03-04 16:38:07 +0100
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for ::1 at 2015-03-04 16:38:07 +0100
+
+
+Started GET "/assets/style.css?body=1" for ::1 at 2015-03-04 16:38:07 +0100
+
+
+Started GET "/assets/animate/animate.css?body=1" for ::1 at 2015-03-04 16:38:07 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for ::1 at 2015-03-04 16:38:07 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for ::1 at 2015-03-04 16:38:07 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for ::1 at 2015-03-04 16:38:07 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for ::1 at 2015-03-04 16:38:07 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for ::1 at 2015-03-04 16:38:07 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for ::1 at 2015-03-04 16:38:07 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for ::1 at 2015-03-04 16:38:07 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for ::1 at 2015-03-04 16:38:07 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for ::1 at 2015-03-04 16:38:07 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for ::1 at 2015-03-04 16:38:07 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for ::1 at 2015-03-04 16:38:07 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for ::1 at 2015-03-04 16:38:07 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for ::1 at 2015-03-04 16:38:07 +0100
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for ::1 at 2015-03-04 16:38:07 +0100
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for ::1 at 2015-03-04 16:38:07 +0100
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for ::1 at 2015-03-04 16:38:07 +0100
+
+
+Started GET "/assets/accounts.js?body=1" for ::1 at 2015-03-04 16:38:07 +0100
+
+
+Started GET "/assets/inspinia.js?body=1" for ::1 at 2015-03-04 16:38:07 +0100
+
+
+Started GET "/assets/landing.js?body=1" for ::1 at 2015-03-04 16:38:07 +0100
+
+
+Started GET "/assets/transactions.js?body=1" for ::1 at 2015-03-04 16:38:07 +0100
+
+
+Started GET "/assets/users.js?body=1" for ::1 at 2015-03-04 16:38:07 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-03-04 16:38:07 +0100
+
+
+Started GET "/assets/patterns/header-profile.png" for ::1 at 2015-03-04 16:38:07 +0100
+
+
+Started GET "/" for ::1 at 2015-03-04 16:38:10 +0100
+Processing by LandingController#landing as HTML
+Completed 401 Unauthorized in 1ms
+
+
+Started GET "/users/sign_in" for ::1 at 2015-03-04 16:38:10 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendered users/shared/_links.html.erb (5.9ms)
+  Rendered users/sessions/new.html.erb within layouts/application (16.2ms)
+  Rendered layouts/_navigation.html.erb (0.3ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 43ms (Views: 41.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for ::1 at 2015-03-04 16:38:10 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for ::1 at 2015-03-04 16:38:10 +0100
+
+
+Started GET "/assets/animate/animate.css?body=1" for ::1 at 2015-03-04 16:38:10 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-03-04 16:38:10 +0100
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-03-04 16:38:10 +0100
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for ::1 at 2015-03-04 16:38:10 +0100
+
+
+Started GET "/assets/style.css?body=1" for ::1 at 2015-03-04 16:38:10 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for ::1 at 2015-03-04 16:38:10 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for ::1 at 2015-03-04 16:38:10 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for ::1 at 2015-03-04 16:38:10 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for ::1 at 2015-03-04 16:38:10 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for ::1 at 2015-03-04 16:38:10 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for ::1 at 2015-03-04 16:38:10 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for ::1 at 2015-03-04 16:38:10 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for ::1 at 2015-03-04 16:38:10 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for ::1 at 2015-03-04 16:38:10 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for ::1 at 2015-03-04 16:38:10 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for ::1 at 2015-03-04 16:38:10 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for ::1 at 2015-03-04 16:38:10 +0100
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for ::1 at 2015-03-04 16:38:10 +0100
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for ::1 at 2015-03-04 16:38:10 +0100
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for ::1 at 2015-03-04 16:38:10 +0100
+
+
+Started GET "/assets/accounts.js?body=1" for ::1 at 2015-03-04 16:38:10 +0100
+
+
+Started GET "/assets/inspinia.js?body=1" for ::1 at 2015-03-04 16:38:10 +0100
+
+
+Started GET "/assets/landing.js?body=1" for ::1 at 2015-03-04 16:38:10 +0100
+
+
+Started GET "/assets/transactions.js?body=1" for ::1 at 2015-03-04 16:38:10 +0100
+
+
+Started GET "/assets/users.js?body=1" for ::1 at 2015-03-04 16:38:10 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-03-04 16:38:10 +0100
+
+
+Started GET "/assets/patterns/header-profile.png" for ::1 at 2015-03-04 16:38:10 +0100
+
+
+Started GET "/home/index" for ::1 at 2015-03-04 16:38:39 +0100
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 1ms
+
+
+Started GET "/users/sign_in" for ::1 at 2015-03-04 16:38:39 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendered users/shared/_links.html.erb (3.1ms)
+  Rendered users/sessions/new.html.erb within layouts/application (9.3ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 32ms (Views: 30.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-03-04 16:38:39 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for ::1 at 2015-03-04 16:38:39 +0100
+
+
+Started GET "/assets/font-awesome.css?body=1" for ::1 at 2015-03-04 16:38:39 +0100
+
+
+Started GET "/assets/style.css?body=1" for ::1 at 2015-03-04 16:38:39 +0100
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for ::1 at 2015-03-04 16:38:39 +0100
+
+
+Started GET "/assets/animate/animate.css?body=1" for ::1 at 2015-03-04 16:38:39 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-03-04 16:38:39 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for ::1 at 2015-03-04 16:38:39 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for ::1 at 2015-03-04 16:38:39 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for ::1 at 2015-03-04 16:38:39 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for ::1 at 2015-03-04 16:38:39 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for ::1 at 2015-03-04 16:38:39 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for ::1 at 2015-03-04 16:38:39 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for ::1 at 2015-03-04 16:38:39 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for ::1 at 2015-03-04 16:38:39 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for ::1 at 2015-03-04 16:38:39 +0100
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for ::1 at 2015-03-04 16:38:39 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for ::1 at 2015-03-04 16:38:39 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for ::1 at 2015-03-04 16:38:39 +0100
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for ::1 at 2015-03-04 16:38:39 +0100
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for ::1 at 2015-03-04 16:38:39 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for ::1 at 2015-03-04 16:38:39 +0100
+
+
+Started GET "/assets/accounts.js?body=1" for ::1 at 2015-03-04 16:38:39 +0100
+
+
+Started GET "/assets/inspinia.js?body=1" for ::1 at 2015-03-04 16:38:39 +0100
+
+
+Started GET "/assets/landing.js?body=1" for ::1 at 2015-03-04 16:38:39 +0100
+
+
+Started GET "/assets/transactions.js?body=1" for ::1 at 2015-03-04 16:38:39 +0100
+
+
+Started GET "/assets/users.js?body=1" for ::1 at 2015-03-04 16:38:39 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-03-04 16:38:39 +0100
+
+
+Started GET "/assets/patterns/header-profile.png" for ::1 at 2015-03-04 16:38:39 +0100
+
+
+Started GET "/home/minor" for ::1 at 2015-03-04 16:38:40 +0100
+Processing by HomeController#minor as HTML
+Completed 401 Unauthorized in 1ms
+
+
+Started GET "/users/sign_in" for ::1 at 2015-03-04 16:38:40 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendered users/shared/_links.html.erb (11.3ms)
+  Rendered users/sessions/new.html.erb within layouts/application (17.8ms)
+  Rendered layouts/_navigation.html.erb (1.2ms)
+  Rendered layouts/_topnavbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 47ms (Views: 45.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for ::1 at 2015-03-04 16:38:41 +0100
+
+
+Started GET "/assets/animate/animate.css?body=1" for ::1 at 2015-03-04 16:38:41 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-03-04 16:38:41 +0100
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for ::1 at 2015-03-04 16:38:41 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for ::1 at 2015-03-04 16:38:41 +0100
+
+
+Started GET "/assets/style.css?body=1" for ::1 at 2015-03-04 16:38:41 +0100
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-03-04 16:38:41 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for ::1 at 2015-03-04 16:38:41 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for ::1 at 2015-03-04 16:38:41 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for ::1 at 2015-03-04 16:38:41 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for ::1 at 2015-03-04 16:38:41 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for ::1 at 2015-03-04 16:38:41 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for ::1 at 2015-03-04 16:38:41 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for ::1 at 2015-03-04 16:38:41 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for ::1 at 2015-03-04 16:38:41 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for ::1 at 2015-03-04 16:38:41 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for ::1 at 2015-03-04 16:38:41 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for ::1 at 2015-03-04 16:38:41 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for ::1 at 2015-03-04 16:38:41 +0100
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for ::1 at 2015-03-04 16:38:41 +0100
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for ::1 at 2015-03-04 16:38:41 +0100
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for ::1 at 2015-03-04 16:38:41 +0100
+
+
+Started GET "/assets/accounts.js?body=1" for ::1 at 2015-03-04 16:38:41 +0100
+
+
+Started GET "/assets/inspinia.js?body=1" for ::1 at 2015-03-04 16:38:41 +0100
+
+
+Started GET "/assets/landing.js?body=1" for ::1 at 2015-03-04 16:38:41 +0100
+
+
+Started GET "/assets/transactions.js?body=1" for ::1 at 2015-03-04 16:38:41 +0100
+
+
+Started GET "/assets/users.js?body=1" for ::1 at 2015-03-04 16:38:41 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-03-04 16:38:41 +0100
+
+
+Started GET "/assets/patterns/header-profile.png" for ::1 at 2015-03-04 16:38:41 +0100
+
+
+Started POST "/users/sign_in" for ::1 at 2015-03-04 16:38:42 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gAOh4tY+P3/Iql9uWx2dF8GDiqOdmZPX70tyId0koaO/EkPn7vKA+P/wKDI4+tZMtxrsBHHemmiJfpa08l3RqA==", "user"=>{"email"=>"rdbrands@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.9ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["email", "rdbrands@gmail.com"]]
+Completed 401 Unauthorized in 89ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gAOh4tY+P3/Iql9uWx2dF8GDiqOdmZPX70tyId0koaO/EkPn7vKA+P/wKDI4+tZMtxrsBHHemmiJfpa08l3RqA==", "user"=>{"email"=>"rdbrands@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered users/shared/_links.html.erb (12.1ms)
+  Rendered users/sessions/new.html.erb within layouts/application (17.7ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_topnavbar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 122ms (Views: 45.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-03-04 16:38:42 +0100
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for ::1 at 2015-03-04 16:38:42 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-03-04 16:38:42 +0100
+
+
+Started GET "/assets/style.css?body=1" for ::1 at 2015-03-04 16:38:42 +0100
+
+
+Started GET "/assets/animate/animate.css?body=1" for ::1 at 2015-03-04 16:38:42 +0100
+
+
+Started GET "/assets/font-awesome.css?body=1" for ::1 at 2015-03-04 16:38:42 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for ::1 at 2015-03-04 16:38:42 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for ::1 at 2015-03-04 16:38:42 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for ::1 at 2015-03-04 16:38:42 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for ::1 at 2015-03-04 16:38:42 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for ::1 at 2015-03-04 16:38:42 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for ::1 at 2015-03-04 16:38:42 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for ::1 at 2015-03-04 16:38:42 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for ::1 at 2015-03-04 16:38:42 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for ::1 at 2015-03-04 16:38:42 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for ::1 at 2015-03-04 16:38:42 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for ::1 at 2015-03-04 16:38:42 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for ::1 at 2015-03-04 16:38:42 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for ::1 at 2015-03-04 16:38:42 +0100
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for ::1 at 2015-03-04 16:38:42 +0100
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for ::1 at 2015-03-04 16:38:42 +0100
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for ::1 at 2015-03-04 16:38:42 +0100
+
+
+Started GET "/assets/accounts.js?body=1" for ::1 at 2015-03-04 16:38:42 +0100
+
+
+Started GET "/assets/inspinia.js?body=1" for ::1 at 2015-03-04 16:38:42 +0100
+
+
+Started GET "/assets/landing.js?body=1" for ::1 at 2015-03-04 16:38:42 +0100
+
+
+Started GET "/assets/transactions.js?body=1" for ::1 at 2015-03-04 16:38:42 +0100
+
+
+Started GET "/assets/users.js?body=1" for ::1 at 2015-03-04 16:38:42 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-03-04 16:38:42 +0100
+
+
+Started GET "/assets/patterns/header-profile.png" for ::1 at 2015-03-04 16:38:42 +0100
+
+
+Started POST "/users/sign_in" for ::1 at 2015-03-04 16:38:49 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nSTXwzIZ1IzKANsQ3kHyzTcWwGzBKMlXpXMwF5P4tYCiNTXGCtVrC/1arEy9prmWQY+myy1vwOjDRtSCvIHFiw==", "user"=>{"email"=>"rdbrands@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "rdbrands@gmail.com"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = $1, "current_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["last_sign_in_at", "2015-03-04 15:15:24.241494"], ["current_sign_in_at", "2015-03-04 15:38:49.520007"], ["sign_in_count", 5], ["updated_at", "2015-03-04 15:38:49.522312"], ["id", 63]]
+  [1m[35m (6.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/home/index
+Completed 302 Found in 124ms (ActiveRecord: 7.1ms)
+
+
+Started GET "/home/index" for ::1 at 2015-03-04 16:38:49 +0100
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 63]]
+  [1m[35mAccount Load (0.5ms)[0m  SELECT  "accounts".* FROM "accounts" WHERE "accounts"."user_id" = $1 LIMIT 1  [["user_id", 63]]
+Completed 500 Internal Server Error in 35ms
+
+NoMethodError (undefined method `balance' for nil:NilClass):
+  app/controllers/home_controller.rb:3:in `index'
+
+
+  Rendered /Users/rdbrands/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.8ms)
+  Rendered /Users/rdbrands/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/rdbrands/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/rdbrands/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (62.9ms)
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-03-04 16:38:52 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for ::1 at 2015-03-04 16:38:52 +0100
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for ::1 at 2015-03-04 16:38:52 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-03-04 16:38:52 +0100
+
+
+Started GET "/assets/font-awesome.css?body=1" for ::1 at 2015-03-04 16:38:52 +0100
+
+
+Started GET "/assets/animate/animate.css?body=1" for ::1 at 2015-03-04 16:38:52 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for ::1 at 2015-03-04 16:38:52 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for ::1 at 2015-03-04 16:38:52 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for ::1 at 2015-03-04 16:38:52 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for ::1 at 2015-03-04 16:38:52 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for ::1 at 2015-03-04 16:38:52 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for ::1 at 2015-03-04 16:38:52 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for ::1 at 2015-03-04 16:38:52 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for ::1 at 2015-03-04 16:38:52 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for ::1 at 2015-03-04 16:38:52 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for ::1 at 2015-03-04 16:38:52 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for ::1 at 2015-03-04 16:38:52 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for ::1 at 2015-03-04 16:38:52 +0100
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for ::1 at 2015-03-04 16:38:52 +0100
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for ::1 at 2015-03-04 16:38:52 +0100
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for ::1 at 2015-03-04 16:38:52 +0100
+
+
+Started GET "/assets/accounts.js?body=1" for ::1 at 2015-03-04 16:38:52 +0100
+
+
+Started GET "/assets/inspinia.js?body=1" for ::1 at 2015-03-04 16:38:52 +0100
+
+
+Started GET "/assets/landing.js?body=1" for ::1 at 2015-03-04 16:38:52 +0100
+
+
+Started GET "/assets/transactions.js?body=1" for ::1 at 2015-03-04 16:38:52 +0100
+
+
+Started GET "/assets/users.js?body=1" for ::1 at 2015-03-04 16:38:52 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-03-04 16:38:52 +0100
+
+
+Started GET "/assets/patterns/header-profile.png" for ::1 at 2015-03-04 16:38:52 +0100
+
+
+Started GET "/assets/fontawesome-webfont.woff2?v=4.3.0" for ::1 at 2015-03-04 16:38:52 +0100
+
+
+Started GET "/users/sign_up" for ::1 at 2015-03-04 16:38:53 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 63]]
+Redirected to http://localhost:3000/home/index
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/home/index" for ::1 at 2015-03-04 16:38:53 +0100
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 63]]
+  [1m[36mAccount Load (0.2ms)[0m  [1mSELECT  "accounts".* FROM "accounts" WHERE "accounts"."user_id" = $1 LIMIT 1[0m  [["user_id", 63]]
+Completed 500 Internal Server Error in 3ms
+
+NoMethodError (undefined method `balance' for nil:NilClass):
+  app/controllers/home_controller.rb:3:in `index'
+
+
+  Rendered /Users/rdbrands/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.2ms)
+  Rendered /Users/rdbrands/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/rdbrands/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/rdbrands/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (55.5ms)
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-03-04 16:38:55 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-03-04 16:38:55 +0100
+
+
+Started GET "/assets/font-awesome.css?body=1" for ::1 at 2015-03-04 16:38:55 +0100
+
+
+Started GET "/assets/style.css?body=1" for ::1 at 2015-03-04 16:38:55 +0100
+
+
+Started GET "/assets/animate/animate.css?body=1" for ::1 at 2015-03-04 16:38:55 +0100
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for ::1 at 2015-03-04 16:38:55 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for ::1 at 2015-03-04 16:38:55 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for ::1 at 2015-03-04 16:38:55 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for ::1 at 2015-03-04 16:38:55 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for ::1 at 2015-03-04 16:38:55 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for ::1 at 2015-03-04 16:38:55 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for ::1 at 2015-03-04 16:38:55 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for ::1 at 2015-03-04 16:38:55 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for ::1 at 2015-03-04 16:38:55 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for ::1 at 2015-03-04 16:38:55 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for ::1 at 2015-03-04 16:38:55 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for ::1 at 2015-03-04 16:38:55 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for ::1 at 2015-03-04 16:38:55 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for ::1 at 2015-03-04 16:38:55 +0100
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for ::1 at 2015-03-04 16:38:55 +0100
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for ::1 at 2015-03-04 16:38:55 +0100
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for ::1 at 2015-03-04 16:38:55 +0100
+
+
+Started GET "/assets/accounts.js?body=1" for ::1 at 2015-03-04 16:38:55 +0100
+
+
+Started GET "/assets/inspinia.js?body=1" for ::1 at 2015-03-04 16:38:55 +0100
+
+
+Started GET "/assets/landing.js?body=1" for ::1 at 2015-03-04 16:38:55 +0100
+
+
+Started GET "/assets/transactions.js?body=1" for ::1 at 2015-03-04 16:38:55 +0100
+
+
+Started GET "/assets/users.js?body=1" for ::1 at 2015-03-04 16:38:55 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-03-04 16:38:55 +0100
+
+
+Started GET "/assets/patterns/header-profile.png" for ::1 at 2015-03-04 16:38:55 +0100
+  [1m[36m (9.9ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (1.6ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateAccounts (20150302161917)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (26.9ms)[0m  [1mCREATE TABLE "accounts" ("id" serial primary key, "number" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150302161917"]]
+  [1m[36m (1.4ms)[0m  [1mCOMMIT[0m
+Migrating to CreateTransactions (20150303122113)
+  [1m[35m (6.1ms)[0m  BEGIN
+  [1m[36m (18.3ms)[0m  [1mCREATE TABLE "transactions" ("id" serial primary key, "transaction_type" character varying, "sender_id" integer, "receiver_id" integer, "amount" integer, "reference" character varying, "status" character varying, "communication" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (0.8ms)[0m  CREATE  INDEX  "index_transactions_on_sender_id" ON "transactions"  ("sender_id")
+  [1m[36m (0.7ms)[0m  [1mCREATE  INDEX  "index_transactions_on_receiver_id" ON "transactions"  ("receiver_id")[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150303122113"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Migrating to CreateUsers (20150303132318)
+  [1m[35m (5.6ms)[0m  BEGIN
+  [1m[36m (19.1ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "first_name" character varying, "last_name" character varying, "salutation" character varying, "phone_number" character varying, "user_type" character varying, "vat_number" character varying, "active" boolean, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150303132318"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Migrating to AddUserRefToAccount (20150303140148)
+  [1m[35m (5.5ms)[0m  BEGIN
+  [1m[36m (5.9ms)[0m  [1mALTER TABLE "accounts" ADD "user_id" integer[0m
+  [1m[35m (6.3ms)[0m  CREATE  INDEX  "index_accounts_on_user_id" ON "accounts"  ("user_id")
+  [1m[36m (7.0ms)[0m  [1mALTER TABLE "accounts" ADD CONSTRAINT "fk_rails_22fb049f36"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150303140148"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Migrating to AddDeviseToUsers (20150303151427)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (28.1ms)[0m  [1mALTER TABLE "users" ADD "email" character varying DEFAULT '' NOT NULL[0m
+  [1m[35m (3.5ms)[0m  ALTER TABLE "users" ADD "encrypted_password" character varying DEFAULT '' NOT NULL
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "users" ADD "reset_password_token" character varying[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "users" ADD "reset_password_sent_at" timestamp
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "users" ADD "remember_created_at" timestamp[0m
+  [1m[35m (2.8ms)[0m  ALTER TABLE "users" ADD "sign_in_count" integer DEFAULT 0 NOT NULL
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "users" ADD "current_sign_in_at" timestamp[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "users" ADD "last_sign_in_at" timestamp
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "users" ADD "current_sign_in_ip" inet[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "users" ADD "last_sign_in_ip" inet
+  [1m[36m (0.8ms)[0m  [1mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  [1m[35m (0.9ms)[0m  CREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20150303151427"]]
+  [1m[35m (1.2ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (3.6ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'accounts'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (1.6ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'transactions'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (1.7ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.9ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'fred@fred.com' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("first_name", "last_name", "salutation", "email", "encrypted_password", "phone_number", "user_type", "vat_number", "active", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"  [["first_name", "Frederic"], ["last_name", "Lambrechts"], ["salutation", "Mr."], ["email", "fred@fred.com"], ["encrypted_password", "$2a$10$rdHF58ApiCMMWmQIihJ1DObJDZrPTLki0JAN1bPp7qh.blcPYnQyq"], ["phone_number", "0478 13 21 63"], ["user_type", "citizen"], ["vat_number", "BE435345745"], ["active", "t"], ["created_at", "2015-03-04 15:40:05.932150"], ["updated_at", "2015-03-04 15:40:05.932150"]]
+  [1m[36m (6.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'ruben@ruben.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("first_name", "last_name", "salutation", "email", "encrypted_password", "phone_number", "user_type", "vat_number", "active", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"  [["first_name", "Ruben"], ["last_name", "Brands"], ["salutation", "Mr."], ["email", "ruben@ruben.com"], ["encrypted_password", "$2a$10$cbty/cuTUgcVDP8rYkCJleuFAxh.lkMz1HfbMqabg9n.9tw4Fo7Du"], ["phone_number", "0033 958 235 45"], ["user_type", "citizen"], ["vat_number", "NL435345745"], ["active", "t"], ["created_at", "2015-03-04 15:40:06.015058"], ["updated_at", "2015-03-04 15:40:06.015058"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mAccount Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "accounts" WHERE "accounts"."number" = $1 LIMIT 1[0m  [["number", "8219884064080"]]
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "accounts" ("user_id", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["user_id", 1], ["number", "8219884064080"], ["created_at", "2015-03-04 15:40:06.032395"], ["updated_at", "2015-03-04 15:40:06.032395"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mAccount Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "accounts" WHERE "accounts"."number" = $1 LIMIT 1[0m  [["number", "5184169942092"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "accounts" ("user_id", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["user_id", 2], ["number", "5184169942092"], ["created_at", "2015-03-04 15:40:06.035502"], ["updated_at", "2015-03-04 15:40:06.035502"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mAccount Load (0.2ms)[0m  SELECT  "accounts".* FROM "accounts" WHERE "accounts"."user_id" = $1 LIMIT 1  [["user_id", 1]]
+  [1m[36mAccount Load (0.2ms)[0m  [1mSELECT  "accounts".* FROM "accounts" WHERE "accounts"."user_id" = $1 LIMIT 1[0m  [["user_id", 2]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "transactions" ("transaction_type", "sender_id", "receiver_id", "amount", "reference", "status", "communication", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["transaction_type", "transfer"], ["sender_id", 1], ["receiver_id", 2], ["amount", 121], ["reference", "expense"], ["status", "confirmed"], ["communication", "my favorite transaction"], ["created_at", "2015-03-04 15:40:06.054001"], ["updated_at", "2015-03-04 15:40:06.054001"]]
+  [1m[35m (6.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "transactions" ("transaction_type", "sender_id", "receiver_id", "amount", "reference", "status", "communication", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["transaction_type", "transfer"], ["sender_id", 1], ["receiver_id", 2], ["amount", 140], ["reference", "expense"], ["status", "confirmed"], ["communication", "my favorite transaction"], ["created_at", "2015-03-04 15:40:06.063763"], ["updated_at", "2015-03-04 15:40:06.063763"]]
+  [1m[36m (5.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "transactions" ("transaction_type", "sender_id", "receiver_id", "amount", "reference", "status", "communication", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["transaction_type", "transfer"], ["sender_id", 1], ["receiver_id", 2], ["amount", 22], ["reference", "expense"], ["status", "confirmed"], ["communication", "my favorite transaction"], ["created_at", "2015-03-04 15:40:06.072452"], ["updated_at", "2015-03-04 15:40:06.072452"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "transactions" ("transaction_type", "sender_id", "receiver_id", "amount", "reference", "status", "communication", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["transaction_type", "transfer"], ["sender_id", 1], ["receiver_id", 2], ["amount", 21], ["reference", "expense"], ["status", "confirmed"], ["communication", "my favorite transaction"], ["created_at", "2015-03-04 15:40:06.075565"], ["updated_at", "2015-03-04 15:40:06.075565"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "transactions" ("transaction_type", "sender_id", "receiver_id", "amount", "reference", "status", "communication", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["transaction_type", "transfer"], ["sender_id", 1], ["receiver_id", 2], ["amount", 70], ["reference", "expense"], ["status", "confirmed"], ["communication", "my favorite transaction"], ["created_at", "2015-03-04 15:40:06.078216"], ["updated_at", "2015-03-04 15:40:06.078216"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "transactions" ("transaction_type", "sender_id", "receiver_id", "amount", "reference", "status", "communication", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["transaction_type", "transfer"], ["sender_id", 2], ["receiver_id", 1], ["amount", 148], ["reference", "income"], ["status", "confirmed"], ["communication", "my favorite transaction"], ["created_at", "2015-03-04 15:40:06.080824"], ["updated_at", "2015-03-04 15:40:06.080824"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "transactions" ("transaction_type", "sender_id", "receiver_id", "amount", "reference", "status", "communication", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["transaction_type", "transfer"], ["sender_id", 2], ["receiver_id", 1], ["amount", 113], ["reference", "income"], ["status", "confirmed"], ["communication", "my favorite transaction"], ["created_at", "2015-03-04 15:40:06.083243"], ["updated_at", "2015-03-04 15:40:06.083243"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "transactions" ("transaction_type", "sender_id", "receiver_id", "amount", "reference", "status", "communication", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["transaction_type", "transfer"], ["sender_id", 2], ["receiver_id", 1], ["amount", 86], ["reference", "income"], ["status", "confirmed"], ["communication", "my favorite transaction"], ["created_at", "2015-03-04 15:40:06.085516"], ["updated_at", "2015-03-04 15:40:06.085516"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "transactions" ("transaction_type", "sender_id", "receiver_id", "amount", "reference", "status", "communication", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["transaction_type", "transfer"], ["sender_id", 2], ["receiver_id", 1], ["amount", 136], ["reference", "income"], ["status", "confirmed"], ["communication", "my favorite transaction"], ["created_at", "2015-03-04 15:40:06.087622"], ["updated_at", "2015-03-04 15:40:06.087622"]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "transactions" ("transaction_type", "sender_id", "receiver_id", "amount", "reference", "status", "communication", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["transaction_type", "transfer"], ["sender_id", 2], ["receiver_id", 1], ["amount", 124], ["reference", "income"], ["status", "confirmed"], ["communication", "my favorite transaction"], ["created_at", "2015-03-04 15:40:06.089766"], ["updated_at", "2015-03-04 15:40:06.089766"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+
+
+Started GET "/" for ::1 at 2015-03-04 16:40:19 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by LandingController#landing as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 63]]
+Completed 401 Unauthorized in 24ms
+
+
+Started GET "/users/sign_in" for ::1 at 2015-03-04 16:40:20 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendered users/shared/_links.html.erb (5.8ms)
+  Rendered users/sessions/new.html.erb within layouts/application (27.7ms)
+  Rendered layouts/_navigation.html.erb (1.0ms)
+  Rendered layouts/_topnavbar.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 160ms (Views: 147.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-03-04 16:40:20 +0100
+
+
+Started GET "/assets/font-awesome.css?body=1" for ::1 at 2015-03-04 16:40:20 +0100
+
+
+Started GET "/assets/animate/animate.css?body=1" for ::1 at 2015-03-04 16:40:20 +0100
+
+
+Started GET "/assets/style.css?body=1" for ::1 at 2015-03-04 16:40:20 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-03-04 16:40:20 +0100
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for ::1 at 2015-03-04 16:40:20 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for ::1 at 2015-03-04 16:40:20 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for ::1 at 2015-03-04 16:40:20 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for ::1 at 2015-03-04 16:40:20 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for ::1 at 2015-03-04 16:40:20 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for ::1 at 2015-03-04 16:40:20 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for ::1 at 2015-03-04 16:40:20 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for ::1 at 2015-03-04 16:40:20 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for ::1 at 2015-03-04 16:40:20 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for ::1 at 2015-03-04 16:40:20 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for ::1 at 2015-03-04 16:40:20 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for ::1 at 2015-03-04 16:40:20 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for ::1 at 2015-03-04 16:40:20 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for ::1 at 2015-03-04 16:40:20 +0100
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for ::1 at 2015-03-04 16:40:20 +0100
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for ::1 at 2015-03-04 16:40:20 +0100
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for ::1 at 2015-03-04 16:40:20 +0100
+
+
+Started GET "/assets/accounts.js?body=1" for ::1 at 2015-03-04 16:40:20 +0100
+
+
+Started GET "/assets/inspinia.js?body=1" for ::1 at 2015-03-04 16:40:20 +0100
+
+
+Started GET "/assets/landing.js?body=1" for ::1 at 2015-03-04 16:40:20 +0100
+
+
+Started GET "/assets/transactions.js?body=1" for ::1 at 2015-03-04 16:40:20 +0100
+
+
+Started GET "/assets/users.js?body=1" for ::1 at 2015-03-04 16:40:20 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-03-04 16:40:20 +0100
+
+
+Started GET "/assets/patterns/header-profile.png" for ::1 at 2015-03-04 16:40:20 +0100
+
+
+Started GET "/" for ::1 at 2015-03-04 16:40:30 +0100
+Processing by LandingController#landing as HTML
+Completed 401 Unauthorized in 1ms
+
+
+Started GET "/users/sign_in" for ::1 at 2015-03-04 16:40:30 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendered users/shared/_links.html.erb (6.8ms)
+  Rendered users/sessions/new.html.erb within layouts/application (11.6ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_topnavbar.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 41ms (Views: 37.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-03-04 16:40:30 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-03-04 16:40:30 +0100
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for ::1 at 2015-03-04 16:40:30 +0100
+
+
+Started GET "/assets/style.css?body=1" for ::1 at 2015-03-04 16:40:30 +0100
+
+
+Started GET "/assets/animate/animate.css?body=1" for ::1 at 2015-03-04 16:40:30 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for ::1 at 2015-03-04 16:40:30 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for ::1 at 2015-03-04 16:40:30 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for ::1 at 2015-03-04 16:40:30 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for ::1 at 2015-03-04 16:40:30 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for ::1 at 2015-03-04 16:40:30 +0100
+
+
+Started GET "/assets/font-awesome.css?body=1" for ::1 at 2015-03-04 16:40:30 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for ::1 at 2015-03-04 16:40:30 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for ::1 at 2015-03-04 16:40:30 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for ::1 at 2015-03-04 16:40:30 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for ::1 at 2015-03-04 16:40:30 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for ::1 at 2015-03-04 16:40:30 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for ::1 at 2015-03-04 16:40:30 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for ::1 at 2015-03-04 16:40:30 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for ::1 at 2015-03-04 16:40:30 +0100
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for ::1 at 2015-03-04 16:40:30 +0100
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for ::1 at 2015-03-04 16:40:30 +0100
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for ::1 at 2015-03-04 16:40:30 +0100
+
+
+Started GET "/assets/accounts.js?body=1" for ::1 at 2015-03-04 16:40:30 +0100
+
+
+Started GET "/assets/inspinia.js?body=1" for ::1 at 2015-03-04 16:40:30 +0100
+
+
+Started GET "/assets/landing.js?body=1" for ::1 at 2015-03-04 16:40:30 +0100
+
+
+Started GET "/assets/transactions.js?body=1" for ::1 at 2015-03-04 16:40:30 +0100
+
+
+Started GET "/assets/users.js?body=1" for ::1 at 2015-03-04 16:40:30 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-03-04 16:40:30 +0100
+
+
+Started GET "/assets/patterns/header-profile.png" for ::1 at 2015-03-04 16:40:30 +0100
+
+
+Started GET "/landing" for ::1 at 2015-03-04 16:40:35 +0100
+
+ActionController::RoutingError (No route matches [GET] "/landing"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  puma (2.11.1) lib/puma/server.rb:507:in `handle_request'
+  puma (2.11.1) lib/puma/server.rb:375:in `process_client'
+  puma (2.11.1) lib/puma/server.rb:262:in `block in run'
+  puma (2.11.1) lib/puma/thread_pool.rb:104:in `call'
+  puma (2.11.1) lib/puma/thread_pool.rb:104:in `block in spawn_thread'
+
+
+  Rendered /Users/rdbrands/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/rdbrands/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.0ms)
+  Rendered /Users/rdbrands/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.7ms)
+  Rendered /Users/rdbrands/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/rdbrands/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (93.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-04 16:40:43 +0100
+Processing by LandingController#landing as HTML
+Completed 401 Unauthorized in 1ms
+
+
+Started GET "/users/sign_in" for ::1 at 2015-03-04 16:40:43 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendered users/shared/_links.html.erb (3.0ms)
+  Rendered users/sessions/new.html.erb within layouts/application (7.8ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_topnavbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 31ms (Views: 30.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-03-04 16:40:44 +0100
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for ::1 at 2015-03-04 16:40:44 +0100
+
+
+Started GET "/assets/style.css?body=1" for ::1 at 2015-03-04 16:40:44 +0100
+
+
+Started GET "/assets/animate/animate.css?body=1" for ::1 at 2015-03-04 16:40:44 +0100
+
+
+Started GET "/assets/font-awesome.css?body=1" for ::1 at 2015-03-04 16:40:44 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-03-04 16:40:44 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for ::1 at 2015-03-04 16:40:44 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for ::1 at 2015-03-04 16:40:44 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for ::1 at 2015-03-04 16:40:44 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for ::1 at 2015-03-04 16:40:44 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for ::1 at 2015-03-04 16:40:44 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for ::1 at 2015-03-04 16:40:44 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for ::1 at 2015-03-04 16:40:44 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for ::1 at 2015-03-04 16:40:44 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for ::1 at 2015-03-04 16:40:44 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for ::1 at 2015-03-04 16:40:44 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for ::1 at 2015-03-04 16:40:44 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for ::1 at 2015-03-04 16:40:44 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for ::1 at 2015-03-04 16:40:44 +0100
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for ::1 at 2015-03-04 16:40:44 +0100
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for ::1 at 2015-03-04 16:40:44 +0100
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for ::1 at 2015-03-04 16:40:44 +0100
+
+
+Started GET "/assets/accounts.js?body=1" for ::1 at 2015-03-04 16:40:44 +0100
+
+
+Started GET "/assets/inspinia.js?body=1" for ::1 at 2015-03-04 16:40:44 +0100
+
+
+Started GET "/assets/landing.js?body=1" for ::1 at 2015-03-04 16:40:44 +0100
+
+
+Started GET "/assets/transactions.js?body=1" for ::1 at 2015-03-04 16:40:44 +0100
+
+
+Started GET "/assets/users.js?body=1" for ::1 at 2015-03-04 16:40:44 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-03-04 16:40:44 +0100
+
+
+Started GET "/assets/patterns/header-profile.png" for ::1 at 2015-03-04 16:40:44 +0100
+
+
+Started GET "/assets/fontawesome-webfont.woff2?v=4.3.0" for ::1 at 2015-03-04 16:40:44 +0100
+
+
+Started POST "/users/sign_in" for ::1 at 2015-03-04 16:40:46 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/OGSnRAFN7inRCWXadjcOzGc0TAxisU0gGMJFk4pPbq7MoM6shgU8EHE62zCstz1F9bvlFFXZWhx6/TsSvO4WA==", "user"=>{"email"=>"rdbrands@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "rdbrands@gmail.com"]]
+Completed 401 Unauthorized in 3ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/OGSnRAFN7inRCWXadjcOzGc0TAxisU0gGMJFk4pPbq7MoM6shgU8EHE62zCstz1F9bvlFFXZWhx6/TsSvO4WA==", "user"=>{"email"=>"rdbrands@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered users/shared/_links.html.erb (5.3ms)
+  Rendered users/sessions/new.html.erb within layouts/application (9.7ms)
+  Rendered layouts/_navigation.html.erb (0.3ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 105ms (Views: 28.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-03-04 16:40:46 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-03-04 16:40:46 +0100
+
+
+Started GET "/assets/font-awesome.css?body=1" for ::1 at 2015-03-04 16:40:46 +0100
+
+
+Started GET "/assets/animate/animate.css?body=1" for ::1 at 2015-03-04 16:40:46 +0100
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for ::1 at 2015-03-04 16:40:46 +0100
+
+
+Started GET "/assets/style.css?body=1" for ::1 at 2015-03-04 16:40:46 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for ::1 at 2015-03-04 16:40:46 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for ::1 at 2015-03-04 16:40:46 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for ::1 at 2015-03-04 16:40:46 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for ::1 at 2015-03-04 16:40:46 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for ::1 at 2015-03-04 16:40:46 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for ::1 at 2015-03-04 16:40:46 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for ::1 at 2015-03-04 16:40:46 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for ::1 at 2015-03-04 16:40:46 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for ::1 at 2015-03-04 16:40:46 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for ::1 at 2015-03-04 16:40:46 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for ::1 at 2015-03-04 16:40:46 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for ::1 at 2015-03-04 16:40:46 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for ::1 at 2015-03-04 16:40:46 +0100
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for ::1 at 2015-03-04 16:40:46 +0100
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for ::1 at 2015-03-04 16:40:46 +0100
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for ::1 at 2015-03-04 16:40:46 +0100
+
+
+Started GET "/assets/accounts.js?body=1" for ::1 at 2015-03-04 16:40:46 +0100
+
+
+Started GET "/assets/inspinia.js?body=1" for ::1 at 2015-03-04 16:40:46 +0100
+
+
+Started GET "/assets/landing.js?body=1" for ::1 at 2015-03-04 16:40:46 +0100
+
+
+Started GET "/assets/transactions.js?body=1" for ::1 at 2015-03-04 16:40:46 +0100
+
+
+Started GET "/assets/users.js?body=1" for ::1 at 2015-03-04 16:40:46 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-03-04 16:40:46 +0100
+
+
+Started GET "/assets/patterns/header-profile.png" for ::1 at 2015-03-04 16:40:46 +0100
+
+
+Started GET "/users/sign_up" for ::1 at 2015-03-04 16:40:49 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered users/shared/_links.html.erb (6.0ms)
+  Rendered users/registrations/new.html.erb within layouts/application (26.4ms)
+  Rendered layouts/_navigation.html.erb (0.3ms)
+  Rendered layouts/_topnavbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 57ms (Views: 56.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.css?body=1" for ::1 at 2015-03-04 16:40:50 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-03-04 16:40:50 +0100
+
+
+Started GET "/assets/animate/animate.css?body=1" for ::1 at 2015-03-04 16:40:50 +0100
+
+
+Started GET "/assets/font-awesome.css?body=1" for ::1 at 2015-03-04 16:40:50 +0100
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-03-04 16:40:50 +0100
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for ::1 at 2015-03-04 16:40:50 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for ::1 at 2015-03-04 16:40:50 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for ::1 at 2015-03-04 16:40:50 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for ::1 at 2015-03-04 16:40:50 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for ::1 at 2015-03-04 16:40:50 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for ::1 at 2015-03-04 16:40:50 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for ::1 at 2015-03-04 16:40:50 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for ::1 at 2015-03-04 16:40:50 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for ::1 at 2015-03-04 16:40:50 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for ::1 at 2015-03-04 16:40:50 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for ::1 at 2015-03-04 16:40:50 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for ::1 at 2015-03-04 16:40:50 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for ::1 at 2015-03-04 16:40:50 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for ::1 at 2015-03-04 16:40:50 +0100
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for ::1 at 2015-03-04 16:40:50 +0100
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for ::1 at 2015-03-04 16:40:50 +0100
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for ::1 at 2015-03-04 16:40:50 +0100
+
+
+Started GET "/assets/accounts.js?body=1" for ::1 at 2015-03-04 16:40:50 +0100
+
+
+Started GET "/assets/inspinia.js?body=1" for ::1 at 2015-03-04 16:40:50 +0100
+
+
+Started GET "/assets/landing.js?body=1" for ::1 at 2015-03-04 16:40:50 +0100
+
+
+Started GET "/assets/transactions.js?body=1" for ::1 at 2015-03-04 16:40:50 +0100
+
+
+Started GET "/assets/users.js?body=1" for ::1 at 2015-03-04 16:40:50 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-03-04 16:40:50 +0100
+
+
+Started GET "/assets/patterns/header-profile.png" for ::1 at 2015-03-04 16:40:50 +0100
+
+
+Started GET "/" for ::1 at 2015-03-04 16:44:46 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by LandingController#landing as HTML
+Completed 401 Unauthorized in 16ms
+
+
+Started GET "/users/sign_in" for ::1 at 2015-03-04 16:44:46 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendered users/shared/_links.html.erb (6.9ms)
+  Rendered users/sessions/new.html.erb within layouts/application (27.7ms)
+  Rendered layouts/_navigation.html.erb (0.9ms)
+  Rendered layouts/_topnavbar.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 165ms (Views: 150.5ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-03-04 16:44:47 +0100
+
+
+Started GET "/assets/font-awesome.css?body=1" for ::1 at 2015-03-04 16:44:47 +0100
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for ::1 at 2015-03-04 16:44:47 +0100
+
+
+Started GET "/assets/animate/animate.css?body=1" for ::1 at 2015-03-04 16:44:47 +0100
+
+
+Started GET "/assets/style.css?body=1" for ::1 at 2015-03-04 16:44:47 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-03-04 16:44:47 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for ::1 at 2015-03-04 16:44:47 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for ::1 at 2015-03-04 16:44:47 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for ::1 at 2015-03-04 16:44:47 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for ::1 at 2015-03-04 16:44:47 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for ::1 at 2015-03-04 16:44:47 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for ::1 at 2015-03-04 16:44:47 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for ::1 at 2015-03-04 16:44:47 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for ::1 at 2015-03-04 16:44:47 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for ::1 at 2015-03-04 16:44:47 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for ::1 at 2015-03-04 16:44:47 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for ::1 at 2015-03-04 16:44:47 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for ::1 at 2015-03-04 16:44:47 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for ::1 at 2015-03-04 16:44:47 +0100
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for ::1 at 2015-03-04 16:44:47 +0100
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for ::1 at 2015-03-04 16:44:47 +0100
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for ::1 at 2015-03-04 16:44:47 +0100
+
+
+Started GET "/assets/accounts.js?body=1" for ::1 at 2015-03-04 16:44:47 +0100
+
+
+Started GET "/assets/inspinia.js?body=1" for ::1 at 2015-03-04 16:44:47 +0100
+
+
+Started GET "/assets/landing.js?body=1" for ::1 at 2015-03-04 16:44:47 +0100
+
+
+Started GET "/assets/transactions.js?body=1" for ::1 at 2015-03-04 16:44:47 +0100
+
+
+Started GET "/assets/users.js?body=1" for ::1 at 2015-03-04 16:44:47 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-03-04 16:44:47 +0100
+
+
+Started GET "/assets/patterns/header-profile.png" for ::1 at 2015-03-04 16:44:47 +0100
+
+
+Started GET "/users/sign_in" for ::1 at 2015-03-04 16:44:48 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendered users/shared/_links.html.erb (3.5ms)
+  Rendered users/sessions/new.html.erb within layouts/application (8.4ms)
+  Rendered layouts/_navigation.html.erb (1.5ms)
+  Rendered layouts/_topnavbar.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 53ms (Views: 51.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-03-04 16:44:48 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-03-04 16:44:48 +0100
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for ::1 at 2015-03-04 16:44:48 +0100
+
+
+Started GET "/assets/style.css?body=1" for ::1 at 2015-03-04 16:44:48 +0100
+
+
+Started GET "/assets/animate/animate.css?body=1" for ::1 at 2015-03-04 16:44:48 +0100
+
+
+Started GET "/assets/font-awesome.css?body=1" for ::1 at 2015-03-04 16:44:48 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for ::1 at 2015-03-04 16:44:48 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for ::1 at 2015-03-04 16:44:48 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for ::1 at 2015-03-04 16:44:48 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for ::1 at 2015-03-04 16:44:48 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for ::1 at 2015-03-04 16:44:48 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for ::1 at 2015-03-04 16:44:48 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for ::1 at 2015-03-04 16:44:48 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for ::1 at 2015-03-04 16:44:48 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for ::1 at 2015-03-04 16:44:48 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for ::1 at 2015-03-04 16:44:48 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for ::1 at 2015-03-04 16:44:48 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for ::1 at 2015-03-04 16:44:48 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for ::1 at 2015-03-04 16:44:48 +0100
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for ::1 at 2015-03-04 16:44:48 +0100
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for ::1 at 2015-03-04 16:44:48 +0100
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for ::1 at 2015-03-04 16:44:48 +0100
+
+
+Started GET "/assets/accounts.js?body=1" for ::1 at 2015-03-04 16:44:48 +0100
+
+
+Started GET "/assets/inspinia.js?body=1" for ::1 at 2015-03-04 16:44:48 +0100
+
+
+Started GET "/assets/landing.js?body=1" for ::1 at 2015-03-04 16:44:48 +0100
+
+
+Started GET "/assets/transactions.js?body=1" for ::1 at 2015-03-04 16:44:48 +0100
+
+
+Started GET "/assets/users.js?body=1" for ::1 at 2015-03-04 16:44:48 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-03-04 16:44:48 +0100
+
+
+Started GET "/assets/patterns/header-profile.png" for ::1 at 2015-03-04 16:44:48 +0100
+
+
+Started GET "/" for ::1 at 2015-03-04 16:44:50 +0100
+Processing by LandingController#landing as HTML
+Completed 401 Unauthorized in 1ms
+
+
+Started GET "/users/sign_in" for ::1 at 2015-03-04 16:44:50 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendered users/shared/_links.html.erb (8.1ms)
+  Rendered users/sessions/new.html.erb within layouts/application (14.1ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+  Rendered layouts/_topnavbar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 44ms (Views: 42.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-03-04 16:44:50 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-03-04 16:44:50 +0100
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for ::1 at 2015-03-04 16:44:50 +0100
+
+
+Started GET "/assets/style.css?body=1" for ::1 at 2015-03-04 16:44:50 +0100
+
+
+Started GET "/assets/animate/animate.css?body=1" for ::1 at 2015-03-04 16:44:50 +0100
+
+
+Started GET "/assets/font-awesome.css?body=1" for ::1 at 2015-03-04 16:44:50 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for ::1 at 2015-03-04 16:44:50 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for ::1 at 2015-03-04 16:44:50 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for ::1 at 2015-03-04 16:44:50 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for ::1 at 2015-03-04 16:44:50 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for ::1 at 2015-03-04 16:44:50 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for ::1 at 2015-03-04 16:44:50 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for ::1 at 2015-03-04 16:44:50 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for ::1 at 2015-03-04 16:44:50 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for ::1 at 2015-03-04 16:44:50 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for ::1 at 2015-03-04 16:44:50 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for ::1 at 2015-03-04 16:44:50 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for ::1 at 2015-03-04 16:44:50 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for ::1 at 2015-03-04 16:44:50 +0100
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for ::1 at 2015-03-04 16:44:50 +0100
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for ::1 at 2015-03-04 16:44:50 +0100
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for ::1 at 2015-03-04 16:44:50 +0100
+
+
+Started GET "/assets/accounts.js?body=1" for ::1 at 2015-03-04 16:44:50 +0100
+
+
+Started GET "/assets/inspinia.js?body=1" for ::1 at 2015-03-04 16:44:50 +0100
+
+
+Started GET "/assets/landing.js?body=1" for ::1 at 2015-03-04 16:44:50 +0100
+
+
+Started GET "/assets/transactions.js?body=1" for ::1 at 2015-03-04 16:44:50 +0100
+
+
+Started GET "/assets/users.js?body=1" for ::1 at 2015-03-04 16:44:50 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-03-04 16:44:50 +0100
+
+
+Started GET "/assets/patterns/header-profile.png" for ::1 at 2015-03-04 16:44:50 +0100
+
+
+Started GET "/landing/signup" for ::1 at 2015-03-04 16:45:09 +0100
+Processing by LandingController#signup as HTML
+Completed 401 Unauthorized in 1ms
+
+
+Started GET "/users/sign_in" for ::1 at 2015-03-04 16:45:09 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendered users/shared/_links.html.erb (4.4ms)
+  Rendered users/sessions/new.html.erb within layouts/application (17.2ms)
+  Rendered layouts/_navigation.html.erb (0.3ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 42ms (Views: 41.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/animate/animate.css?body=1" for ::1 at 2015-03-04 16:45:10 +0100
+
+
+Started GET "/assets/font-awesome.css?body=1" for ::1 at 2015-03-04 16:45:10 +0100
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-03-04 16:45:10 +0100
+
+
+Started GET "/assets/style.css?body=1" for ::1 at 2015-03-04 16:45:10 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for ::1 at 2015-03-04 16:45:10 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-03-04 16:45:10 +0100
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for ::1 at 2015-03-04 16:45:10 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for ::1 at 2015-03-04 16:45:10 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for ::1 at 2015-03-04 16:45:10 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for ::1 at 2015-03-04 16:45:10 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for ::1 at 2015-03-04 16:45:10 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for ::1 at 2015-03-04 16:45:10 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for ::1 at 2015-03-04 16:45:10 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for ::1 at 2015-03-04 16:45:10 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for ::1 at 2015-03-04 16:45:10 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for ::1 at 2015-03-04 16:45:10 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for ::1 at 2015-03-04 16:45:10 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for ::1 at 2015-03-04 16:45:10 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for ::1 at 2015-03-04 16:45:10 +0100
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for ::1 at 2015-03-04 16:45:10 +0100
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for ::1 at 2015-03-04 16:45:10 +0100
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for ::1 at 2015-03-04 16:45:10 +0100
+
+
+Started GET "/assets/accounts.js?body=1" for ::1 at 2015-03-04 16:45:10 +0100
+
+
+Started GET "/assets/inspinia.js?body=1" for ::1 at 2015-03-04 16:45:10 +0100
+
+
+Started GET "/assets/landing.js?body=1" for ::1 at 2015-03-04 16:45:10 +0100
+
+
+Started GET "/assets/transactions.js?body=1" for ::1 at 2015-03-04 16:45:10 +0100
+
+
+Started GET "/assets/users.js?body=1" for ::1 at 2015-03-04 16:45:10 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-03-04 16:45:10 +0100
+
+
+Started GET "/assets/patterns/header-profile.png" for ::1 at 2015-03-04 16:45:10 +0100
+
+
+Started GET "/home/index" for ::1 at 2015-03-04 16:45:47 +0100
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 1ms
+
+
+Started GET "/users/sign_in" for ::1 at 2015-03-04 16:45:47 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendered users/shared/_links.html.erb (6.6ms)
+  Rendered users/sessions/new.html.erb within layouts/application (14.7ms)
+  Rendered layouts/_navigation.html.erb (0.3ms)
+  Rendered layouts/_topnavbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 38ms (Views: 36.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for ::1 at 2015-03-04 16:45:47 +0100
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-03-04 16:45:47 +0100
+
+
+Started GET "/assets/style.css?body=1" for ::1 at 2015-03-04 16:45:47 +0100
+
+
+Started GET "/assets/animate/animate.css?body=1" for ::1 at 2015-03-04 16:45:47 +0100
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for ::1 at 2015-03-04 16:45:47 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for ::1 at 2015-03-04 16:45:48 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-03-04 16:45:48 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for ::1 at 2015-03-04 16:45:48 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for ::1 at 2015-03-04 16:45:48 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for ::1 at 2015-03-04 16:45:48 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for ::1 at 2015-03-04 16:45:48 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for ::1 at 2015-03-04 16:45:48 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for ::1 at 2015-03-04 16:45:48 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for ::1 at 2015-03-04 16:45:48 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for ::1 at 2015-03-04 16:45:48 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for ::1 at 2015-03-04 16:45:48 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for ::1 at 2015-03-04 16:45:48 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for ::1 at 2015-03-04 16:45:48 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for ::1 at 2015-03-04 16:45:48 +0100
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for ::1 at 2015-03-04 16:45:48 +0100
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for ::1 at 2015-03-04 16:45:48 +0100
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for ::1 at 2015-03-04 16:45:48 +0100
+
+
+Started GET "/assets/accounts.js?body=1" for ::1 at 2015-03-04 16:45:48 +0100
+
+
+Started GET "/assets/inspinia.js?body=1" for ::1 at 2015-03-04 16:45:48 +0100
+
+
+Started GET "/assets/landing.js?body=1" for ::1 at 2015-03-04 16:45:48 +0100
+
+
+Started GET "/assets/transactions.js?body=1" for ::1 at 2015-03-04 16:45:48 +0100
+
+
+Started GET "/assets/users.js?body=1" for ::1 at 2015-03-04 16:45:48 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-03-04 16:45:48 +0100
+
+
+Started GET "/assets/patterns/header-profile.png" for ::1 at 2015-03-04 16:45:48 +0100
+
+
+Started GET "/home/minor" for ::1 at 2015-03-04 16:45:48 +0100
+Processing by HomeController#minor as HTML
+Completed 401 Unauthorized in 1ms
+
+
+Started GET "/users/sign_in" for ::1 at 2015-03-04 16:45:48 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendered users/shared/_links.html.erb (8.3ms)
+  Rendered users/sessions/new.html.erb within layouts/application (18.2ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+  Rendered layouts/_topnavbar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 48ms (Views: 45.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-03-04 16:45:48 +0100
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for ::1 at 2015-03-04 16:45:48 +0100
+
+
+Started GET "/assets/font-awesome.css?body=1" for ::1 at 2015-03-04 16:45:48 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-03-04 16:45:48 +0100
+
+
+Started GET "/assets/style.css?body=1" for ::1 at 2015-03-04 16:45:48 +0100
+
+
+Started GET "/assets/animate/animate.css?body=1" for ::1 at 2015-03-04 16:45:48 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for ::1 at 2015-03-04 16:45:48 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for ::1 at 2015-03-04 16:45:48 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for ::1 at 2015-03-04 16:45:48 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for ::1 at 2015-03-04 16:45:48 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for ::1 at 2015-03-04 16:45:48 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for ::1 at 2015-03-04 16:45:48 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for ::1 at 2015-03-04 16:45:48 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for ::1 at 2015-03-04 16:45:48 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for ::1 at 2015-03-04 16:45:48 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for ::1 at 2015-03-04 16:45:48 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for ::1 at 2015-03-04 16:45:48 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for ::1 at 2015-03-04 16:45:48 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for ::1 at 2015-03-04 16:45:48 +0100
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for ::1 at 2015-03-04 16:45:48 +0100
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for ::1 at 2015-03-04 16:45:48 +0100
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for ::1 at 2015-03-04 16:45:48 +0100
+
+
+Started GET "/assets/accounts.js?body=1" for ::1 at 2015-03-04 16:45:48 +0100
+
+
+Started GET "/assets/inspinia.js?body=1" for ::1 at 2015-03-04 16:45:48 +0100
+
+
+Started GET "/assets/landing.js?body=1" for ::1 at 2015-03-04 16:45:48 +0100
+
+
+Started GET "/assets/transactions.js?body=1" for ::1 at 2015-03-04 16:45:48 +0100
+
+
+Started GET "/assets/users.js?body=1" for ::1 at 2015-03-04 16:45:48 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-03-04 16:45:48 +0100
+
+
+Started GET "/assets/patterns/header-profile.png" for ::1 at 2015-03-04 16:45:49 +0100
+
+
+Started GET "/users/sign_in" for ::1 at 2015-03-04 16:45:51 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendered users/shared/_links.html.erb (4.7ms)
+  Rendered users/sessions/new.html.erb within layouts/application (12.4ms)
+  Rendered layouts/_navigation.html.erb (0.3ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 34ms (Views: 33.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-03-04 16:45:51 +0100
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for ::1 at 2015-03-04 16:45:51 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-03-04 16:45:51 +0100
+
+
+Started GET "/assets/style.css?body=1" for ::1 at 2015-03-04 16:45:51 +0100
+
+
+Started GET "/assets/animate/animate.css?body=1" for ::1 at 2015-03-04 16:45:51 +0100
+
+
+Started GET "/assets/font-awesome.css?body=1" for ::1 at 2015-03-04 16:45:51 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for ::1 at 2015-03-04 16:45:51 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for ::1 at 2015-03-04 16:45:51 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for ::1 at 2015-03-04 16:45:51 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for ::1 at 2015-03-04 16:45:51 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for ::1 at 2015-03-04 16:45:51 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for ::1 at 2015-03-04 16:45:51 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for ::1 at 2015-03-04 16:45:51 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for ::1 at 2015-03-04 16:45:51 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for ::1 at 2015-03-04 16:45:51 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for ::1 at 2015-03-04 16:45:51 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for ::1 at 2015-03-04 16:45:51 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for ::1 at 2015-03-04 16:45:51 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for ::1 at 2015-03-04 16:45:51 +0100
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for ::1 at 2015-03-04 16:45:51 +0100
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for ::1 at 2015-03-04 16:45:51 +0100
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for ::1 at 2015-03-04 16:45:51 +0100
+
+
+Started GET "/assets/accounts.js?body=1" for ::1 at 2015-03-04 16:45:51 +0100
+
+
+Started GET "/assets/inspinia.js?body=1" for ::1 at 2015-03-04 16:45:51 +0100
+
+
+Started GET "/assets/landing.js?body=1" for ::1 at 2015-03-04 16:45:51 +0100
+
+
+Started GET "/assets/transactions.js?body=1" for ::1 at 2015-03-04 16:45:51 +0100
+
+
+Started GET "/assets/users.js?body=1" for ::1 at 2015-03-04 16:45:51 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-03-04 16:45:51 +0100
+
+
+Started GET "/assets/patterns/header-profile.png" for ::1 at 2015-03-04 16:45:51 +0100
+
+
+Started POST "/users/sign_in" for ::1 at 2015-03-04 16:45:58 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jzmbGw8Meq3MRnOQTlCItldzPYXr0PAKANRVKEzDnRbI6oq8rRFZ5SrGvWvlOoh4cTkDIYsNUFbxXKjSSBkY9A==", "user"=>{"email"=>"rdbrands@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (1.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["email", "rdbrands@gmail.com"]]
+Completed 401 Unauthorized in 11ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jzmbGw8Meq3MRnOQTlCItldzPYXr0PAKANRVKEzDnRbI6oq8rRFZ5SrGvWvlOoh4cTkDIYsNUFbxXKjSSBkY9A==", "user"=>{"email"=>"rdbrands@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered users/shared/_links.html.erb (5.4ms)
+  Rendered users/sessions/new.html.erb within layouts/application (10.4ms)
+  Rendered layouts/_navigation.html.erb (0.3ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 130ms (Views: 37.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-03-04 16:45:58 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-03-04 16:45:58 +0100
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for ::1 at 2015-03-04 16:45:58 +0100
+
+
+Started GET "/assets/style.css?body=1" for ::1 at 2015-03-04 16:45:58 +0100
+
+
+Started GET "/assets/animate/animate.css?body=1" for ::1 at 2015-03-04 16:45:58 +0100
+
+
+Started GET "/assets/font-awesome.css?body=1" for ::1 at 2015-03-04 16:45:58 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for ::1 at 2015-03-04 16:45:58 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for ::1 at 2015-03-04 16:45:58 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for ::1 at 2015-03-04 16:45:58 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for ::1 at 2015-03-04 16:45:58 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for ::1 at 2015-03-04 16:45:58 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for ::1 at 2015-03-04 16:45:58 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for ::1 at 2015-03-04 16:45:58 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for ::1 at 2015-03-04 16:45:58 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for ::1 at 2015-03-04 16:45:58 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for ::1 at 2015-03-04 16:45:58 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for ::1 at 2015-03-04 16:45:58 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for ::1 at 2015-03-04 16:45:58 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for ::1 at 2015-03-04 16:45:58 +0100
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for ::1 at 2015-03-04 16:45:58 +0100
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for ::1 at 2015-03-04 16:45:58 +0100
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for ::1 at 2015-03-04 16:45:58 +0100
+
+
+Started GET "/assets/accounts.js?body=1" for ::1 at 2015-03-04 16:45:58 +0100
+
+
+Started GET "/assets/inspinia.js?body=1" for ::1 at 2015-03-04 16:45:58 +0100
+
+
+Started GET "/assets/landing.js?body=1" for ::1 at 2015-03-04 16:45:58 +0100
+
+
+Started GET "/assets/transactions.js?body=1" for ::1 at 2015-03-04 16:45:58 +0100
+
+
+Started GET "/assets/users.js?body=1" for ::1 at 2015-03-04 16:45:58 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-03-04 16:45:58 +0100
+
+
+Started GET "/assets/patterns/header-profile.png" for ::1 at 2015-03-04 16:45:58 +0100
+
+
+Started GET "/users/sign_up" for ::1 at 2015-03-04 16:46:00 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered users/shared/_links.html.erb (3.5ms)
+  Rendered users/registrations/new.html.erb within layouts/application (13.3ms)
+  Rendered layouts/_navigation.html.erb (0.3ms)
+  Rendered layouts/_topnavbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 42ms (Views: 40.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-03-04 16:46:00 +0100
+
+
+Started GET "/assets/font-awesome.css?body=1" for ::1 at 2015-03-04 16:46:00 +0100
+
+
+Started GET "/assets/animate/animate.css?body=1" for ::1 at 2015-03-04 16:46:00 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-03-04 16:46:00 +0100
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for ::1 at 2015-03-04 16:46:00 +0100
+
+
+Started GET "/assets/style.css?body=1" for ::1 at 2015-03-04 16:46:00 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for ::1 at 2015-03-04 16:46:00 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for ::1 at 2015-03-04 16:46:00 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for ::1 at 2015-03-04 16:46:00 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for ::1 at 2015-03-04 16:46:00 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for ::1 at 2015-03-04 16:46:00 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for ::1 at 2015-03-04 16:46:00 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for ::1 at 2015-03-04 16:46:00 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for ::1 at 2015-03-04 16:46:00 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for ::1 at 2015-03-04 16:46:00 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for ::1 at 2015-03-04 16:46:00 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for ::1 at 2015-03-04 16:46:00 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for ::1 at 2015-03-04 16:46:00 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for ::1 at 2015-03-04 16:46:00 +0100
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for ::1 at 2015-03-04 16:46:00 +0100
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for ::1 at 2015-03-04 16:46:00 +0100
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for ::1 at 2015-03-04 16:46:00 +0100
+
+
+Started GET "/assets/accounts.js?body=1" for ::1 at 2015-03-04 16:46:00 +0100
+
+
+Started GET "/assets/inspinia.js?body=1" for ::1 at 2015-03-04 16:46:00 +0100
+
+
+Started GET "/assets/landing.js?body=1" for ::1 at 2015-03-04 16:46:00 +0100
+
+
+Started GET "/assets/transactions.js?body=1" for ::1 at 2015-03-04 16:46:00 +0100
+
+
+Started GET "/assets/users.js?body=1" for ::1 at 2015-03-04 16:46:00 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-03-04 16:46:00 +0100
+
+
+Started GET "/assets/patterns/header-profile.png" for ::1 at 2015-03-04 16:46:00 +0100
+
+
+Started POST "/users" for ::1 at 2015-03-04 16:46:32 +0100
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"B5fnFi4vOB9LV8G7QWR7K/1yEQ0zNWpzjvfq2vCOwEVARPaxjDIbV63XD0DqDnvl2zgvqVPoyi9/fxcg9FRFpw==", "user"=>{"first_name"=>"Ruben", "last_name"=>"Brands", "salutation"=>"Mr.", "phone_number"=>"0626943111", "user_type"=>"Citizen", "vat_number"=>"12345678", "email"=>"rdbrands@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Unpermitted parameter: password_confirmation
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'rdbrands@gmail.com' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "first_name", "last_name", "salutation", "phone_number", "user_type", "vat_number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["email", "rdbrands@gmail.com"], ["encrypted_password", "$2a$10$2EQ5KFLnD2WsSt7wTe7DnOQqm86QEs9duvqFNzMDsIjEoRpeRhNAq"], ["first_name", "Ruben"], ["last_name", "Brands"], ["salutation", "Mr."], ["phone_number", "0626943111"], ["user_type", "Citizen"], ["vat_number", "12345678"], ["created_at", "2015-03-04 15:46:32.583509"], ["updated_at", "2015-03-04 15:46:32.583509"]]
+  [1m[35m (0.9ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "last_sign_in_at" = $1, "current_sign_in_at" = $2, "last_sign_in_ip" = $3, "current_sign_in_ip" = $4, "sign_in_count" = $5, "updated_at" = $6 WHERE "users"."id" = $7  [["last_sign_in_at", "2015-03-04 15:46:32.587145"], ["current_sign_in_at", "2015-03-04 15:46:32.587145"], ["last_sign_in_ip", "::1/128"], ["current_sign_in_ip", "::1/128"], ["sign_in_count", 1], ["updated_at", "2015-03-04 15:46:32.588460"], ["id", 3]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/home/index
+Completed 302 Found in 104ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/home/index" for ::1 at 2015-03-04 16:46:32 +0100
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mAccount Load (0.3ms)[0m  [1mSELECT  "accounts".* FROM "accounts" WHERE "accounts"."user_id" = $1 LIMIT 1[0m  [["user_id", 3]]
+Completed 500 Internal Server Error in 20ms
+
+NoMethodError (undefined method `balance' for nil:NilClass):
+  app/controllers/home_controller.rb:3:in `index'
+
+
+  Rendered /Users/rdbrands/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.5ms)
+  Rendered /Users/rdbrands/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/rdbrands/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/rdbrands/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (55.1ms)
+
+
+Started GET "/home/index" for ::1 at 2015-03-04 16:46:40 +0100
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mAccount Load (0.2ms)[0m  [1mSELECT  "accounts".* FROM "accounts" WHERE "accounts"."user_id" = $1 LIMIT 1[0m  [["user_id", 3]]
+Completed 500 Internal Server Error in 3ms
+
+NoMethodError (undefined method `balance' for nil:NilClass):
+  app/controllers/home_controller.rb:3:in `index'
+
+
+  Rendered /Users/rdbrands/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.5ms)
+  Rendered /Users/rdbrands/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/rdbrands/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/rdbrands/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (57.9ms)
+
+
+Started GET "/" for ::1 at 2015-03-04 16:46:44 +0100
+Processing by LandingController#landing as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  Rendered landing/landing.html.erb (19.7ms)
+Completed 200 OK in 28ms (Views: 25.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-03-04 16:46:44 +0100
+
+
+Started GET "/assets/font-awesome.css?body=1" for ::1 at 2015-03-04 16:46:44 +0100
+
+
+Started GET "/assets/animate/animate.css?body=1" for ::1 at 2015-03-04 16:46:44 +0100
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for ::1 at 2015-03-04 16:46:44 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-03-04 16:46:44 +0100
+
+
+Started GET "/assets/style.css?body=1" for ::1 at 2015-03-04 16:46:44 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for ::1 at 2015-03-04 16:46:44 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for ::1 at 2015-03-04 16:46:44 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for ::1 at 2015-03-04 16:46:44 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for ::1 at 2015-03-04 16:46:44 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for ::1 at 2015-03-04 16:46:44 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for ::1 at 2015-03-04 16:46:44 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for ::1 at 2015-03-04 16:46:44 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for ::1 at 2015-03-04 16:46:44 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for ::1 at 2015-03-04 16:46:44 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for ::1 at 2015-03-04 16:46:44 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for ::1 at 2015-03-04 16:46:44 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for ::1 at 2015-03-04 16:46:44 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for ::1 at 2015-03-04 16:46:44 +0100
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for ::1 at 2015-03-04 16:46:44 +0100
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for ::1 at 2015-03-04 16:46:44 +0100
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for ::1 at 2015-03-04 16:46:44 +0100
+
+
+Started GET "/assets/accounts.js?body=1" for ::1 at 2015-03-04 16:46:44 +0100
+
+
+Started GET "/assets/inspinia.js?body=1" for ::1 at 2015-03-04 16:46:44 +0100
+
+
+Started GET "/assets/landing.js?body=1" for ::1 at 2015-03-04 16:46:44 +0100
+
+
+Started GET "/assets/transactions.js?body=1" for ::1 at 2015-03-04 16:46:44 +0100
+
+
+Started GET "/assets/users.js?body=1" for ::1 at 2015-03-04 16:46:44 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-03-04 16:46:44 +0100
+
+
+Started POST "/users/sign_in" for ::1 at 2015-03-04 16:47:04 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ThbN0ZgP7IZ2kuTA8Gx33RD22tKXwu3d/Ub5ug35KBwJxdx2OhLPzpASKjtbBncTNrzkdvcfTYEMzgRACSOt/g==", "user"=>{"email"=>"rdbrands@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+Redirected to http://localhost:3000/home/index
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/home/index" for ::1 at 2015-03-04 16:47:04 +0100
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mAccount Load (0.4ms)[0m  [1mSELECT  "accounts".* FROM "accounts" WHERE "accounts"."user_id" = $1 LIMIT 1[0m  [["user_id", 3]]
+Completed 500 Internal Server Error in 4ms
+
+NoMethodError (undefined method `balance' for nil:NilClass):
+  app/controllers/home_controller.rb:3:in `index'
+
+
+  Rendered /Users/rdbrands/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.9ms)
+  Rendered /Users/rdbrands/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/rdbrands/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/rdbrands/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (62.3ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (2.1ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'accounts'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (1.5ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'transactions'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (1.5ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+
+
+Started GET "/" for ::1 at 2015-03-04 16:56:29 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by LandingController#landing as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  Rendered landing/landing.html.erb (398.6ms)
+Completed 200 OK in 436ms (Views: 406.2ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-03-04 16:56:30 +0100
+
+
+Started GET "/assets/font-awesome.css?body=1" for ::1 at 2015-03-04 16:56:30 +0100
+
+
+Started GET "/assets/animate/animate.css?body=1" for ::1 at 2015-03-04 16:56:30 +0100
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for ::1 at 2015-03-04 16:56:30 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-03-04 16:56:30 +0100
+
+
+Started GET "/assets/style.css?body=1" for ::1 at 2015-03-04 16:56:30 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for ::1 at 2015-03-04 16:56:30 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for ::1 at 2015-03-04 16:56:30 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for ::1 at 2015-03-04 16:56:30 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for ::1 at 2015-03-04 16:56:30 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for ::1 at 2015-03-04 16:56:30 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for ::1 at 2015-03-04 16:56:30 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for ::1 at 2015-03-04 16:56:30 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for ::1 at 2015-03-04 16:56:30 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for ::1 at 2015-03-04 16:56:30 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for ::1 at 2015-03-04 16:56:30 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for ::1 at 2015-03-04 16:56:30 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for ::1 at 2015-03-04 16:56:30 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for ::1 at 2015-03-04 16:56:30 +0100
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for ::1 at 2015-03-04 16:56:30 +0100
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for ::1 at 2015-03-04 16:56:30 +0100
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for ::1 at 2015-03-04 16:56:30 +0100
+
+
+Started GET "/assets/accounts.js?body=1" for ::1 at 2015-03-04 16:56:30 +0100
+
+
+Started GET "/assets/inspinia.js?body=1" for ::1 at 2015-03-04 16:56:30 +0100
+
+
+Started GET "/assets/landing.js?body=1" for ::1 at 2015-03-04 16:56:30 +0100
+
+
+Started GET "/assets/transactions.js?body=1" for ::1 at 2015-03-04 16:56:30 +0100
+
+
+Started GET "/assets/users.js?body=1" for ::1 at 2015-03-04 16:56:30 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-03-04 16:56:30 +0100
