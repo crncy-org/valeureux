@@ -1,4 +1,5 @@
 Myapp::Application.routes.draw do
+
   devise_for :users
 
 
@@ -6,13 +7,20 @@ Myapp::Application.routes.draw do
 
   resources :accounts, :only => [:index, :new, :create, :show]
 
+  root to: 'landing#landing'
+
+  get "landing/signup"
+
   get "home/index"
   get "home/minor"
+
+  end
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-root to: 'home#index'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
@@ -61,4 +69,5 @@ root to: 'home#index'
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-end
+
+
