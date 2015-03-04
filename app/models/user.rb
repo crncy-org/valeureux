@@ -9,6 +9,10 @@ class User < ActiveRecord::Base
   #   User.self.account.transactions
   # end
 
+  def full_name
+    "#{first_name}" + " " + "#{last_name}"
+  end
+
 end
 
 
