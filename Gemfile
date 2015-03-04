@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 ruby '2.2.0'
 gem 'rails_12factor', group: :production
 gem 'puma',           group: :production
-gem 'faker',          group: :development
+gem 'faker'
 gem 'devise'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

@@ -5,6 +5,7 @@ class ApplicationController < ActionController::Base
 
   # Zelf toegevoegd
   before_action :configure_permitted_parameters, if: :devise_controller?
+  before_action :authenticate_user!
 
 
   # added om devise te gebruiken op landingpage

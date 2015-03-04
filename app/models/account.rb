@@ -2,8 +2,23 @@ class Account < ActiveRecord::Base
   before_save :generate_unique_account_number
   belongs_to :user
 
+  has_many :expenses, class_name: 'Transaction', foreign_key: "sender_id"
+  has_many :incomes,  class_name: 'Transaction', foreign_key: "receiver_id"
+
+  def current_user_account
+    Account.find_by_user(current_user)
+  end
+
   def amount
     return 2000
+  end
+
+  def transactions
+    expenses + incomes
+  end
+
+  def balance
+    incomes.map(&:amount).sum - expenses.map(&:amount).sum
   end
 
   def generate_unique_account_number

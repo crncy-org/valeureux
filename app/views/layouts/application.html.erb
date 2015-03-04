@@ -28,8 +28,20 @@
             <%= render 'layouts/topnavbar' %>
 
             <!-- Volgende notices toegevoegd voor devise, kunnen later verwijdert wanneer dubbel -->
-           <p class="notice"><%= notice %></p>
-           <p class="alert"><%= alert %></p>
+
+            <% if notice %>
+           <div class="alert alert-success alert-dismissable">
+              <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>
+              <p class="notice"><%= notice %></p>
+           </div>
+           <% end %>
+            <% if alert %>
+            <div class="alert alert-success alert-dismissable">
+              <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>
+              <p class="notice"><%= alert %></p>
+           </div>
+           <% end %>
+
 
             <!-- Main view  -->
             <%= yield %>
