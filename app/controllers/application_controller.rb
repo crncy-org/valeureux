@@ -29,12 +29,18 @@ class ApplicationController < ActionController::Base
   protected
 
   def configure_permitted_parameters
-    devise_parameter_sanitizer.for(:sign_up) { |u| u.permit(:email, :password, :first_name, :last_name, :salutation, :phone_number, :user_type, :vat_number) }
-    devise_parameter_sanitizer.for(:account_update) { |u| u.permit(:email, :current_password, :first_name, :last_name, :salutation, :phone_number, :user_type, :vat_number) }
+    devise_parameter_sanitizer.for(:sign_up) { |u| u.permit(:email, :password, :first_name, :last_name, :salutation, :phone_number, :user_type, :vat_number, :picture) }
+    devise_parameter_sanitizer.for(:account_update) { |u| u.permit(:email, :current_password, :first_name, :last_name, :salutation, :phone_number, :user_type, :vat_number, :picture) }
   end
 
    def after_sign_in_path_for(user)
     home_index_path
   end
+
+  #werkt niet... Wat je wilt is dat je na editen gewoon in activiteit komt en niet op sign-up page.
+
+  # def after_update_path_for(user)
+  #   home_index_path
+  # end
 end
 
