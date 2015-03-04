@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valeureux</title>
+
+    <!-- Main css styles -->
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+
+    <!-- Main javascript files -->
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+
+</head>
+  <body>
+    <div class="middle-box text-center loginscreen  animated fadeInDown">
+      <div>
+        <div>
+          <h1 class="logo-name">V</h1>
+        </div>
+          <h3>Welcome to Valeureux</h3>
+          <p>Check out our list of participating shop owners!</p>
+          <p>
+            <ul style="list-style: none;">
+              <li><a href="http://valeureux.be/champs-libres/">Champs Libres</a></li>
+              <li><a href="http://valeureux.be/la-bourrache/">La Bourrache</a></li>
+              <li><a href="http://valeureux.be/vive-vin/">Vive vin</a></li>
+              <li><a href="http://valeureux.be/centre-liegeois-du-beau-mur/">Centre Liegeouis</a></li>
+              <li><a href="http://valeureux.be/babibar/">Babibar</a></li>
+              <li><a href="http://valeureux.be/tricotea/">Tricotea</a></li>
+            </ul>
+          </p>
+          <p>
+            <small>Check out<a href="http://valeureux.be/les-commerces/"> Valeureux.be </a> for a list of all the shop owners</small>
+          </p>
+              <div class="form-group">
+                <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+                <%= devise_error_messages! %>
+                <div class="field">
+                  <%= f.label :email %><br />
+                  <%= f.email_field :email, autofocus: true, class: "form-control", placeholder: "i.e. example@valeureux.com" %>
+                </div>
+                <div class="field">
+                  <%= f.label :password %><br />
+                  <%= f.password_field :password, autocomplete: "off", class: "form-control"%>
+                </div>
+                  <% if devise_mapping.rememberable? -%>
+                <div class="field">
+                    <%= f.check_box :remember_me %>
+                    <%= f.label :remember_me %>
+                </div>
+                  <% end -%>
+                <div class="actions">
+                  <%= f.submit "Log in", class: "btn btn-primary block full-width m-b" %>
+                </div>
+                <% end %>
+              </div>
+          </div>
+        </form>
+        <p><%= link_to "Sign up", landing_signup_path %></p>
+        <p><%= link_to "Forgot your password?", new_password_path(resource_name) %></p>
+      </div>
+</body>
+</html>
