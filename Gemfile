@@ -7,6 +7,9 @@ gem 'faker',          group: :development
 gem 'devise'
 gem 'figaro'
 
+# For active-admin panel
+gem 'activeadmin', git: 'https://github.com/activeadmin/activeadmin.git'
+
 # For image uploading
 gem 'aws-sdk', '< 2.0'
 gem 'paperclip'
