@@ -7,4 +7,9 @@ class HomeController < ApplicationController
   def minor
     @wire_reference = current_user.account.number
   end
+
+  def qr
+    @transaction = Transaction.new
+  end
+
 end

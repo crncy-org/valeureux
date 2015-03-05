@@ -13,6 +13,7 @@ Myapp::Application.routes.draw do
 
   get "home/index"
   get "home/minor"
+  get "home/qr"
 
   end
 
