@@ -1,5 +1,7 @@
 Myapp::Application.routes.draw do
 
+  resources :topups
+
   ActiveAdmin.routes(self)
   devise_for :users
 
