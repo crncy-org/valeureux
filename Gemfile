@@ -9,6 +9,8 @@ gem 'figaro'
 
 # For QR code generation
 gem 'rqrcode'
+# For active-admin panel
+gem 'activeadmin', git: 'https://github.com/activeadmin/activeadmin.git'
 
 # For image uploading
 gem 'aws-sdk', '< 2.0'
