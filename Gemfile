@@ -5,7 +5,6 @@ gem 'rails_12factor', group: :production
 gem 'puma',           group: :production
 gem 'faker',          group: :development
 gem 'devise'
-gem 'figaro'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'

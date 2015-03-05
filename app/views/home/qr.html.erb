@@ -1,0 +1,106 @@
+<%= form_for(@transaction) do |f| %>
+  <% if @transaction.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@transaction.errors.count, "error") %> prohibited this transaction from being saved:</h2>
+
+      <ul>
+      <% @transaction.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+<div class="wrapper wrapper-content animated fadeInRight">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="ibox float-e-margins">
+        <div class="ibox-title">
+          <h5>Fill the details to generate a QR code </h5>
+        </div>
+        <div class="ibox-content">
+            <form method="get" class="form-horizontal">
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Amount</label>
+                <div class="col-sm-10">
+                  <div class="input-group m-b">
+                    <span class="input-group-addon"> V </span>
+                    <%= f.text_field :amount, class: "form-control", placeholder: "Amount"  %>
+                  </div>
+                </div>
+            </div>
+
+            <div class="hr-line-dashed"></div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Reference</label>
+                <div class="col-sm-10">
+                  <%= f.text_field :communication, class: "form-control", placeholder: "Reference(optional)"  %>
+                </div>
+            </div>
+              <%= f.button :submit, class: "btn btn-block btn-outline btn-primary" %>
+              <% end %>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="ibox float-e-margins">
+        <div class="ibox-title">
+          <h5>History of QR generated transactions</h5>
+        </div>
+        <div class="ibox-content">
+          <div class="table-responsive">
+                <table class="table table-hover no-margins">
+                    <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>Status</th>
+                        <th>Date</th>
+                        <th>Amount</th>
+                        <th>Details</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><i class="fa fa-qrcode"></i></td>
+                        <td><small>Pending...</small></td>
+                        <td></i>Mar 03, 2015</td>
+                        <td class="text-navy"> <i class="fa fa-level-up"></i> 100 V </td>
+                        <td><i class="fa fa-ellipsis-h"></i></td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa fa-qrcode"></i></td>
+                        <td><span class="label label-warning">Canceled</span> </td>
+                        <td></i>Mar 01, 2015</td>
+                        <td class="text-navy"> <i class="fa fa-level-up"></i> 80 V </td>
+                        <td><i class="fa fa-ellipsis-h"></i></td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa fa-qrcode"></i></td>
+                        <td><span class="label label-primary">Completed</span> </td>
+                        <td></i>Feb 01, 2015</td>
+                        <td class="text-navy"> <i class="fa fa-level-up"></i> 80 V </td>
+                        <td><i class="fa fa-ellipsis-h"></i></td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa fa-qrcode"></i></td>
+                        <td><span class="label label-primary">Completed</span> </td>
+                        <td></i>Jan 01, 2015</td>
+                        <td class="text-navy"> <i class="fa fa-level-up"></i> 50 V </td>
+                        <td><i class="fa fa-ellipsis-h"></i></td>
+                    </tr>
+
+                    </tbody>
+                </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
