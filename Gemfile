@@ -7,6 +7,9 @@ gem 'faker',          group: :development
 gem 'devise'
 gem 'figaro'
 
+# For QR code generation
+gem 'rqrcode'
+
 # For image uploading
 gem 'aws-sdk', '< 2.0'
 gem 'paperclip'
