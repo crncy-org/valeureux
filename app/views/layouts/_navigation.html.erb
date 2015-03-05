@@ -26,12 +26,17 @@
             </li>
             <li class="<%= 'active' if current_page?('/home/minor') %>">
                 <%= link_to "/home/minor" do %>
-                <i class="fa fa-cart-plus"></i> <span class="nav-label">Top-up</span>
+                <i class="fa fa-cart-plus"></i> <span class="nav-label">Top up</span>
                 <% end %>
             </li>
             <li class="<%= 'active' if current_page?('/transactions/new') %>">
                 <%= link_to "/transactions/new" do %>
                 <i class="fa fa-exchange"></i> <span class="nav-label">Transfer</span>
+                <% end %>
+            </li>
+            <li class="<%= 'active' if current_page?('/home/qr') %>">
+                <%= link_to "/home/qr" do %>
+                <i class="fa fa-qrcode"></i> <span class="nav-label">QR Generator</span>
                 <% end %>
             </li>
             <li class="<%= 'active' if current_page?('/new_account') %>">
