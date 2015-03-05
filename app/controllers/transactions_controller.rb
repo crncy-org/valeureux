@@ -29,7 +29,7 @@ class TransactionsController < ApplicationController
     @transaction.transaction_type = "transfer"
     @transaction.status = "confirmed"
     @transaction.reference = "RTRGGTAF4Z3"
-    @transaction.sender = Account.find_by_number("9563488190073")
+    @transaction.sender = current_user.account
     respond_to do |format|
       if @transaction.save
         format.html { redirect_to @transaction, notice: 'Transaction was successfully created.' }

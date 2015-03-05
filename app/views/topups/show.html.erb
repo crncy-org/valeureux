@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Amount:</strong>
+  <%= @topup.amount %>
+</p>
+
+<p>
+  <strong>Receiver:</strong>
+  <%= @topup.receiver %>
+</p>
+
+<p>
+  <strong>Reference:</strong>
+  <%= @topup.reference %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @topup.status %>
+</p>
+
+<p>
+  <strong>Admin user:</strong>
+  <%= @topup.admin_user %>
+</p>
+
+<%= link_to 'Edit', edit_topup_path(@topup) %> |
+<%= link_to 'Back', topups_path %>

@@ -1,4 +1,4 @@
-ActiveAdmin.register User do
+ActiveAdmin.register Topup do
 
 
   # See permitted parameters documentation:
@@ -14,7 +14,6 @@ ActiveAdmin.register User do
   #   permitted
   # end
 
-  permit_params :first_name, :last_name, :salutation, :phone_number, :user_type, :vat_number, :active, :email
-
+  permit_params :amount, :receiver, :reference, :status, :admin_user
 end
 

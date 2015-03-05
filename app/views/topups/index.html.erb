@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Topups</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Amount</th>
+      <th>Receiver</th>
+      <th>Reference</th>
+      <th>Status</th>
+      <th>Admin user</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @topups.each do |topup| %>
+      <tr>
+        <td><%= topup.amount %></td>
+        <td><%= topup.receiver %></td>
+        <td><%= topup.reference %></td>
+        <td><%= topup.status %></td>
+        <td><%= topup.admin_user %></td>
+        <td><%= link_to 'Show', topup %></td>
+        <td><%= link_to 'Edit', edit_topup_path(topup) %></td>
+        <td><%= link_to 'Destroy', topup, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Topup', new_topup_path %>

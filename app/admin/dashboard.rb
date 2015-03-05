@@ -43,6 +43,16 @@ ActiveAdmin.register_page "Dashboard" do
         end
       end
 
+      column do
+        panel "Recent Topups" do
+          ul do
+            Topup.last(10).map do |topup|
+              li link_to(topup.amount, batch_action_admin_topups_path(topup))
+            end
+          end
+        end
+      end
+
     end
   end # content
 end
