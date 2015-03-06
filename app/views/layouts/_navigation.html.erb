@@ -19,7 +19,7 @@
                     V+
                 </div>
             </li>
-            <li class="<%= 'active' if current_page?('/') %>">
+            <li class="<%= 'active' if current_page?('/home/index') %>">
                 <%= link_to "/home/index" do %>
                 <i class="fa fa-bar-chart-o"></i> <span class="nav-label">Activity</span>
                 <% end %>
@@ -39,8 +39,8 @@
                 <i class="fa fa-qrcode"></i> <span class="nav-label">QR Generator</span>
                 <% end %>
             </li>
-            <li class="<%= 'active' if current_page?('/new_account') %>">
-                <%= link_to "/accounts/new" do %>
+            <li class="<%= 'active' if current_page?('/users/settings') %>">
+                <%= link_to "/users/settings" do %>
                 <i class="fa fa-cog"></i> <span class="nav-label">Settings</span>
                 <% end %>
             </li>
