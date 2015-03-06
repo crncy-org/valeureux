@@ -1,0 +1,53 @@
+
+<p>
+  <strong>Type:</strong>
+  <%= @transaction.transaction_type %>
+</p>
+
+<p>
+  <strong>Sender:</strong>
+  <%= @transaction.sender %>
+</p>
+
+<p>
+  <strong>Receiver:</strong>
+  <%= @transaction.receiver %>
+</p>
+
+<p>
+  <strong>Amount:</strong>
+  <%= @transaction.amount %>
+</p>
+
+<p>
+  <strong>Reference:</strong>
+  <%= @transaction.reference %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @transaction.status %>
+</p>
+
+<p>
+  <strong>Communication:</strong>
+  <%= @transaction.communication %>
+</p>
+
+<h2><%= @url %></h2>
+
+<table>
+                          <% @qr.modules.each_index do |x| %>
+                          <tr>
+                            <% @qr.modules.each_index do |y| %>
+                            <% if @qr.dark?(x,y) %>
+                            <td class="qr-black"/>
+                            <% else %>
+                            <td class="qr-white"/>
+                              <% end %>
+                              <% end %>
+                            </tr>
+                            <% end %>
+                          </table>
+
+                          <p>szzzz</p>

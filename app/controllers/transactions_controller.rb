@@ -1,5 +1,5 @@
 class TransactionsController < ApplicationController
-  before_action :set_transaction, only: [:show, :edit, :update, :destroy]
+  before_action :set_transaction, only: [:show, :edit, :update, :destroy, :show_qr, :confirm, :show_confirm]
 
   # GET /transactions
   # GET /transactions.json
@@ -22,11 +22,21 @@ class TransactionsController < ApplicationController
   def edit
   end
 
+  # GET
+  def show_confirm
+
+  end
+
   # POST
   def confirm
-    @transaction = Transaction.id( from url via params )
     @transaction.receiver = current_user.account
     @transaction.status = "confirmed"
+    @transaction.save
+    redirect_to home_index_path
+  end
+
+  def qr
+    @transaction = Transaction.new
   end
 
   # POST /transactions
@@ -37,15 +47,18 @@ class TransactionsController < ApplicationController
     @transaction.status = "pending"
     @transaction.reference = "RTRGGTAF4Z3"
     @transaction.sender = current_user.account
-    respond_to do |format|
-      if @transaction.save
-        format.html { redirect_to @transaction, notice: 'Transaction was successfully created and is currently in status "Pending".' }
-        format.json { render action: 'show', status: :created, location: @transaction }
-      else
-        format.html { render action: 'new' }
-        format.json { render json: @transaction.errors, status: :unprocessable_entity }
-      end
+
+
+    if @transaction.save
+      redirect_to show_qr_transaction_path(@transaction), notice: 'Transaction was successfully created and is currently in status "Pending".'
+    else
+      render action: 'new'
     end
+  end
+
+  def show_qr
+    @url = show_confirm_transaction_url(@transaction)
+    @qr = RQRCode::QRCode.new( @url, :size => 6, :level => :h )
   end
 
   # POST /transactions
@@ -71,7 +84,7 @@ class TransactionsController < ApplicationController
   # PATCH/PUT /transactions/1.json
   def update
     respond_to do |format|
-      if @transaction.update(transaction_params)
+      if @transaction.update(@transaction)
         format.html { redirect_to @transaction, notice: 'Transaction was successfully updated.' }
         format.json { head :no_content }
       else
@@ -99,6 +112,6 @@ class TransactionsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def transaction_params
-      params.require(:transaction).permit(:receiver_id, :amount, :communication) #removed the fields that are not rendered in the form
+      params.require(:transaction).permit(:id, :receiver_id, :amount, :communication) #removed the fields that are not rendered in the form
     end
 end

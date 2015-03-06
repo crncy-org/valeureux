@@ -1,0 +1,5 @@
+<%= form_for(@transaction, url: qrcreate_transactions_path) do |f| %>
+   <%= f.text_field :amount, class: "form-control", placeholder: "Amount"  %>
+   <%= f.text_field :communication, class: "form-control", placeholder: "Communication(optional)"  %>
+   <%= f.button :submit, class: "btn btn-block btn-outline btn-primary" %>
+<% end %>

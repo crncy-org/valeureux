@@ -7,9 +7,18 @@ Myapp::Application.routes.draw do
   devise_for :users #, controllers: { sessions: "users/sessions" }
 
 
-  resources :transactions
+  resources :transactions do
+    collection do
+      get 'qr'
+      post 'qrcreate'
+    end
 
-  get "transactions/confirm"
+    member do # member = for one instance only vs. collection = for all txns
+      get 'show_confirm'
+      get 'confirm'
+      get 'show_qr'
+    end
+  end
 
   resources :accounts, :only => [:index, :new, :create, :show]
 
@@ -20,7 +29,7 @@ Myapp::Application.routes.draw do
   get "home/index"
   get "home/minor"
   get "home/qr"
-  post "transactions/qrcreate", as: 'qrcreate'
+
   get "users/settings"
   get "home/faq"
   get "home/tec"
