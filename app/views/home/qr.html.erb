@@ -1,4 +1,4 @@
-<%= form_for(@transaction, remote: true, url: qrcreate_path) do |f| %>
+<%= form_for(@transaction, url: qrcreate_transactions_path) do |f| %>
 <% if @transaction.errors.any? %>
 <div id="error_explanation">
   <h2><%= pluralize(@transaction.errors.count, "error") %> prohibited this transaction from being saved:</h2>
@@ -34,7 +34,7 @@
                 <%= f.text_field :communication, class: "form-control", placeholder: "Reference(optional)"  %>
               </div>
             </div>
-            <%= f.button :submit, 'Generate QR code!', class: "btn btn-block btn-outline btn-primary" %>
+            <%= f.submit 'Generate QR code!', class: "btn btn-block btn-outline btn-primary" %>
             <div class="text-center">
               <a data-toggle="modal" class="btn btn-primary" href="#modal-form"></a>
             </div>
