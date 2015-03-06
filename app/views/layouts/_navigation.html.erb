@@ -44,7 +44,13 @@
                 <i class="fa fa-cog"></i> <span class="nav-label">Settings</span>
                 <% end %>
             </li>
-
+            <li class="<%= is_active_controller('info') %>">
+                <a href="#"><i class="fa fa-info"></i> <span class="nav-label">Info</span><span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level is_active_controller('info')">
+                    <li class="<%= is_active_action('faq') %>"><%= link_to "FAQ", home_faq_path %></li>
+                    <li class="<%= is_active_action('tec') %>"><%= link_to "Terms & Conditions", home_tec_path %></li>
+                </ul>
+            </li>
         </ul>
     </div>
 </nav>
