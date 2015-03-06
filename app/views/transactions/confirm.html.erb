@@ -1,0 +1,17 @@
+<h1>Confirm Transaction</h1>
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Receiver:</strong>
+  <%= @transaction.receiver %>
+</p>
+
+<p>
+  <strong>Amount:</strong>
+  <%= @transaction.amount %>
+</p>
+
+<%= link_to 'Confirm', confirm_transaction_path(@transaction) %> |
+
+

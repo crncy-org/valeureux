@@ -8,6 +8,8 @@ Myapp::Application.routes.draw do
 
   resources :transactions
 
+  get "transactions/confirm"
+
   resources :accounts, :only => [:index, :new, :create, :show]
 
   root to: 'landing#landing'
@@ -17,6 +19,7 @@ Myapp::Application.routes.draw do
   get "home/index"
   get "home/minor"
   get "home/qr"
+  post "transactions/qrcreate", as: 'qrcreate'
 
   end
 
