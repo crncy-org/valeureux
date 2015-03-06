@@ -1,47 +1,44 @@
 source 'https://rubygems.org'
 
 ruby '2.2.0'
-gem 'rails_12factor', group: :production
-gem 'puma',           group: :production
-gem 'faker',          group: :development
+
+group :development do
+  gem 'faker'
+  gem 'better_errors'
+end
+
+group :production do
+  gem 'rails_12factor'
+  gem 'puma'
+end
+
 gem 'devise'
 gem 'figaro'
-
 # For QR code generation
 gem 'rqrcode'
 # For active-admin panel
 gem 'activeadmin', git: 'https://github.com/activeadmin/activeadmin.git'
-
 # For image uploading
 gem 'aws-sdk', '< 2.0'
 gem 'paperclip'
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
 gem 'bootstrap-sass', '3.2.0.0'
 gem "font-awesome-rails"
-
 gem "jquery-rails"
-
 # Use Postgresql as the database for Active Record
 gem 'pg'
-
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
-
-
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
-
 # Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails', '~> 4.0.0'
-
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
-
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
