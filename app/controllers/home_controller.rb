@@ -10,7 +10,7 @@ class HomeController < ApplicationController
 
   def qr
     @transaction = Transaction.new
-    @qr = RQRCode::QRCode.new( 'my string to generate', :size => 4, :level => :h )
+    @qr = RQRCode::QRCode.new( 'my string to generate', :size => 8, :level => :h )
   end
 
 end

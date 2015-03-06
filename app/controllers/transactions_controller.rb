@@ -58,7 +58,7 @@ class TransactionsController < ApplicationController
 
   def show_qr
     @url = show_confirm_transaction_url(@transaction)
-    @qr = RQRCode::QRCode.new( @url, :size => 6, :level => :h )
+    @qr = RQRCode::QRCode.new( @url, :size => 8, :level => :h )
   end
 
   # POST /transactions
