@@ -20,6 +20,7 @@ Myapp::Application.routes.draw do
   get "home/minor"
   get "home/qr"
   post "transactions/qrcreate", as: 'qrcreate'
+  get "users/settings"
 
   end
 
