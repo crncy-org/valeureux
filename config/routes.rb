@@ -21,7 +21,8 @@ Myapp::Application.routes.draw do
   get "home/qr"
   post "transactions/qrcreate", as: 'qrcreate'
   get "users/settings"
-
+  get "home/faq"
+  get "home/tec"
   end
 
   # The priority is based upon order of creation: first created -> highest priority.
