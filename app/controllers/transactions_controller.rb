@@ -22,6 +22,32 @@ class TransactionsController < ApplicationController
   def edit
   end
 
+  # POST
+  def confirm
+    @transaction = Transaction.id( from url via params )
+    @transaction.receiver = current_user.account
+    @transaction.status = "confirmed"
+  end
+
+  # POST /transactions
+  # POST /transactions.json
+  def qrcreate
+    @transaction = Transaction.new(transaction_params)
+    @transaction.transaction_type = "qr transfer"
+    @transaction.status = "pending"
+    @transaction.reference = "RTRGGTAF4Z3"
+    @transaction.sender = current_user.account
+    respond_to do |format|
+      if @transaction.save
+        format.html { redirect_to @transaction, notice: 'Transaction was successfully created and is currently in status "Pending".' }
+        format.json { render action: 'show', status: :created, location: @transaction }
+      else
+        format.html { render action: 'new' }
+        format.json { render json: @transaction.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+
   # POST /transactions
   # POST /transactions.json
   def create
