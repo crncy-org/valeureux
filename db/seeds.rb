@@ -6,7 +6,6 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-pw = "12345678"
 
 # ADMIN TESTING SEED
 
@@ -17,8 +16,8 @@ pw = "12345678"
 #     last_name: Faker::Name.last_name,
 #     salutation: Faker::Name.prefix,
 #     email: Faker::Internet.email,
-#     password: pw,
-#     password_confirmation: pw,
+#     password: "12345678",
+#     password_confirmation: "12345678",
 #     phone_number: Faker::PhoneNumber.phone_number,
 #     user_type: "citizen",
 #     vat_number: Faker::Number.number(8),
@@ -48,8 +47,8 @@ user1 = User.new(
   last_name: "Lambrechts",
   salutation: "Mr.",
   email: "fred@fred.com",
-  password: pw,
-  password_confirmation: pw,
+  password: "12345678",
+  password_confirmation: "12345678",
   phone_number: "0478 13 21 63",
   user_type: "citizen",
   vat_number: "BE435345745",
@@ -61,13 +60,26 @@ user2 = User.new(
   last_name: "Brands",
   salutation: "Mr.",
   email: "ruben@ruben.com",
-  password: pw,
-  password_confirmation: pw,
+  password: "12345678",
+  password_confirmation: "12345678",
   phone_number: "0033 958 235 45",
   user_type: "citizen",
   vat_number: "NL435345745",
   active: true)
 user2.save
+
+user3 = User.new(
+  first_name: "Demo",
+  last_name: "1",
+  salutation: "Mr.",
+  email: "demo1@test.com",
+  password: "12345678",
+  password_confirmation: "12345678",
+  phone_number: "0032 478 235 453",
+  user_type: "citizen",
+  vat_number: "BE035345745",
+  active: true)
+user3.save
 
 Account.create(user_id: user1.id)
 Account.create(user_id: user2.id)
