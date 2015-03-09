@@ -1,7 +1,7 @@
 class HomeController < ApplicationController
   def index
     @balance = current_user.account.balance
-    # @transaction_history = Account.current_user_account.transactions
+    @transaction_history = current_user.account.transactions
   end
 
   def minor

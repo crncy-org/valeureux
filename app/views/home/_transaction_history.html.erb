@@ -27,45 +27,26 @@
             <tr>
               <th>Date</th>
               <th>Type </th>
-              <th>Status </th>
-              <th>Description </th>
               <th>Amount </th>
+              <th>Status </th>
+              <th>Sender </th>
+              <th>Receiver </th>
               <th>Details</th>
             </tr>
           </thead>
           <tbody>
+            <% @transaction_history.each do |t| %>
             <tr>
-              <td>Jul 14, 2013</td>
-              <td>Outgoing transfer</td>
-              <td>Confirmed</td>
-              <td>Your purchase @ MilkyWayCoin Lcl.</td>
-              <td>80 V</td>
-              <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+              <td><%= t.created_at %></td>
+              <td><%= t.transaction_type %></td>
+              <td><%= t.amount %></td>
+              <td><%= t.status %></td>
+              <td><%= t.sender_id %></td>
+              <td><%= t.receiver_id %></td>
+              <td><a href="<%= transaction_url(t) %>"><i class="fa fa-check text-navy"></i></a></td>
+
             </tr>
-            <tr>
-              <td>Jul 14, 2013</td>
-              <td>Outgoing transfer</td>
-              <td>Confirmed</td>
-              <td>Your purchase @ MilkyWayCoin Lcl.</td>
-              <td>80 V</td>
-              <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
-            </tr>
-            <tr>
-              <td>Jul 14, 2013</td>
-              <td>Outgoing transfer</td>
-              <td>Confirmed</td>
-              <td>Your wire trasfer to @ my brother</td>
-              <td>80 V</td>
-              <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
-            </tr>
-            <tr>
-              <td>Jul 14, 2013</td>
-              <td>Outgoing transfer</td>
-              <td><span class="label label-warning">Canceled</span></td>
-              <td>Your purchase @ MilkyWayCoin Lcl.</td>
-              <td>80 V</td>
-              <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
-            </tr>
+            <% end %>
           </tbody>
         </table>
       </div>
