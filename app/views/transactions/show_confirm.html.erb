@@ -2,16 +2,58 @@
 
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Receiver:</strong>
-  <%= @transaction.receiver %>
-</p>
+<div class="wrapper wrapper-content animated fadeInRight">
+<div class="row">
+  <div class="col-lg-12">
+    <div class="ibox float-e-margins">
+      <div class="ibox-title">
+        <h5>Confirm Transaction</h5>
+      </div>
+      <div class="ibox-content">
+        <form method="get" class="form-horizontal">
 
-<p>
-  <strong>Amount:</strong>
-  <%= @transaction.amount %>
-</p>
+          <div class="form-group">
+            <label class="col-sm-2 control-label">To</label>
+            <div class="col-sm-10">
+              <div class="row">
+                  <div class="m-b">
+                  <span class="input-group-addon">&#64;</span>
+                  <%= User.find_by_id(@transaction.receiver).full_name %>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="m-b">
+                  <img src=<%= User.find_by_id(@transaction.receiver).picture %>>
+                  </div>
+              </div>
+            </div>
 
-<%= link_to 'Confirm', confirm_transaction_path(@transaction) %> |
+          </div>
+
+          <div class="hr-line-dashed"></div>
+
+          <div class="form-group">
+              <label class="col-sm-2 control-label">Amount</label>
+              <div class="col-sm-10">
+                <div class="m-b">
+                  <span class="input-group-addon"> V </span>
+                  <%= @transaction.amount %>
+                </div>
+              </div>
+          </div>
+
+          <div class="hr-line-dashed"></div>
+
+            <%= link_to 'Confirm', confirm_transaction_path(@transaction), class: "btn btn-block btn-outline btn-primary" %>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
 
 

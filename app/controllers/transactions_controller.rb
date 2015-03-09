@@ -24,7 +24,6 @@ class TransactionsController < ApplicationController
 
   # GET
   def show_confirm
-
   end
 
   # POST
@@ -43,10 +42,9 @@ class TransactionsController < ApplicationController
   # POST /transactions.json
   def qrcreate
     @transaction = Transaction.new(transaction_params)
-    @transaction.transaction_type = "qr transfer"
+    @transaction.transaction_type = "qrtransfer"
     @transaction.status = "pending"
-    @transaction.reference = "RTRGGTAF4Z3"
-    @transaction.sender = current_user.account
+    @transaction.receiver = current_user.account
 
 
     if @transaction.save

@@ -11,10 +11,6 @@ class Account < ActiveRecord::Base
     Account.find_by_user(current_user)
   end
 
-  def amount
-    return 2000
-  end
-
   def transactions
     expenses + incomes #topups.amount +
   end
