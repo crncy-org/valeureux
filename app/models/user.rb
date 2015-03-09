@@ -5,15 +5,12 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
   has_one :account
 
-  has_attached_file :picture,
-  styles: { medium: "300x300>", thumb: "100x100>" }
+  has_attached_file :picture, styles: { medium: "300x300>", thumb: "100x100>" }, :default_url => "/images/:style/missing.png"
+  validates_attachment_content_type :picture, :content_type => /\Aimage\/.*\z/
 
-  validates_attachment_content_type :picture,
-  content_type: /\Aimage\/.*\z/
-
-  # def transactions
-  #   User.self.account.transactions
-  # end
+  after_create do |user|
+    Account.new(user_id: user.id)
+  end
 
   def full_name
     "#{first_name}" + " " + "#{last_name}"

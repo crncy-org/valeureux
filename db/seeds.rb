@@ -81,14 +81,11 @@ user3 = User.new(
   active: true)
 user3.save
 
-Account.create(user_id: user1.id)
-Account.create(user_id: user2.id)
-
 5.times do
   Transaction.create(
     transaction_type: "transfer",
-    sender: user1.account,
-    receiver: user2.account,
+    sender: User.all.sample.account,
+    receiver: User.all.sample.account,
     amount: rand(10..150),
     reference: "expense",
     status: "confirmed",
@@ -98,8 +95,8 @@ end
 5.times do
   Transaction.create(
     transaction_type: "transfer",
-    sender: user2.account,
-    receiver: user1.account,
+    sender: User.all.sample.account,
+    receiver: User.all.sample.account,
     amount: rand(10..150),
     reference: "income",
     status: "confirmed",

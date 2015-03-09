@@ -3,13 +3,11 @@ class ApplicationController < ActionController::Base
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
 
-  # Zelf toegevoegd
   before_action :configure_permitted_parameters, if: :devise_controller?
   before_action :authenticate_user!
 
 
-  # added om devise te gebruiken op landingpage
-
+  # added to use devise on landing page
   def resource_name
     :user
   end
@@ -33,9 +31,14 @@ class ApplicationController < ActionController::Base
     devise_parameter_sanitizer.for(:account_update) { |u| u.permit(:email, :current_password, :first_name, :last_name, :salutation, :phone_number, :user_type, :vat_number, :picture) }
   end
 
-   def after_sign_in_path_for(user)
+  def after_sign_in_path_for(user)
     home_index_path
   end
+
+  def authenticate_user!
+    redirect_to root_path, notice: "You must login" unless user_signed_in?
+  end
+
 
   #werkt niet... Wat je wilt is dat je na editen gewoon in activiteit komt en niet op sign-up page.
 
