@@ -4,7 +4,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   before_action :configure_permitted_parameters, if: :devise_controller?
-  before_action :authenticate_user!
+  before_action :authenticate_user!, unless: :devise_controller?
 
 
   # added to use devise on landing page
@@ -35,9 +35,9 @@ class ApplicationController < ActionController::Base
     home_index_path
   end
 
-  def authenticate_user!
-    redirect_to root_path, notice: "You must login" unless user_signed_in?
-  end
+  # def authenticate_user!
+  #   redirect_to root_path, notice: "You must login" unless user_signed_in?
+  # end
 
 
   #werkt niet... Wat je wilt is dat je na editen gewoon in activiteit komt en niet op sign-up page.

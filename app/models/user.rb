@@ -9,7 +9,7 @@ class User < ActiveRecord::Base
   validates_attachment_content_type :picture, :content_type => /\Aimage\/.*\z/
 
   after_create do |user|
-    Account.new(user_id: user.id)
+    Account.create(user_id: user.id)
   end
 
   def full_name

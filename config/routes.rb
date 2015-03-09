@@ -6,7 +6,6 @@ Myapp::Application.routes.draw do
 
   devise_for :users #, controllers: { sessions: "users/sessions" }
 
-
   resources :transactions do
     collection do
       get 'qr'
@@ -33,6 +32,8 @@ Myapp::Application.routes.draw do
   get "users/settings"
   get "home/faq"
   get "home/tec"
+
+
   end
 
   # The priority is based upon order of creation: first created -> highest priority.
