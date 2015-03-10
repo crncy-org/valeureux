@@ -36,7 +36,7 @@ class TransactionsController < ApplicationController
     client.messages.create(
       from: '+32460200005',
       to: @transaction.sender.phone_number,
-      body: 'You just received a payment in your account!'
+      body: 'You just received a payment in your account!')
   end
 
   def qr
