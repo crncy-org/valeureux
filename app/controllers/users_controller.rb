@@ -12,6 +12,8 @@ class UsersController < ApplicationController
   # GET /users/1
   # GET /users/1.json
   def show
+    @shop = User.find(params[:id])
+    @alert_message = "You are viewing #{@shop.name}"
   end
 
   # GET /users/new
@@ -71,6 +73,6 @@ class UsersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def user_params
-      params.require(:user).permit(:first_name, :last_name, :salutation, :email, :phone_number, :user_type, :vat_number, :active, :account_id, :picture)
+      params.require(:user).permit(:first_name, :last_name, :salutation, :email, :phone_number, :user_type, :vat_number, :active, :account_id, :picture, :address)
     end
 end

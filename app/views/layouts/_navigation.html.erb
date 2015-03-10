@@ -32,12 +32,12 @@
             </li>
             <li class="<%= 'active' if current_page?('/transactions/new') %>">
                 <%= link_to "/transactions/new" do %>
-                <i class="fa fa-long-arrow-right"></i> <span class="nav-label">Money out</span>
+                <i class="fa fa-long-arrow-right"></i> <span class="nav-label">Send money</span>
                 <% end %>
             </li>
             <li class="<%= 'active' if current_page?('/home/qr') %>">
                 <%= link_to "/home/qr" do %>
-                <i class="fa fa-long-arrow-left"></i> <span class="nav-label">Money in</span>
+                <i class="fa fa-long-arrow-left"></i> <span class="nav-label">Receive money</span>
                 <% end %>
             </li>
             <li class="<%= 'active' if current_page?('/users/settings') %>">
@@ -46,7 +46,11 @@
                 <% end %>
             </li>
             <% end %>
-
+            <li class="<%= 'active' if current_page?('/shop_locator/show') %>">
+                <%= link_to "/shop_locator/show" do %>
+                <i class="fa fa-compass"></i> <span class="nav-label">Shop locator</span>
+                <% end %>
+            </li>
             <li class="<%= is_active_controller('info') %>">
                 <a href="#"><i class="fa fa-info"></i> <span class="nav-label">Info</span><span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level is_active_controller('info')">

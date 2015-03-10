@@ -36,6 +36,11 @@
 </p>
 
 <p>
+  <strong>Address:</strong>
+  <%= @user.address %>
+</p>
+
+<p>
   <strong>Active:</strong>
   <%= @user.active %>
 </p>
@@ -47,3 +52,9 @@
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>
+
+<%= javascript_tag do %>
+  $(document).ready(function() {
+    alert('<%= j @alert_message %>');
+  });
+<% end %>

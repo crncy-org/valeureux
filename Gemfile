@@ -12,7 +12,12 @@ group :production do
   gem 'puma'
 end
 
+
+# Google api
+gem "geocoder"
+# For authentication
 gem 'devise'
+# For private key handling (AWS, Twilio, ...)
 gem 'figaro'
 # For QR code generation
 gem 'rqrcode'

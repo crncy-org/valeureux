@@ -47,8 +47,8 @@ class ApplicationController < ActionController::Base
   protected
 
   def configure_permitted_parameters
-    devise_parameter_sanitizer.for(:sign_up) { |u| u.permit(:email, :password, :first_name, :last_name, :salutation, :phone_number, :user_type, :vat_number, :picture) }
-    devise_parameter_sanitizer.for(:account_update) { |u| u.permit(:email, :current_password, :first_name, :last_name, :salutation, :phone_number, :user_type, :vat_number, :picture) }
+    devise_parameter_sanitizer.for(:sign_up) { |u| u.permit(:email, :password, :first_name, :last_name, :salutation, :phone_number, :user_type, :vat_number, :picture, :address) }
+    devise_parameter_sanitizer.for(:account_update) { |u| u.permit(:email, :current_password, :first_name, :last_name, :salutation, :phone_number, :user_type, :vat_number, :picture, :address) }
   end
 
   def after_sign_in_path_for(user)

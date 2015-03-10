@@ -5,6 +5,9 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
   has_one :account
 
+  geocoded_by :address
+  after_validation :geocode, if: :address_changed?
+
   has_attached_file :picture, styles: { medium: "300x300>", thumb: "100x100>", minithumb: "70x70" }, :default_url => "/images/:style/missing.png"
   validates_attachment_content_type :picture, :content_type => /\Aimage\/.*\z/
 

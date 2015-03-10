@@ -1,5 +1,7 @@
 Myapp::Application.routes.draw do
 
+  get 'shop_locator/show'
+
   resources :topups
 
   ActiveAdmin.routes(self)
@@ -30,6 +32,7 @@ Myapp::Application.routes.draw do
   get "home/qr"
 
   get "users/settings"
+  get "users/show"
   get "home/faq"
   get "home/tec"
 

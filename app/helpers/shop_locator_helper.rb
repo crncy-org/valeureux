@@ -1,0 +1,2 @@
+module ShopLocatorHelper
+end
