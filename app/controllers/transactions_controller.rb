@@ -32,6 +32,11 @@ class TransactionsController < ApplicationController
     @transaction.status = "confirmed"
     @transaction.save
     redirect_to home_index_path
+    client = Twilio::REST::Client.new
+    client.messages.create(
+      from: '+32460200005',
+      to: @transaction.sender.phone_number,
+      body: 'You just received a payment in your account!'
   end
 
   def qr

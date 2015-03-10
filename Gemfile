@@ -12,7 +12,8 @@ group :production do
   gem 'puma'
 end
 
-
+# Twilio is used to send and receive sms from user
+gem 'twilio-ruby', '~> 3.12'
 # Google api
 gem "geocoder"
 # For authentication

@@ -15,6 +15,12 @@ class User < ActiveRecord::Base
 
   after_create do |user|
     Account.create(user_id: user.id)
+    client = Twilio::REST::Client.new
+    client.messages.create(
+      from: '+32460200005',
+      to: user.phone_number,
+      body: 'Congratulations!'
+    )
   end
 
   def full_name
