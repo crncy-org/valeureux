@@ -11,6 +11,11 @@ class Account < ActiveRecord::Base
     Account.find_by_user(current_user)
   end
 
+
+  def structured_account_number
+    number.split("")[0..2].join + "/" + number.split("")[3..6].join + "/" + number.split("")[7..11].join
+  end
+
   def transactions
     topups + expenses + incomes
   end

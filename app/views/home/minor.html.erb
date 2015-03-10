@@ -11,9 +11,7 @@
             <h3 class="text-center"><span class="badge badge-info">BE23 2345 3466 3443</span></h3>
             <h4 class="font-bold no-margins">Please provide the following reference as a communication: </h4>
             <h3 class="badge badge-info text-center">
-              <%= current_user.account.number.split("")[0..2].join %> /
-              <%= current_user.account.number.split("")[3..6].join %> /
-              <%= current_user.account.number.split("")[7..11].join %>
+              <%= current_user.account.structured_account_number %>
             </h3>
           </div>
         </div>
@@ -38,26 +36,12 @@
                     </thead>
                     <tbody>
                     <tr>
-                        <td><small>Pending...</small></td>
-                        <td></i>Mar 03, 2015</td>
-                        <td class="text-navy"> <i class="fa fa-level-up"></i> 100 </td>
+                    <% current_user.account.topups.each do |t| %>
+                        <td><span class="label label-warning"><%= t.status %></span> </td>
+                        <td></i> <%= t.created_at %></td>
+                        <td class="text-navy"> <i class="fa fa-level-up"></i> <%= t.amount %></td>
+                    <% end %>
                     </tr>
-                    <tr>
-                        <td><span class="label label-warning">Canceled</span> </td>
-                        <td></i>Mar 01, 2015</td>
-                        <td class="text-navy"> <i class="fa fa-level-up"></i> 80 </td>
-                    </tr>
-                    <tr>
-                        <td><span class="label label-primary">Completed</span> </td>
-                        <td></i>Feb 01, 2015</td>
-                        <td class="text-navy"> <i class="fa fa-level-up"></i> 80 </td>
-                    </tr>
-                    <tr>
-                        <td><span class="label label-primary">Completed</span> </td>
-                        <td></i>Jan 01, 2015</td>
-                        <td class="text-navy"> <i class="fa fa-level-up"></i> 50 </td>
-                    </tr>
-
                     </tbody>
                 </table>
           </div>
