@@ -5,6 +5,10 @@ class LandingController < ApplicationController
     render layout: false
   end
 
+  def landing2
+  render layout: false
+  end
+
   def signup
     render layout: false
   end

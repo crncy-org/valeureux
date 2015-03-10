@@ -1,6 +1,6 @@
 Myapp::Application.routes.draw do
 
-  get 'shop_locator/show'
+
 
   resources :topups
 
@@ -23,7 +23,9 @@ Myapp::Application.routes.draw do
 
   resources :accounts, :only => [:index, :new, :create, :show]
 
-  root to: 'landing#landing'
+  root to: 'landing#landing2'
+
+  get "landing/landing2"
 
   get "landing/signup"
 
@@ -36,6 +38,15 @@ Myapp::Application.routes.draw do
   get "home/faq"
   get "home/tec"
 
+  get 'pages/empty_page'
+  get 'pages/login'
+  get 'pages/signin'
+  get 'pages/lockscreen'
+  get 'pages/login_2'
+  get 'pages/register'
+  get 'pages/not_found_error'
+  get 'pages/internal_server_error'
+  get 'pages/shop_locator'
 
   end
 
