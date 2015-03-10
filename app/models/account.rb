@@ -4,7 +4,7 @@ class Account < ActiveRecord::Base
 
   has_many :expenses, class_name: 'Transaction', foreign_key: "sender_id"
   has_many :incomes,  class_name: 'Transaction', foreign_key: "receiver_id"
-  # has_many :topups,  class_name: 'Topup', foreign_key: "receiver_id"
+  has_many :topups,  class_name: 'Topup', foreign_key: "receiver_id"
 
 
   def current_user_account
@@ -12,11 +12,11 @@ class Account < ActiveRecord::Base
   end
 
   def transactions
-    expenses + incomes #topups.amount +
+    topups + expenses + incomes
   end
 
   def balance
-    incomes.map(&:amount).sum - expenses.map(&:amount).sum  #topups.map(&:amount).sum +
+    topups.map(&:amount).sum + incomes.map(&:amount).sum - expenses.map(&:amount).sum
   end
 
   def generate_unique_account_number

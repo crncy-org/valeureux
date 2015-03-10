@@ -10,7 +10,11 @@
             <h4 class="font-bold no-margins">Here's the number you can wire Euros into: </h4>
             <h3 class="text-center"><span class="badge badge-info">BE23 2345 3466 3443</span></h3>
             <h4 class="font-bold no-margins">Please provide the following reference as a communication: </h4>
-            <h3 class="badge badge-info text-center">100/4344/54921</h3>
+            <h3 class="badge badge-info text-center">
+              <%= current_user.account.number.split("")[0..2].join %> /
+              <%= current_user.account.number.split("")[3..6].join %> /
+              <%= current_user.account.number.split("")[7..11].join %>
+            </h3>
           </div>
         </div>
       </div>

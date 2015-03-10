@@ -26,8 +26,7 @@ class TopupsController < InheritedResources::Base
   def create
     @topup = Topup.new(topup_params)
     @topup.status = "confirmed"
-    @topup.reference = "RTRGGTAF4Z3"
-    @topup.receiver = Account.find_by_number("7495651829012")
+    @topup.reference = "test"
     respond_to do |format|
       if @topup.save
         format.html { redirect_to @topup, notice: 'topup was successfully created.' }
