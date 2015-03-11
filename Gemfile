@@ -1,16 +1,23 @@
 source 'https://rubygems.org'
+source 'https://rails-assets.org'
+
 
 ruby '2.2.0'
 
 group :development do
   gem 'faker'
   gem 'better_errors'
+  gem 'byebug'
 end
 
 group :production do
   gem 'rails_12factor'
   gem 'puma'
 end
+
+# Google maps
+gem "gmaps4rails"
+gem "rails-assets-underscore"
 
 # Twilio is used to send and receive sms from user
 gem 'twilio-ruby', '~> 3.12'

@@ -32,11 +32,12 @@ class TransactionsController < ApplicationController
     @transaction.status = "confirmed"
     @transaction.save
     redirect_to home_index_path
-    client = Twilio::REST::Client.new
-    client.messages.create(
-      from: '+32460200005',
-      to: @transaction.sender.phone_number,
-      body: 'You just received a payment in your account!')
+    # client = Twilio::REST::Client.new
+    # client.messages.create(
+    #   from: '+32460200005',
+    #   to: User.find_by_account_id(Transaction.find_by_sender_id(@transaction.sender_id)).phone_number,
+    #   body: 'You just received a payment in your account!'
+    #   )
   end
 
   def qr
@@ -70,7 +71,6 @@ class TransactionsController < ApplicationController
     @transaction = Transaction.new(transaction_params)
     @transaction.transaction_type = "transfer"
     @transaction.status = "confirmed"
-    @transaction.reference = "RTRGGTAF4Z3"
     @transaction.sender = current_user.account
     respond_to do |format|
       if @transaction.save

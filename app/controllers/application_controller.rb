@@ -8,7 +8,6 @@ class ApplicationController < ActionController::Base
 
   after_filter :store_location
 
-
   # added to use devise on landing page
   def resource_name
     :user
@@ -34,12 +33,9 @@ class ApplicationController < ActionController::Base
         request.path != "/users/confirmation" &&
         request.path != "/users/sign_out" &&
         !request.xhr?) # don't store ajax calls
-      session[:previous_url] = request.fullpath
+      session[:my_previous_url] = request.fullpath
+      p "On redirect: " + session[:my_previous_url]
     end
-  end
-
-  def after_sign_in_path_for(resource)
-    session[:previous_url] || root_path
   end
 
   # ----------
@@ -52,7 +48,8 @@ class ApplicationController < ActionController::Base
   end
 
   def after_sign_in_path_for(user)
-    home_index_path
+    p "After sign in: " + session[:my_previous_url]
+    session[:previous_url] || home_index_path
   end
 
   # def authenticate_user!

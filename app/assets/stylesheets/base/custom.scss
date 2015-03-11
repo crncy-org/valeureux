@@ -1,6 +1,9 @@
 // body {
 //   background-color: #0094B3;
-//   color: #fff;
+// }
+
+// .loginscreen {
+//   color:#fff;
 // }
 
 // .container-fluid {
@@ -11,12 +14,30 @@
 // .landing-banner-icons{
 //   font-size: 24px;
 //   padding: 5px;
-//   text-align: center;
+// }
+
+// a.landing-banner-icons {
+//   color: #fff;
+// }
+
+// a.landing-banner-icons:hover {
+//   color: blue;
 // }
 
 // .landing-banner-text {
 //   font-size: 18px;
 // }
+
+// .text-center {
+//   text-align: center;
+// }
+
+// input[placeholder],
+//     [placeholder],
+//     *[placeholder] {
+//       color: red !important;
+//     }
+
 
 // @media only screen
 // and (min-device-width : 320px)
@@ -32,3 +53,10 @@
 //     font-size: 10px;
 //   }
 // }
+.map-wrapper {
+width: 40%;
+height: calc(100vh);
+right: 0;
+display: block;
+position: absolute;
+}

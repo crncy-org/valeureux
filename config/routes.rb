@@ -10,7 +10,7 @@ Myapp::Application.routes.draw do
 
   resources :transactions do
     collection do
-      get 'qr'
+      # get 'qr'
       post 'qrcreate'
     end
 
@@ -47,6 +47,7 @@ Myapp::Application.routes.draw do
   get 'pages/not_found_error'
   get 'pages/internal_server_error'
   get 'pages/shop_locator'
+  post 'transactions/out'
 
   end
 

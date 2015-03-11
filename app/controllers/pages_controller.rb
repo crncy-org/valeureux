@@ -27,4 +27,10 @@ class PagesController < ApplicationController
 
   def internal_server_error
   end
+
+  def shop_locator
+    @shops = User.where(user_type: "shop")
+    # @shops = shops.near('Bruxelles', 10)
+
+  end
 end
