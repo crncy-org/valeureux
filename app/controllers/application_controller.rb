@@ -47,11 +47,6 @@ class ApplicationController < ActionController::Base
     devise_parameter_sanitizer.for(:account_update) { |u| u.permit(:email, :current_password, :first_name, :last_name, :salutation, :phone_number, :user_type, :vat_number, :picture, :address) }
   end
 
-  def after_sign_in_path_for(user)
-    p "After sign in: " + session[:my_previous_url]
-    session[:previous_url] || home_index_path
-  end
-
   # def authenticate_user!
   #   redirect_to root_path, notice: "You must login" unless user_signed_in?
   # end
