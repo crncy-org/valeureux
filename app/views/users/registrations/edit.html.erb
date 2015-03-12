@@ -2,107 +2,118 @@
   <div class="col-lg-10">
     <h2>My profile (<%= current_user.first_name %>) </h2>
   </ol>
-</div>
+  </div>
 </div>
 <div class="wrapper wrapper-content animated fadeInRight">
-<div class="row">
-  <div class="col-lg-6">
-    <div class="widget-head-color-box navy-bg p-lg text-center">
-      <div class="m-b-md">
-        <h2 class="font-bold no-margins"><%= current_user.full_name %></h2>
-        <small> user since: <%= current_user.created_at %> </small>
-      </div>
-      <img src="<%= current_user.picture %>" class="img-circle circle-border m-b-md" alt="profile">
-    </div>
-  </div>
-</div>
-<div class="row">
-  <div class="col-lg-6">
-    <div class="ibox float-e-margins">
-      <div class="ibox-title">
-        <h5></h5>
-      </div>
-      <div class="ibox-content">
-        <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
-        <%= devise_error_messages! %>
-        <p>
-          <%= f.label "edit profile picture" %>
-          <%= f.file_field :picture %>
-        </p>
-        <table class="table">
-          <thead>
-            <tr>
-              <th>Edit if you want....</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><%= f.label :first_name %></td>
-              <td><%= f.text_field :first_name %></td>
-            </tr>
-            <tr>
-              <td><%= f.label :last_name %></td>
-              <td><%= f.text_field :last_name %></td>
-            </tr>
-            <tr>
-              <td><%= f.label :salutation %><br></td>
-              <td><%= f.text_field :salutation %></td>
-            </tr>
-            <tr>
-              <td><%= f.label :phone_number %></td>
-              <td><%= f.text_field :phone_number %></td>
-            </tr>
-            <tr>
-              <td><%= f.label :user_type %></td>
-              <td><%= f.text_field :user_type %></td>
-            </tr>
-            <tr>
-              <td><%= f.label :vat_number %></td>
-              <td><%= f.text_field :vat_number %></td>
-            </tr>
-            <tr>
-              <td><%= f.label :email %></td>
-              <td> <%= f.email_field :email, autofocus: true %></td>
-            </tr>
-            <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
-            <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
-            <% end %>
-            <tr class="hidden">
-              <td><%= f.label :password %> <i>(leave blank if you don't want to change it)</i></td>
-              <td><%= f.password_field :password, autocomplete: "off" %></td>
-            </tr>
-            <tr class="hidden">
-              <td><%= f.label :password_confirmation %></td>
-              <td><%= f.password_field :password_confirmation, autocomplete: "off" %></td>
-            </tr>
-            <tr>
-              <td> <%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i></td>
-              <td><%= f.password_field :current_password, autocomplete: "off" %></td>
-            </tr>
-            <tr>
-                <div class="actions">
-                  <%= f.submit "Update", class: "btn btn-primary block full-width m-b" %>
-                </div>
-              </td>
-            </tr>
-          </tbody>
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="widget-head-color-box navy-bg p-lg text-center">
+        <div class="m-b-md">
+          <h2 class="font-bold no-margins"><%= current_user.full_name %></h2>
+          <small> user since: <%= current_user.created_at %> </small>
         </div>
-        <% end %>
-      </table>
+        <img src="<%= current_user.picture %>" class="img-circle circle-border m-b-md" alt="profile">
+      </div>
     </div>
   </div>
-</div>
-</div>
-<div class="row">
-<div class="col-lg-6">
-  <div class="ibox float-e-margins">
-    <div class="ibox-title">
-      <h5>Unhappy?</h5>
-    </div>
-    <div class="ibox-content">
-      <p><%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %></p>sx
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="ibox float-e-margins">
+        <div class="ibox-title">
+          <h5></h5>
+        </div>
+        <div class="ibox-content">
+          <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
+          <%= devise_error_messages! %>
+
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Edit if you want....</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><%= f.label "edit profile picture" %></td>
+                <td><%= f.file_field :picture %></td>
+              </tr>
+              <tr>
+                <td><%= f.label :first_name %></td>
+                <td><%= f.text_field :first_name %></td>
+              </tr>
+              <tr>
+                <td><%= f.label :last_name %></td>
+                <td><%= f.text_field :last_name %></td>
+              </tr>
+              <tr>
+                <td><%= f.label :salutation %><br></td>
+                <td><%= f.text_field :salutation %></td>
+              </tr>
+              <tr>
+                <td><%= f.label :phone_number %></td>
+                <td><%= f.text_field :phone_number %></td>
+              </tr>
+              <tr>
+                <td><%= f.label :user_type %></td>
+                <td><%= f.text_field :user_type %></td>
+              </tr>
+              <tr>
+                <td><%= f.label :vat_number %></td>
+                <td><%= f.text_field :vat_number %></td>
+              </tr>
+              <tr>
+                <td><%= f.label :email %></td>
+                <td> <%= f.email_field :email, autofocus: true %></td>
+              </tr>
+              <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+              <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
+              <% end %>
+              <tr class="hidden">
+                <td><%= f.label :password %> <i>(leave blank if you don't want to change it)</i></td>
+                <td><%= f.password_field :password, autocomplete: "off" %></td>
+              </tr>
+              <tr class="hidden">
+                <td><%= f.label :password_confirmation %></td>
+                <td><%= f.password_field :password_confirmation, autocomplete: "off" %></td>
+              </tr>
+              <tr>
+                <td> <%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i></td>
+                <td><%= f.password_field :current_password, autocomplete: "off" %></td>
+              </tr>
+            </tbody>
+          </div>
+
+        </table>
+        <div class="actions">
+          <%= f.submit "Update", class: "btn btn-primary block full-width m-b" %>
+          <% end %>
+        </div>
+      </div>
     </div>
   </div>
-</div>
-</div>
+  </div>
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="ibox float-e-margins">
+        <div class="ibox-title">
+          <h5>Change password</h5>
+        </div>
+        <div class="ibox-content">
+          <p><%= button_to "Change my password", edit_user_password_path %></p>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="row">
+    <div class="col-lg-6">
+      <div class="ibox float-e-margins">
+        <div class="ibox-title">
+          <h5>Unhappy?</h5>
+        </div>
+        <div class="ibox-content">
+          <p><%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %></p>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

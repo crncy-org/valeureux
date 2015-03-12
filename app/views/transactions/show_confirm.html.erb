@@ -16,13 +16,13 @@
             <label class="col-sm-2 control-label">This is a payment to</label>
             <div class="col-sm-10">
               <div class="row">
-                  <div class="m-b h1">
+                  <div class="m-b h3">
                   <strong><%= User.find_by_id(@transaction.receiver).full_name %></strong>
                   </div>
               </div>
               <div class="row">
                   <div class="m-b" >
-                  <img src=<%= User.find_by_id(@transaction.receiver).picture %> class="img-responsive" height="60">
+                  <%= image_tag User.find_by_id(@transaction.receiver).picture.url(:minithumb), class: "img-responsive img-circle" %>
                   </div>
               </div>
             </div>
@@ -34,7 +34,7 @@
           <div class="form-group">
               <label class="col-sm-2 control-label">For the amount of</label>
               <div class="col-sm-10">
-                <div class="m-b h1">
+                <div class="m-b h2">
                   <%= @transaction.amount %> V
                 </div>
               </div>
@@ -42,7 +42,19 @@
 
           <div class="hr-line-dashed"></div>
 
-            <%= link_to 'Enter PIN code to confirm', confirm_transaction_path(@transaction), class: "btn btn-block btn-outline btn-primary" %>
+          <div class="form-group">
+            <label class="col-sm-2 control-label">Enter PIN code</label>
+            <div class="col-sm-10">
+              <div class="m-b">
+                <input type="PIN code" placeholder="PIN code" pattern="[0-9]*" class="form-control">
+              </div>
+            </div>
+          </div>
+
+          <div class="hr-line-dashed"></div>
+
+          <div>
+            <%= link_to 'Confirm transaction', confirm_transaction_path(@transaction), class: "btn btn-block btn-outline btn-primary" %>
         </form>
       </div>
     </div>
