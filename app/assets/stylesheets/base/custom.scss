@@ -1,42 +1,38 @@
-// body {
-//   background-color: #0094B3;
-// }
+.landing-body {
+  background-color: #fff;
+}
 
-// .loginscreen {
-//   color:#fff;
-// }
+.landing-loginscreen {
+  color:#0094B3;
+}
 
-// .container-fluid {
-//   padding-left: 0px;
-//   padding-right: 0px;
-// }
+.landing-container-fluid {
+  padding-left: 0px;
+  padding-right: 0px;
+}
 
-// .landing-banner-icons{
-//   font-size: 24px;
-//   padding: 5px;
-// }
+.landing-banner-icons{
+  font-size: 40px;
+  padding: 5px;
+}
 
-// a.landing-banner-icons {
-//   color: #fff;
-// }
+a.landing-banner-icons {
+  color: #0094B3;
+}
 
-// a.landing-banner-icons:hover {
-//   color: blue;
-// }
+.landing-banner-text {
+  font-size: 18px;
+}
 
-// .landing-banner-text {
-//   font-size: 18px;
-// }
+.landing-text-center {
+  text-align: center;
+}
 
-// .text-center {
-//   text-align: center;
-// }
-
-// input[placeholder],
-//     [placeholder],
-//     *[placeholder] {
-//       color: red !important;
-//     }
+.landing-input[placeholder],
+    [placeholder],
+    *[placeholder] {
+      color: red !important;
+    }
 
 
 // @media only screen
@@ -61,6 +57,6 @@ display: block;
 position: absolute;
 }
 
-.form-group {
+.valeureux-form-group {
   height: 34px
 }

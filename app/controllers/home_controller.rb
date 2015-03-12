@@ -11,6 +11,8 @@ class HomeController < ApplicationController
   def qr
     @transaction = Transaction.new
     @qr = RQRCode::QRCode.new( 'my string to generate', :size => 8, :level => :h )
+    @accounts = Account.all
+    @incomes_history = current_user.account.incomes
   end
 
 end

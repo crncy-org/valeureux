@@ -16,6 +16,7 @@ class TransactionsController < ApplicationController
   def new
     @transaction = Transaction.new
     @accounts = Account.all
+    @expenses_history = current_user.account.expenses
   end
 
   # GET /transactions/1/edit

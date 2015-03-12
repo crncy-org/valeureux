@@ -20,30 +20,28 @@
     <%= csrf_meta_tags %>
 
 </head>
-  <body>
-  <div class="container-fluid">
+  <body class="landing-body">
+  <div class="landing-container-fluid">
     <div class="row">
       <div class="col-xs-12 landing-banner">
         <div class="row">
-          <div class="text-center col-xs-2">
+          <div class="landing-text-center col-xs-2">
             <%= link_to "/pages/shop_locator", class: 'landing-banner-icons' do %>
               <i class="fa fa-map-marker"></i>
             <% end %>
 
           </div>
-          <div class="col-xs-3">
+          <div class="col-xs-6">
 
           </div>
-          <div class="col-xs-3">
-            <i class="fa fa-sign-in"></i>
-            <%= link_to "/pages/login" do %>
+          <div class="col-xs-2">
+            <%= link_to "/pages/login", class: 'landing-banner-icons'  do %>
               <i class="fa fa-sign-in landing-banner-icons"></i>
             <% end %>
           </div>
-          <div class="col-xs-4 landing-banner-text">
-            <strong>Sign up</strong>
-            <%= link_to "/pages/register" do %>
-                <span class="nav-label">Sign up</span>
+          <div class="col-xs-2 landing-banner-text">
+            <%= link_to "/pages/register", class: 'landing-banner-icons'  do %>
+                <span class="nav-label"><strong>Sign up</strong></span>
                 <% end %>
           </div>
         </div>
