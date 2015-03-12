@@ -11,7 +11,13 @@ $( document ).on(
         // "Standalone" mode and change the URL at the same time.
 
         var link = $(this);
-        location.href = link.attr( "href" );
+
+        var datamethod = link.attr("data-method");
+
+        if(datamethod != 'delete') {
+          location.href = link.attr( "href" );
+        }
+
 
     }
 );

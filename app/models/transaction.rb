@@ -4,5 +4,12 @@ class Transaction < ActiveRecord::Base
 
   TRANSACTION_TYPE = ["transfer","payment"]
 
+  # after_create do |transaction|
+  #   client = Twilio::REST::Client.new
+  #   client.messages.create(
+  #     from: '+32460200005',
+  #     to: '+32478132163',
+  #     body: 'You have received money transaction'
+  #   )
 end
 

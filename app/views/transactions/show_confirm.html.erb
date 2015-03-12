@@ -13,17 +13,16 @@
         <form method="get" class="form-horizontal">
 
           <div class="form-group">
-            <label class="col-sm-2 control-label">To</label>
+            <label class="col-sm-2 control-label">This is a payment to</label>
             <div class="col-sm-10">
               <div class="row">
-                  <div class="m-b">
-                  <span class="input-group-addon">&#64;</span>
-                  <%= User.find_by_id(@transaction.receiver).full_name %>
+                  <div class="m-b h1">
+                  <strong><%= User.find_by_id(@transaction.receiver).full_name %></strong>
                   </div>
               </div>
               <div class="row">
-                  <div class="m-b">
-                  <img src=<%= User.find_by_id(@transaction.receiver).picture %>>
+                  <div class="m-b" >
+                  <img src=<%= User.find_by_id(@transaction.receiver).picture %> class="img-responsive" height="60">
                   </div>
               </div>
             </div>
@@ -33,18 +32,17 @@
           <div class="hr-line-dashed"></div>
 
           <div class="form-group">
-              <label class="col-sm-2 control-label">Amount</label>
+              <label class="col-sm-2 control-label">For the amount of</label>
               <div class="col-sm-10">
-                <div class="m-b">
-                  <span class="input-group-addon"> V </span>
-                  <%= @transaction.amount %>
+                <div class="m-b h1">
+                  <%= @transaction.amount %> V
                 </div>
               </div>
           </div>
 
           <div class="hr-line-dashed"></div>
 
-            <%= link_to 'Confirm', confirm_transaction_path(@transaction), class: "btn btn-block btn-outline btn-primary" %>
+            <%= link_to 'Enter PIN code to confirm', confirm_transaction_path(@transaction), class: "btn btn-block btn-outline btn-primary" %>
         </form>
       </div>
     </div>
