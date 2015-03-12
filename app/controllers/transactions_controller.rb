@@ -29,7 +29,7 @@ class TransactionsController < ApplicationController
 
   # POST
   def confirm
-    @transaction.receiver = current_user.account
+    @transaction.sender = current_user.account
     @transaction.status = "confirmed"
     @transaction.save
     redirect_to home_index_path
@@ -51,7 +51,7 @@ class TransactionsController < ApplicationController
     @transaction = Transaction.new(transaction_params)
     @transaction.transaction_type = "qrtransfer"
     @transaction.status = "pending"
-    @transaction.sender = current_user.account
+    @transaction.receiver = current_user.account
 
 
     if @transaction.save
