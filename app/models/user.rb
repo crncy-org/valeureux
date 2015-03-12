@@ -24,7 +24,13 @@ class User < ActiveRecord::Base
   end
 
   def full_name
-    "#{first_name}" + " " + "#{last_name}"
+    if user_type == "shop"
+      "#{shopname}"
+    elsif user_type == "citizen" && first_name.empty? && last_name.empty?
+      "#{email}"
+    else
+      "#{first_name}" + " " + "#{last_name}"
+    end
   end
 
 end
