@@ -6,7 +6,11 @@ class LandingController < ApplicationController
   end
 
   def landing2
-  render layout: false
+    if current_user
+      redirect_to '/home/index'
+    else
+      render layout: false
+    end
   end
 
   def signup
