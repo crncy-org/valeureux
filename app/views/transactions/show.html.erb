@@ -12,7 +12,7 @@
 
 <p>
   <strong>Receiver:</strong>
-  <%= @transaction.receiver.user.full_name %>
+  <%= @transaction.receiver.user.full_name if @transaction.receiver %>
 </p>
 
 <p>
