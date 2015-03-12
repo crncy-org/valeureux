@@ -51,7 +51,7 @@ class TransactionsController < ApplicationController
     @transaction = Transaction.new(transaction_params)
     @transaction.transaction_type = "qrtransfer"
     @transaction.status = "pending"
-    @transaction.receiver = current_user.account
+    @transaction.sender = current_user.account
 
 
     if @transaction.save
