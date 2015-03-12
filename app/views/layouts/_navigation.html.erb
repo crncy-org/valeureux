@@ -3,21 +3,11 @@
         <ul class="nav" id="side-menu">
         <% if user_signed_in? %>
             <li class="nav-header">
-               <div class="dropdown profile-element">
-                  <span>
-                    <%= image_tag current_user.picture.url(:minithumb), class: "img-circle"%>
-                   </span>
-                   <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                       <span class="clear">
-                           <span class="block m-t-xs">
-
-                           <%= link_to current_user.full_name, edit_user_registration_path %>
-
-                       </span>
-                   </a>
+               <div class="dropdown profile-element text-center">
+                  <%= image_tag("valeureux_cut_out_medium.png") %>
                 </div>
                 <div class="logo-element">
-                    <%= image_tag("valeureux_cut_out_small.png") %>
+                  <%= image_tag("valeureux_cut_out_small.png") %>
                 </div>
             </li>
             <li class="<%= 'active' if current_page?('/home/index') %>">
