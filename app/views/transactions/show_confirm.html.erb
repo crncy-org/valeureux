@@ -17,12 +17,12 @@
             <div class="col-sm-10">
               <div class="row">
                   <div class="m-b h1">
-                  <strong><%= User.find_by_id(@transaction.receiver).full_name %></strong>
+                  <strong><%= User.find_by_id(@transaction.sender).full_name %></strong>
                   </div>
               </div>
               <div class="row">
                   <div class="m-b" >
-                  <img src=<%= User.find_by_id(@transaction.receiver).picture %> class="img-responsive" height="60">
+                  <img src=<%= User.find_by_id(@transaction.sender).picture %> class="img-responsive" height="60">
                   </div>
               </div>
             </div>
