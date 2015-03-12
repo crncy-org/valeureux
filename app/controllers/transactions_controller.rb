@@ -12,7 +12,7 @@ class TransactionsController < ApplicationController
   def show
   end
 
-  # GET /transactions/new
+  # GET /transactions/new_wire_out
   def new
     @transaction = Transaction.new
     @accounts = Account.all

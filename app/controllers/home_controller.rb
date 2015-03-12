@@ -4,7 +4,7 @@ class HomeController < ApplicationController
     @transaction_history = current_user.account.transactions
   end
 
-  def minor
+  def topup
     @wire_reference = current_user.account.number
   end
 

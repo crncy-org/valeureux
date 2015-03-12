@@ -30,7 +30,9 @@ class PagesController < ApplicationController
 
   def shop_locator
     @shops = User.where(user_type: "shop")
-    # @shops = shops.near('Bruxelles', 10)
-
+    @hash = Gmaps4rails.build_markers(@shops.geocoded) do |shop, marker|
+      marker.lat shop.latitude
+      marker.lng shop.longitude
+    end
   end
 end

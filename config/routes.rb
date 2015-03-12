@@ -30,7 +30,7 @@ Myapp::Application.routes.draw do
   get "landing/signup"
 
   get "home/index"
-  get "home/minor"
+  get "home/topup"
   get "home/qr"
 
   get "users/settings"
@@ -47,7 +47,7 @@ Myapp::Application.routes.draw do
   get 'pages/not_found_error'
   get 'pages/internal_server_error'
   get 'pages/shop_locator'
-  post 'transactions/out'
+
 
   end
 

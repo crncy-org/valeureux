@@ -13,6 +13,8 @@
 //= require jquery/jquery-2.1.1.js
 //= require jquery_ujs
 //= require bootstrap-sprockets
+//= require underscore
+//= require gmaps/google
 //= require metisMenu/jquery.metisMenu.js
 //= require switchery/switchery.js
 //= require pace/pace.min.js

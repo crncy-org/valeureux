@@ -26,7 +26,9 @@
                   </ul>
                 </div>
                 <% end %>
+                <br>
                 <form method="get" class="form-horizontal">
+
                   <div class="form-group">
                     <label class="col-sm-2 control-label">Amount</label>
                     <div class="col-sm-10">
@@ -43,6 +45,7 @@
                       <%= f.text_field :communication, class: "form-control", placeholder: "Reference(optional)"  %>
                     </div>
                   </div>
+                  <div class="hr-line-dashed"></div>
                   <%= f.submit 'Generate QR code!', class: "btn btn-block btn-outline btn-primary" %>
                   <% end %>
                 </form>
