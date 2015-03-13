@@ -64,7 +64,7 @@ user2 = User.new(
   email: "ruben@ruben.com",
   password: "12345678",
   password_confirmation: "12345678",
-  phone_number: "+31626943111",
+  phone_number: "+32478132163",
   user_type: "citizen",
   vat_number: "",
   pin: "123456",
