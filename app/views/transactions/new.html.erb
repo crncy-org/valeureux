@@ -74,11 +74,11 @@
             <thead>
               <tr>
                 <th>Date</th>
-                <th>Type </th>
+                <th>In/Out </th>
+                <th>Type</th>
                 <th>Amount </th>
                 <th>Status </th>
                 <th>Party </th>
-
                 <th>Details</th>
               </tr>
             </thead>
@@ -87,12 +87,13 @@
               <tr>
                 <td><%= t.created_at.strftime('%F') %></td>
                 <td>
-                  <% if t.sender.user == current_user then %> <span class="label label-primary">in</span>
-                    <% else %><span class="label label-danger">out</span>
+                  <% if t.sender == current_user.account then %> <span class="label label-danger">out</span>
+                    <% else %><span class="label label-primary">in</span>
                     <% end %>
-                  <% if t.transaction_type == "qrtransfer" then %> <i class="fa fa-qrcode"></i>
-                    <% else %> <i class="fa fa-paper-plane-o"></i>
-                    <% end %>
+                </td>
+                <td><% if t.transaction_type == "qrtransfer" then %> <i class="fa fa-qrcode"></i>
+                  <% else %> <i class="fa fa-paper-plane-o"></i>
+                  <% end %>
                 </td>
                 <td><%= t.amount %></td>
                 <td>
@@ -101,13 +102,16 @@
                     <% end %>
                 </td>
                 <td>
-                  <% if t.sender == nil || t.receiver == nil then %> O
-                  <% elsif t.sender == current_user then %><%= image_tag t.receiver.user.picture.url(:nanothumb), class: "img-circle"%><%= t.receiver.user.full_name %>
-                  <% else %><%= image_tag t.sender.user.picture.url(:nanothumb), class: "img-circle"%><%= t.sender.user.full_name %>
+                  <% if t.sender == current_user.account && t.receiver == nil then %> N/A
+                  <% elsif t.sender == current_user.account && t.receiver != nil then %><%= image_tag t.receiver.user.picture.url(:nanothumb), class: "img-circle"%><%= t.receiver.user.full_name %>
+                  <% elsif t.receiver == current_user.account && t.sender == nil then %> N/A
+                  <% elsif t.receiver == current_user.account && t.sender != nil then %><%= image_tag t.sender.user.picture.url(:nanothumb), class: "img-circle"%><%= t.sender.user.full_name %>
+                  <% else %>???
                     <% end %>
                 <td><a href="<%= transaction_url(t) %>"><i class="fa fa-ellipsis-h"></i></a></td>
-                <% end %>
+
               </tr>
+              <% end %>
             </tbody>
           </table>
         </div>

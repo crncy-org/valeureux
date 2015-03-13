@@ -1,12 +1,12 @@
 Myapp::Application.routes.draw do
 
-
-
   resources :topups
 
   ActiveAdmin.routes(self)
 
-  devise_for :users #, controllers: { sessions: "users/sessions" }
+  devise_for :users, controllers: {
+        sessions: 'devise/sessions'
+      }
 
   resources :transactions do
     collection do
@@ -27,22 +27,18 @@ Myapp::Application.routes.draw do
 
   get "landing/landing2"
 
-  get "landing/signup"
-
   get "home/index"
   get "home/topup"
   get "home/qr"
-
-  get "users/settings"
-  get "users/show"
   get "home/faq"
   get "home/tec"
 
+  get "users/settings"
+  get "users/show"
+
   get 'pages/empty_page'
-  get 'pages/login'
   get 'pages/signin'
   get 'pages/lockscreen'
-  get 'pages/login_2'
   get 'pages/register'
   get 'pages/not_found_error'
   get 'pages/internal_server_error'

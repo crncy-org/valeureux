@@ -116,45 +116,49 @@
                 <div class="row">
                   <div class="table-responsive">
                     <table class="table table-striped">
-                      <thead>
-                        <tr>
-                          <th>Date</th>
-                          <th>Type </th>
-                          <th>Amount </th>
-                          <th>Status </th>
-                          <th>Party </th>
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>In/Out </th>
+                <th>Type</th>
+                <th>Amount </th>
+                <th>Status </th>
+                <th>Party </th>
+                <th>Details</th>
+              </tr>
+            </thead>
+            <tbody>
+              <% @incomes_history.each do |t| %>
+              <tr>
+                <td><%= t.created_at.strftime('%F') %></td>
+                <td>
+                  <% if t.sender == current_user.account then %> <span class="label label-danger">out</span>
+                    <% else %><span class="label label-primary">in</span>
+                    <% end %>
+                </td>
+                <td><% if t.transaction_type == "qrtransfer" then %> <i class="fa fa-qrcode"></i>
+                  <% else %> <i class="fa fa-paper-plane-o"></i>
+                  <% end %>
+                </td>
+                <td><%= t.amount %></td>
+                <td>
+                  <% if t.status == "confirmed" then %> <span class="label label-primary">confirmed</span>
+                    <% else %><span class="label label-danger">pending</span>
+                    <% end %>
+                </td>
+                <td>
+                  <% if t.sender == current_user.account && t.receiver == nil then %> N/A
+                  <% elsif t.sender == current_user.account && t.receiver != nil then %><%= image_tag t.receiver.user.picture.url(:nanothumb), class: "img-circle"%><%= t.receiver.user.full_name %>
+                  <% elsif t.receiver == current_user.account && t.sender == nil then %> N/A
+                  <% elsif t.receiver == current_user.account && t.sender != nil then %><%= image_tag t.sender.user.picture.url(:nanothumb), class: "img-circle"%><%= t.sender.user.full_name %>
+                  <% else %>???
+                    <% end %>
+                <td><a href="<%= transaction_url(t) %>"><i class="fa fa-ellipsis-h"></i></a></td>
 
-                          <th>Details</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <% @incomes_history.each do |t| %>
-                        <tr>
-                          <td><%= t.created_at.strftime('%F') %></td>
-                          <td>
-                            <% if t.sender == current_user then %> <span class="label label-primary">in</span>
-                              <% else %><span class="label label-danger">out</span>
-                              <% end %>
-                            <% if t.transaction_type == "qrtransfer" then %> <i class="fa fa-qrcode"></i>
-                              <% else %> <i class="fa fa-paper-plane-o"></i>
-                              <% end %>
-                          </td>
-                          <td><%= t.amount %></td>
-                          <td>
-                            <% if t.status == "confirmed" then %> <span class="label label-primary">confirmed</span>
-                              <% else %><span class="label label-danger">pending</span>
-                              <% end %>
-                          </td>
-                          <td>
-                            <% if t.sender == nil || t.receiver == nil then %> O
-                            <% elsif t.sender == current_user then %><%= image_tag t.receiver.user.picture.url(:nanothumb), class: "img-circle"%><%= t.receiver.user.full_name %>
-                            <% else %><%= image_tag t.sender.user.picture.url(:nanothumb), class: "img-circle"%><%= t.sender.user.full_name %>
-                              <% end %>
-                          <td><a href="<%= transaction_url(t) %>"><i class="fa fa-ellipsis-h"></i></a></td>
-                          <% end %>
-                        </tr>
-                      </tbody>
-                    </table>
+              </tr>
+              <% end %>
+            </tbody>
+          </table>
                   </div>
                 </div>
               </div>
