@@ -17,7 +17,7 @@ class Account < ActiveRecord::Base
   end
 
   def transactions
-    topups + expenses + incomes
+    expenses + incomes
   end
 
   def balance
