@@ -319,14 +319,14 @@ end
 
 # 4 - TOPUPS
 
-20.times do
-  Topup.create(
-    receiver: User.all.sample.account,
-    sender: User.first.account,
-    amount: rand(10..150),
-    status: "confirmed",
-    reference: "your top up")
-end
+# 20.times do
+#   Topup.create(
+#     receiver: User.all.sample.account,
+#     sender: User.first.account,
+#     amount: rand(10..150),
+#     status: "confirmed",
+#     reference: "your top up")
+# end
 
 # url = "http://valeureux.be/les-commerces/"
 
