@@ -5,7 +5,8 @@ Myapp::Application.routes.draw do
   ActiveAdmin.routes(self)
 
   devise_for :users, controllers: {
-        sessions: 'sessions/sessions'
+        sessions: 'sessions/sessions',
+        registrations: 'sessions/registrations'
       }
 
   resources :transactions do
