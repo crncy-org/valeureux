@@ -1,5 +1,5 @@
 # valeureux
-app for Valeureux local currency
+local currency payment application (currently only for Valeureux)
 
 
 ## What is the Valeureux app for?
